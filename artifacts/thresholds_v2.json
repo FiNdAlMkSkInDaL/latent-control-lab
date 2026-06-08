@@ -1,0 +1,7 @@
+{
+  "min_confidence": 0.9717154502868652,
+  "min_margin": 0.9548585414886475,
+  "max_centroid_distance": 26.004375457763672,
+  "selection_method": "5th percentile confidence/margin and 95th percentile class-centroid distance on validation split when present, otherwise training split",
+  "threshold_source": "validation"
+}

@@ -1,0 +1,93 @@
+{
+  "timestamp": "2026-06-08T22:05:31.694993+00:00",
+  "probe": "artifacts\\probe_distilgpt2_v2.joblib",
+  "features": "artifacts\\features_distilgpt2_v2_pre_lm_head.npz",
+  "model_id": "distilgpt2",
+  "feature_space": "pre_lm_head_last_token",
+  "objective_formula": "0.4 * executable_accept_rate + 0.4 * hard_negative_reject_rate + 0.2 * macro_f1",
+  "validation_rows": 72,
+  "train_executable_rows": 210,
+  "methods": [
+    {
+      "method": "max_softmax_probability",
+      "threshold": 0.7045196890830994,
+      "objective": 1.0,
+      "executable_accept_rate": 1.0,
+      "hard_negative_reject_rate": 1.0,
+      "macro_f1": 1.0,
+      "auroc": 0.4872427983539095,
+      "auprc": 0.6210208975308588
+    },
+    {
+      "method": "top2_margin",
+      "threshold": 0.5447178483009338,
+      "objective": 1.0,
+      "executable_accept_rate": 1.0,
+      "hard_negative_reject_rate": 1.0,
+      "macro_f1": 1.0,
+      "auroc": 0.4814814814814815,
+      "auprc": 0.6119489812336563
+    },
+    {
+      "method": "negative_entropy",
+      "threshold": -0.9332209825515747,
+      "objective": 1.0,
+      "executable_accept_rate": 1.0,
+      "hard_negative_reject_rate": 1.0,
+      "macro_f1": 1.0,
+      "auroc": 0.48641975308641977,
+      "auprc": 0.6187087934051863
+    },
+    {
+      "method": "negative_nearest_executable_centroid_distance",
+      "threshold": -40.357093811035156,
+      "objective": 1.0,
+      "executable_accept_rate": 1.0,
+      "hard_negative_reject_rate": 1.0,
+      "macro_f1": 1.0,
+      "auroc": 0.4666666666666667,
+      "auprc": 0.6674597116949157
+    },
+    {
+      "method": "classwise_centroid_threshold",
+      "threshold": -8.739261627197266,
+      "objective": 1.0,
+      "executable_accept_rate": 1.0,
+      "hard_negative_reject_rate": 1.0,
+      "macro_f1": 1.0,
+      "auroc": null,
+      "auprc": null
+    },
+    {
+      "method": "negative_mahalanobis_distance",
+      "threshold": -115.47528839111328,
+      "objective": 1.0,
+      "executable_accept_rate": 1.0,
+      "hard_negative_reject_rate": 1.0,
+      "macro_f1": 1.0,
+      "auroc": 0.9868312757201646,
+      "auprc": 0.9932268988872762
+    }
+  ],
+  "selected": {
+    "method": "max_softmax_probability",
+    "threshold": 0.7045196890830994,
+    "objective": 1.0,
+    "executable_accept_rate": 1.0,
+    "hard_negative_reject_rate": 1.0,
+    "macro_f1": 1.0,
+    "auroc": 0.4872427983539095,
+    "auprc": 0.6210208975308588
+  },
+  "selected_parameter_shapes": {},
+  "thresholds": {
+    "selection": "validation_only",
+    "objective_formula": "0.4 * executable_accept_rate + 0.4 * hard_negative_reject_rate + 0.2 * macro_f1",
+    "ood_method": "max_softmax_probability",
+    "ood_threshold": 0.7045196890830994,
+    "min_confidence": 0.0,
+    "min_margin": 0.0,
+    "max_centroid_distance": null,
+    "parameters": {}
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "timestamp": "2026-06-08T22:00:18.977709+00:00",
+  "model_id": "distilgpt2",
+  "dataset": "data\\intent_dataset_v2.csv",
+  "hard_dataset": "data\\hard_eval.csv",
+  "sample_size": null,
+  "hard_sample_size": null,
+  "prompt_templates": {
+    "default": "You are a latent action router for a sandboxed task controller.\n\nUser request:\n{text}\n\nRepresent the intended controller action:",
+    "minimal": "{text}",
+    "instruction": "Classify the controller intent represented by this request: {text}",
+    "controller": "Request from user: {text}\nInternal controller representation:",
+    "terse": "Intent: {text}"
+  },
+  "probe": "artifacts\\probe_prompt_augmented.joblib",
+  "runs": [
+    {
+      "prompt_name": "default",
+      "dataset": "v2_test",
+      "n_rows": 73,
+      "accuracy": 1.0,
+      "macro_f1": 1.0,
+      "abstain_precision": 1.0,
+      "abstain_recall": 1.0
+    },
+    {
+      "prompt_name": "default",
+      "dataset": "hard_eval",
+      "n_rows": 275,
+      "accuracy": 0.6509090909090909,
+      "macro_f1": 0.5159434906338931,
+      "abstain_precision": 0.6684210526315789,
+      "abstain_recall": 0.8466666666666667
+    },
+    {
+      "prompt_name": "minimal",
+      "dataset": "v2_test",
+      "n_rows": 73,
+      "accuracy": 0.9863013698630136,
+      "macro_f1": 0.9881977671451357,
+      "abstain_precision": 1.0,
+      "abstain_recall": 0.9642857142857143
+    },
+    {
+      "prompt_name": "minimal",
+      "dataset": "hard_eval",
+      "n_rows": 275,
+      "accuracy": 0.6690909090909091,
+      "macro_f1": 0.5239317391204183,
+      "abstain_precision": 0.6989247311827957,
+      "abstain_recall": 0.8666666666666667
+    },
+    {
+      "prompt_name": "instruction",
+      "dataset": "v2_test",
+      "n_rows": 73,
+      "accuracy": 0.9863013698630136,
+      "macro_f1": 0.9881977671451357,
+      "abstain_precision": 1.0,
+      "abstain_recall": 0.9642857142857143
+    },
+    {
+      "prompt_name": "instruction",
+      "dataset": "hard_eval",
+      "n_rows": 275,
+      "accuracy": 0.6509090909090909,
+      "macro_f1": 0.49394279348899356,
+      "abstain_precision": 0.655,
+      "abstain_recall": 0.8733333333333333
+    },
+    {
+      "prompt_name": "controller",
+      "dataset": "v2_test",
+      "n_rows": 73,
+      "accuracy": 1.0,
+      "macro_f1": 1.0,
+      "abstain_precision": 1.0,
+      "abstain_recall": 1.0
+    },
+    {
+      "prompt_name": "controller",
+      "dataset": "hard_eval",
+      "n_rows": 275,
+      "accuracy": 0.6581818181818182,
+      "macro_f1": 0.535702211837045,
+      "abstain_precision": 0.6850828729281768,
+      "abstain_recall": 0.8266666666666667
+    },
+    {
+      "prompt_name": "terse",
+      "dataset": "v2_test",
+      "n_rows": 73,
+      "accuracy": 0.9863013698630136,
+      "macro_f1": 0.9881977671451357,
+      "abstain_precision": 1.0,
+      "abstain_recall": 0.9642857142857143
+    },
+    {
+      "prompt_name": "terse",
+      "dataset": "hard_eval",
+      "n_rows": 275,
+      "accuracy": 0.6763636363636364,
+      "macro_f1": 0.5527408974510851,
+      "abstain_precision": 0.7010869565217391,
+      "abstain_recall": 0.86
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+CREATE_TASK:
+  canonical: create a new task
+  examples:
+    - create a new task
+    - add this as a todo
+    - put this in my task list
+PROMOTE_TASK:
+  canonical: promote next task
+  examples:
+    - start the next task
+    - make the next item active
+    - pull up the next task
+COMPLETE_ACTIVE:
+  canonical: complete active task
+  examples:
+    - finish the current task
+    - mark the active item done
+    - this one is done
+ARCHIVE_COMPLETED:
+  canonical: archive completed tasks
+  examples:
+    - archive completed tasks
+    - clean up done items
+    - move finished work to archive
+TOGGLE_FOCUS_MODE:
+  canonical: toggle focus mode
+  examples:
+    - toggle focus mode
+    - turn on focus mode
+    - turn off focus mode
+ABSTAIN:
+  canonical: no valid controller action
+  examples:
+    - what is the weather tomorrow
+    - asdf qwer zxcv
+    - write me a sonnet

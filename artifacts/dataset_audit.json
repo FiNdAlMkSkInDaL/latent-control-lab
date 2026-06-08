@@ -1,0 +1,1276 @@
+{
+  "dataset": "data\\intent_dataset.csv",
+  "n_rows": 350,
+  "labels": [
+    "ABSTAIN",
+    "ARCHIVE_COMPLETED",
+    "COMPLETE_ACTIVE",
+    "CREATE_TASK",
+    "PROMOTE_TASK",
+    "TOGGLE_FOCUS_MODE"
+  ],
+  "splits": [
+    "test",
+    "train",
+    "validation"
+  ],
+  "similarity_threshold": 0.82,
+  "exact_duplicate_count": 0,
+  "normalized_duplicate_count": 25,
+  "split_text_overlap_count": 8,
+  "template_family_overlap_count": 39,
+  "near_duplicate_pair_count": 69,
+  "cross_split_near_duplicate_pair_count": 31,
+  "exact_duplicates": [],
+  "normalized_duplicates": [
+    {
+      "normalized_text": "please search the web for coffee shops for me",
+      "count": 2
+    },
+    {
+      "normalized_text": "can you file away everything completed if that is okay",
+      "count": 2
+    },
+    {
+      "normalized_text": "please move finished work to archive please",
+      "count": 2
+    },
+    {
+      "normalized_text": "i want you to promote the oldest backlog item now",
+      "count": 2
+    },
+    {
+      "normalized_text": "create a new task if that is okay",
+      "count": 2
+    },
+    {
+      "normalized_text": "can you asdf asdf qwer now",
+      "count": 2
+    },
+    {
+      "normalized_text": "hey assistant promote the oldest backlog item for me",
+      "count": 2
+    },
+    {
+      "normalized_text": "can you clear out the completed list",
+      "count": 2
+    },
+    {
+      "normalized_text": "can you clear out the completed list when possible",
+      "count": 2
+    },
+    {
+      "normalized_text": "i want you to this one is done",
+      "count": 2
+    },
+    {
+      "normalized_text": "could you resolve the active task if that is okay",
+      "count": 2
+    },
+    {
+      "normalized_text": "can you start a fresh task entry",
+      "count": 2
+    },
+    {
+      "normalized_text": "can you how do transformers work for me",
+      "count": 2
+    },
+    {
+      "normalized_text": "hey assistant what is the weather tomorrow now",
+      "count": 2
+    },
+    {
+      "normalized_text": "translate this sentence into french if that is okay",
+      "count": 2
+    },
+    {
+      "normalized_text": "can you search the web for coffee shops when possible",
+      "count": 2
+    },
+    {
+      "normalized_text": "i want you to what is two plus two for me",
+      "count": 2
+    },
+    {
+      "normalized_text": "hey assistant open a new backlog item if that is okay",
+      "count": 2
+    },
+    {
+      "normalized_text": "clear out the completed list if that is okay",
+      "count": 2
+    },
+    {
+      "normalized_text": "please complete what i am working on",
+      "count": 2
+    },
+    {
+      "normalized_text": "can you change the deep work mode setting",
+      "count": 2
+    },
+    {
+      "normalized_text": "could you translate this sentence into french please",
+      "count": 2
+    },
+    {
+      "normalized_text": "could you activate the next backlog item for me",
+      "count": 2
+    },
+    {
+      "normalized_text": "i want you to turn off focus mode please",
+      "count": 2
+    },
+    {
+      "normalized_text": "hey assistant resolve the active task for me",
+      "count": 2
+    }
+  ],
+  "split_text_overlap": [
+    {
+      "normalized_text": "can you how do transformers work for me",
+      "splits": [
+        "train",
+        "validation"
+      ],
+      "rows": [
+        113,
+        162
+      ],
+      "count": 2
+    },
+    {
+      "normalized_text": "could you activate the next backlog item for me",
+      "splits": [
+        "train",
+        "validation"
+      ],
+      "rows": [
+        225,
+        315
+      ],
+      "count": 2
+    },
+    {
+      "normalized_text": "create a new task if that is okay",
+      "splits": [
+        "test",
+        "train"
+      ],
+      "rows": [
+        27,
+        112
+      ],
+      "count": 2
+    },
+    {
+      "normalized_text": "hey assistant promote the oldest backlog item for me",
+      "splits": [
+        "test",
+        "train"
+      ],
+      "rows": [
+        41,
+        200
+      ],
+      "count": 2
+    },
+    {
+      "normalized_text": "hey assistant resolve the active task for me",
+      "splits": [
+        "train",
+        "validation"
+      ],
+      "rows": [
+        311,
+        349
+      ],
+      "count": 2
+    },
+    {
+      "normalized_text": "i want you to this one is done",
+      "splits": [
+        "train",
+        "validation"
+      ],
+      "rows": [
+        77,
+        294
+      ],
+      "count": 2
+    },
+    {
+      "normalized_text": "i want you to turn off focus mode please",
+      "splits": [
+        "test",
+        "train"
+      ],
+      "rows": [
+        234,
+        278
+      ],
+      "count": 2
+    },
+    {
+      "normalized_text": "translate this sentence into french if that is okay",
+      "splits": [
+        "train",
+        "validation"
+      ],
+      "rows": [
+        122,
+        319
+      ],
+      "count": 2
+    }
+  ],
+  "template_family_overlap": [
+    {
+      "template_family": "ABSTAIN_0",
+      "splits": [
+        "test",
+        "train",
+        "validation"
+      ],
+      "rows": [
+        79,
+        88,
+        191,
+        201,
+        248,
+        264,
+        276,
+        285,
+        339,
+        347
+      ],
+      "count": 10
+    },
+    {
+      "template_family": "ABSTAIN_1",
+      "splits": [
+        "test",
+        "train"
+      ],
+      "rows": [
+        1,
+        95,
+        111,
+        142,
+        183,
+        209,
+        211,
+        239,
+        260,
+        284
+      ],
+      "count": 10
+    },
+    {
+      "template_family": "ABSTAIN_2",
+      "splits": [
+        "test",
+        "train",
+        "validation"
+      ],
+      "rows": [
+        23,
+        34,
+        80,
+        84,
+        116,
+        122,
+        178,
+        195,
+        237,
+        325
+      ],
+      "count": 10
+    },
+    {
+      "template_family": "ABSTAIN_3",
+      "splits": [
+        "train",
+        "validation"
+      ],
+      "rows": [
+        49,
+        128,
+        198,
+        233,
+        279,
+        301,
+        308,
+        310,
+        327,
+        331
+      ],
+      "count": 10
+    },
+    {
+      "template_family": "ABSTAIN_4",
+      "splits": [
+        "test",
+        "train"
+      ],
+      "rows": [
+        5,
+        6,
+        30,
+        90,
+        103,
+        113,
+        147,
+        184,
+        277,
+        304
+      ],
+      "count": 10
+    },
+    {
+      "template_family": "ABSTAIN_5",
+      "splits": [
+        "train",
+        "validation"
+      ],
+      "rows": [
+        2,
+        55,
+        98,
+        117,
+        118,
+        160,
+        176,
+        180,
+        262,
+        313
+      ],
+      "count": 10
+    },
+    {
+      "template_family": "ABSTAIN_6",
+      "splits": [
+        "test",
+        "train",
+        "validation"
+      ],
+      "rows": [
+        69,
+        86,
+        162,
+        164,
+        179,
+        181,
+        193,
+        207,
+        312,
+        329
+      ],
+      "count": 10
+    },
+    {
+      "template_family": "ABSTAIN_7",
+      "splits": [
+        "test",
+        "train",
+        "validation"
+      ],
+      "rows": [
+        16,
+        42,
+        75,
+        94,
+        132,
+        145,
+        242,
+        244,
+        319,
+        332
+      ],
+      "count": 10
+    },
+    {
+      "template_family": "ABSTAIN_8",
+      "splits": [
+        "test",
+        "train"
+      ],
+      "rows": [
+        8,
+        47,
+        50,
+        101,
+        102,
+        227,
+        266,
+        283,
+        333,
+        348
+      ],
+      "count": 10
+    },
+    {
+      "template_family": "ABSTAIN_9",
+      "splits": [
+        "test",
+        "train",
+        "validation"
+      ],
+      "rows": [
+        39,
+        63,
+        139,
+        154,
+        155,
+        243,
+        286,
+        287,
+        293,
+        342
+      ],
+      "count": 10
+    },
+    {
+      "template_family": "ARCHIVE_COMPLETED_0",
+      "splits": [
+        "test",
+        "train",
+        "validation"
+      ],
+      "rows": [
+        12,
+        115,
+        194,
+        213,
+        221,
+        247,
+        265,
+        274,
+        317
+      ],
+      "count": 9
+    },
+    {
+      "template_family": "ARCHIVE_COMPLETED_2",
+      "splits": [
+        "test",
+        "train",
+        "validation"
+      ],
+      "rows": [
+        22,
+        45,
+        60,
+        131,
+        182,
+        190,
+        219,
+        344
+      ],
+      "count": 8
+    },
+    {
+      "template_family": "ARCHIVE_COMPLETED_3",
+      "splits": [
+        "test",
+        "train"
+      ],
+      "rows": [
+        29,
+        31,
+        82,
+        163,
+        173,
+        215,
+        252,
+        318
+      ],
+      "count": 8
+    },
+    {
+      "template_family": "ARCHIVE_COMPLETED_4",
+      "splits": [
+        "test",
+        "train",
+        "validation"
+      ],
+      "rows": [
+        135,
+        136,
+        185,
+        206,
+        228,
+        292,
+        309,
+        328
+      ],
+      "count": 8
+    },
+    {
+      "template_family": "ARCHIVE_COMPLETED_5",
+      "splits": [
+        "test",
+        "train",
+        "validation"
+      ],
+      "rows": [
+        4,
+        9,
+        14,
+        67,
+        99,
+        165,
+        289,
+        330
+      ],
+      "count": 8
+    },
+    {
+      "template_family": "COMPLETE_ACTIVE_0",
+      "splits": [
+        "test",
+        "train"
+      ],
+      "rows": [
+        11,
+        19,
+        114,
+        174,
+        220,
+        235,
+        245,
+        335,
+        346
+      ],
+      "count": 9
+    },
+    {
+      "template_family": "COMPLETE_ACTIVE_1",
+      "splits": [
+        "test",
+        "train",
+        "validation"
+      ],
+      "rows": [
+        33,
+        40,
+        81,
+        83,
+        144,
+        156,
+        202,
+        223,
+        334
+      ],
+      "count": 9
+    },
+    {
+      "template_family": "COMPLETE_ACTIVE_2",
+      "splits": [
+        "test",
+        "train",
+        "validation"
+      ],
+      "rows": [
+        13,
+        52,
+        59,
+        100,
+        151,
+        192,
+        267,
+        349
+      ],
+      "count": 8
+    },
+    {
+      "template_family": "COMPLETE_ACTIVE_3",
+      "splits": [
+        "test",
+        "train"
+      ],
+      "rows": [
+        53,
+        105,
+        124,
+        188,
+        196,
+        205,
+        251,
+        341
+      ],
+      "count": 8
+    },
+    {
+      "template_family": "COMPLETE_ACTIVE_4",
+      "splits": [
+        "test",
+        "train",
+        "validation"
+      ],
+      "rows": [
+        77,
+        92,
+        107,
+        110,
+        152,
+        157,
+        270,
+        311
+      ],
+      "count": 8
+    },
+    {
+      "template_family": "COMPLETE_ACTIVE_5",
+      "splits": [
+        "train",
+        "validation"
+      ],
+      "rows": [
+        121,
+        123,
+        169,
+        177,
+        230,
+        238,
+        269,
+        294
+      ],
+      "count": 8
+    },
+    {
+      "template_family": "CREATE_TASK_0",
+      "splits": [
+        "test",
+        "train",
+        "validation"
+      ],
+      "rows": [
+        36,
+        76,
+        217,
+        218,
+        241,
+        273,
+        297,
+        326
+      ],
+      "count": 8
+    },
+    {
+      "template_family": "CREATE_TASK_1",
+      "splits": [
+        "train",
+        "validation"
+      ],
+      "rows": [
+        32,
+        125,
+        199,
+        254,
+        271,
+        290,
+        296
+      ],
+      "count": 7
+    },
+    {
+      "template_family": "CREATE_TASK_2",
+      "splits": [
+        "test",
+        "train",
+        "validation"
+      ],
+      "rows": [
+        27,
+        37,
+        73,
+        149,
+        150,
+        187,
+        208
+      ],
+      "count": 7
+    },
+    {
+      "template_family": "CREATE_TASK_3",
+      "splits": [
+        "test",
+        "train"
+      ],
+      "rows": [
+        21,
+        51,
+        91,
+        93,
+        112,
+        130,
+        170
+      ],
+      "count": 7
+    },
+    {
+      "template_family": "CREATE_TASK_4",
+      "splits": [
+        "test",
+        "train"
+      ],
+      "rows": [
+        15,
+        25,
+        56,
+        108,
+        171,
+        240,
+        258
+      ],
+      "count": 7
+    },
+    {
+      "template_family": "CREATE_TASK_5",
+      "splits": [
+        "test",
+        "train",
+        "validation"
+      ],
+      "rows": [
+        43,
+        61,
+        104,
+        216,
+        236,
+        257,
+        275
+      ],
+      "count": 7
+    },
+    {
+      "template_family": "CREATE_TASK_6",
+      "splits": [
+        "test",
+        "train",
+        "validation"
+      ],
+      "rows": [
+        127,
+        231,
+        261,
+        300,
+        306,
+        323,
+        343
+      ],
+      "count": 7
+    },
+    {
+      "template_family": "PROMOTE_TASK_0",
+      "splits": [
+        "train",
+        "validation"
+      ],
+      "rows": [
+        18,
+        140,
+        148,
+        159,
+        197,
+        253,
+        268,
+        298,
+        316
+      ],
+      "count": 9
+    },
+    {
+      "template_family": "PROMOTE_TASK_1",
+      "splits": [
+        "test",
+        "train",
+        "validation"
+      ],
+      "rows": [
+        10,
+        28,
+        46,
+        62,
+        133,
+        141,
+        225,
+        337,
+        338
+      ],
+      "count": 9
+    },
+    {
+      "template_family": "PROMOTE_TASK_2",
+      "splits": [
+        "train",
+        "validation"
+      ],
+      "rows": [
+        24,
+        64,
+        65,
+        214,
+        272,
+        303,
+        307,
+        322
+      ],
+      "count": 8
+    },
+    {
+      "template_family": "PROMOTE_TASK_3",
+      "splits": [
+        "test",
+        "train",
+        "validation"
+      ],
+      "rows": [
+        17,
+        120,
+        200,
+        210,
+        226,
+        232,
+        295,
+        345
+      ],
+      "count": 8
+    },
+    {
+      "template_family": "PROMOTE_TASK_4",
+      "splits": [
+        "test",
+        "train",
+        "validation"
+      ],
+      "rows": [
+        41,
+        58,
+        71,
+        72,
+        74,
+        85,
+        143,
+        315
+      ],
+      "count": 8
+    },
+    {
+      "template_family": "TOGGLE_FOCUS_MODE_0",
+      "splits": [
+        "test",
+        "train",
+        "validation"
+      ],
+      "rows": [
+        87,
+        168,
+        175,
+        234,
+        249,
+        259,
+        263,
+        280,
+        282
+      ],
+      "count": 9
+    },
+    {
+      "template_family": "TOGGLE_FOCUS_MODE_1",
+      "splits": [
+        "test",
+        "train",
+        "validation"
+      ],
+      "rows": [
+        44,
+        129,
+        134,
+        172,
+        186,
+        250,
+        281,
+        288,
+        314
+      ],
+      "count": 9
+    },
+    {
+      "template_family": "TOGGLE_FOCUS_MODE_2",
+      "splits": [
+        "train",
+        "validation"
+      ],
+      "rows": [
+        26,
+        38,
+        78,
+        126,
+        138,
+        167,
+        246,
+        340
+      ],
+      "count": 8
+    },
+    {
+      "template_family": "TOGGLE_FOCUS_MODE_3",
+      "splits": [
+        "test",
+        "train",
+        "validation"
+      ],
+      "rows": [
+        7,
+        20,
+        57,
+        97,
+        161,
+        166,
+        222,
+        255
+      ],
+      "count": 8
+    },
+    {
+      "template_family": "TOGGLE_FOCUS_MODE_4",
+      "splits": [
+        "test",
+        "train",
+        "validation"
+      ],
+      "rows": [
+        3,
+        54,
+        70,
+        89,
+        96,
+        224,
+        229,
+        278
+      ],
+      "count": 8
+    },
+    {
+      "template_family": "TOGGLE_FOCUS_MODE_5",
+      "splits": [
+        "test",
+        "train"
+      ],
+      "rows": [
+        109,
+        189,
+        203,
+        204,
+        291,
+        299,
+        305,
+        324
+      ],
+      "count": 8
+    }
+  ],
+  "per_class_split_counts": {
+    "ABSTAIN": {
+      "test": 15,
+      "train": 70,
+      "validation": 15
+    },
+    "ARCHIVE_COMPLETED": {
+      "test": 8,
+      "train": 35,
+      "validation": 7
+    },
+    "COMPLETE_ACTIVE": {
+      "test": 8,
+      "train": 35,
+      "validation": 7
+    },
+    "CREATE_TASK": {
+      "test": 8,
+      "train": 35,
+      "validation": 7
+    },
+    "PROMOTE_TASK": {
+      "test": 8,
+      "train": 35,
+      "validation": 7
+    },
+    "TOGGLE_FOCUS_MODE": {
+      "test": 8,
+      "train": 35,
+      "validation": 7
+    }
+  },
+  "per_class_template_family_counts": {
+    "ABSTAIN": {
+      "ABSTAIN_0": 10,
+      "ABSTAIN_1": 10,
+      "ABSTAIN_2": 10,
+      "ABSTAIN_3": 10,
+      "ABSTAIN_4": 10,
+      "ABSTAIN_5": 10,
+      "ABSTAIN_6": 10,
+      "ABSTAIN_7": 10,
+      "ABSTAIN_8": 10,
+      "ABSTAIN_9": 10,
+      "ARCHIVE_COMPLETED_0": 0,
+      "ARCHIVE_COMPLETED_1": 0,
+      "ARCHIVE_COMPLETED_2": 0,
+      "ARCHIVE_COMPLETED_3": 0,
+      "ARCHIVE_COMPLETED_4": 0,
+      "ARCHIVE_COMPLETED_5": 0,
+      "COMPLETE_ACTIVE_0": 0,
+      "COMPLETE_ACTIVE_1": 0,
+      "COMPLETE_ACTIVE_2": 0,
+      "COMPLETE_ACTIVE_3": 0,
+      "COMPLETE_ACTIVE_4": 0,
+      "COMPLETE_ACTIVE_5": 0,
+      "CREATE_TASK_0": 0,
+      "CREATE_TASK_1": 0,
+      "CREATE_TASK_2": 0,
+      "CREATE_TASK_3": 0,
+      "CREATE_TASK_4": 0,
+      "CREATE_TASK_5": 0,
+      "CREATE_TASK_6": 0,
+      "PROMOTE_TASK_0": 0,
+      "PROMOTE_TASK_1": 0,
+      "PROMOTE_TASK_2": 0,
+      "PROMOTE_TASK_3": 0,
+      "PROMOTE_TASK_4": 0,
+      "PROMOTE_TASK_5": 0,
+      "TOGGLE_FOCUS_MODE_0": 0,
+      "TOGGLE_FOCUS_MODE_1": 0,
+      "TOGGLE_FOCUS_MODE_2": 0,
+      "TOGGLE_FOCUS_MODE_3": 0,
+      "TOGGLE_FOCUS_MODE_4": 0,
+      "TOGGLE_FOCUS_MODE_5": 0
+    },
+    "ARCHIVE_COMPLETED": {
+      "ABSTAIN_0": 0,
+      "ABSTAIN_1": 0,
+      "ABSTAIN_2": 0,
+      "ABSTAIN_3": 0,
+      "ABSTAIN_4": 0,
+      "ABSTAIN_5": 0,
+      "ABSTAIN_6": 0,
+      "ABSTAIN_7": 0,
+      "ABSTAIN_8": 0,
+      "ABSTAIN_9": 0,
+      "ARCHIVE_COMPLETED_0": 9,
+      "ARCHIVE_COMPLETED_1": 9,
+      "ARCHIVE_COMPLETED_2": 8,
+      "ARCHIVE_COMPLETED_3": 8,
+      "ARCHIVE_COMPLETED_4": 8,
+      "ARCHIVE_COMPLETED_5": 8,
+      "COMPLETE_ACTIVE_0": 0,
+      "COMPLETE_ACTIVE_1": 0,
+      "COMPLETE_ACTIVE_2": 0,
+      "COMPLETE_ACTIVE_3": 0,
+      "COMPLETE_ACTIVE_4": 0,
+      "COMPLETE_ACTIVE_5": 0,
+      "CREATE_TASK_0": 0,
+      "CREATE_TASK_1": 0,
+      "CREATE_TASK_2": 0,
+      "CREATE_TASK_3": 0,
+      "CREATE_TASK_4": 0,
+      "CREATE_TASK_5": 0,
+      "CREATE_TASK_6": 0,
+      "PROMOTE_TASK_0": 0,
+      "PROMOTE_TASK_1": 0,
+      "PROMOTE_TASK_2": 0,
+      "PROMOTE_TASK_3": 0,
+      "PROMOTE_TASK_4": 0,
+      "PROMOTE_TASK_5": 0,
+      "TOGGLE_FOCUS_MODE_0": 0,
+      "TOGGLE_FOCUS_MODE_1": 0,
+      "TOGGLE_FOCUS_MODE_2": 0,
+      "TOGGLE_FOCUS_MODE_3": 0,
+      "TOGGLE_FOCUS_MODE_4": 0,
+      "TOGGLE_FOCUS_MODE_5": 0
+    },
+    "COMPLETE_ACTIVE": {
+      "ABSTAIN_0": 0,
+      "ABSTAIN_1": 0,
+      "ABSTAIN_2": 0,
+      "ABSTAIN_3": 0,
+      "ABSTAIN_4": 0,
+      "ABSTAIN_5": 0,
+      "ABSTAIN_6": 0,
+      "ABSTAIN_7": 0,
+      "ABSTAIN_8": 0,
+      "ABSTAIN_9": 0,
+      "ARCHIVE_COMPLETED_0": 0,
+      "ARCHIVE_COMPLETED_1": 0,
+      "ARCHIVE_COMPLETED_2": 0,
+      "ARCHIVE_COMPLETED_3": 0,
+      "ARCHIVE_COMPLETED_4": 0,
+      "ARCHIVE_COMPLETED_5": 0,
+      "COMPLETE_ACTIVE_0": 9,
+      "COMPLETE_ACTIVE_1": 9,
+      "COMPLETE_ACTIVE_2": 8,
+      "COMPLETE_ACTIVE_3": 8,
+      "COMPLETE_ACTIVE_4": 8,
+      "COMPLETE_ACTIVE_5": 8,
+      "CREATE_TASK_0": 0,
+      "CREATE_TASK_1": 0,
+      "CREATE_TASK_2": 0,
+      "CREATE_TASK_3": 0,
+      "CREATE_TASK_4": 0,
+      "CREATE_TASK_5": 0,
+      "CREATE_TASK_6": 0,
+      "PROMOTE_TASK_0": 0,
+      "PROMOTE_TASK_1": 0,
+      "PROMOTE_TASK_2": 0,
+      "PROMOTE_TASK_3": 0,
+      "PROMOTE_TASK_4": 0,
+      "PROMOTE_TASK_5": 0,
+      "TOGGLE_FOCUS_MODE_0": 0,
+      "TOGGLE_FOCUS_MODE_1": 0,
+      "TOGGLE_FOCUS_MODE_2": 0,
+      "TOGGLE_FOCUS_MODE_3": 0,
+      "TOGGLE_FOCUS_MODE_4": 0,
+      "TOGGLE_FOCUS_MODE_5": 0
+    },
+    "CREATE_TASK": {
+      "ABSTAIN_0": 0,
+      "ABSTAIN_1": 0,
+      "ABSTAIN_2": 0,
+      "ABSTAIN_3": 0,
+      "ABSTAIN_4": 0,
+      "ABSTAIN_5": 0,
+      "ABSTAIN_6": 0,
+      "ABSTAIN_7": 0,
+      "ABSTAIN_8": 0,
+      "ABSTAIN_9": 0,
+      "ARCHIVE_COMPLETED_0": 0,
+      "ARCHIVE_COMPLETED_1": 0,
+      "ARCHIVE_COMPLETED_2": 0,
+      "ARCHIVE_COMPLETED_3": 0,
+      "ARCHIVE_COMPLETED_4": 0,
+      "ARCHIVE_COMPLETED_5": 0,
+      "COMPLETE_ACTIVE_0": 0,
+      "COMPLETE_ACTIVE_1": 0,
+      "COMPLETE_ACTIVE_2": 0,
+      "COMPLETE_ACTIVE_3": 0,
+      "COMPLETE_ACTIVE_4": 0,
+      "COMPLETE_ACTIVE_5": 0,
+      "CREATE_TASK_0": 8,
+      "CREATE_TASK_1": 7,
+      "CREATE_TASK_2": 7,
+      "CREATE_TASK_3": 7,
+      "CREATE_TASK_4": 7,
+      "CREATE_TASK_5": 7,
+      "CREATE_TASK_6": 7,
+      "PROMOTE_TASK_0": 0,
+      "PROMOTE_TASK_1": 0,
+      "PROMOTE_TASK_2": 0,
+      "PROMOTE_TASK_3": 0,
+      "PROMOTE_TASK_4": 0,
+      "PROMOTE_TASK_5": 0,
+      "TOGGLE_FOCUS_MODE_0": 0,
+      "TOGGLE_FOCUS_MODE_1": 0,
+      "TOGGLE_FOCUS_MODE_2": 0,
+      "TOGGLE_FOCUS_MODE_3": 0,
+      "TOGGLE_FOCUS_MODE_4": 0,
+      "TOGGLE_FOCUS_MODE_5": 0
+    },
+    "PROMOTE_TASK": {
+      "ABSTAIN_0": 0,
+      "ABSTAIN_1": 0,
+      "ABSTAIN_2": 0,
+      "ABSTAIN_3": 0,
+      "ABSTAIN_4": 0,
+      "ABSTAIN_5": 0,
+      "ABSTAIN_6": 0,
+      "ABSTAIN_7": 0,
+      "ABSTAIN_8": 0,
+      "ABSTAIN_9": 0,
+      "ARCHIVE_COMPLETED_0": 0,
+      "ARCHIVE_COMPLETED_1": 0,
+      "ARCHIVE_COMPLETED_2": 0,
+      "ARCHIVE_COMPLETED_3": 0,
+      "ARCHIVE_COMPLETED_4": 0,
+      "ARCHIVE_COMPLETED_5": 0,
+      "COMPLETE_ACTIVE_0": 0,
+      "COMPLETE_ACTIVE_1": 0,
+      "COMPLETE_ACTIVE_2": 0,
+      "COMPLETE_ACTIVE_3": 0,
+      "COMPLETE_ACTIVE_4": 0,
+      "COMPLETE_ACTIVE_5": 0,
+      "CREATE_TASK_0": 0,
+      "CREATE_TASK_1": 0,
+      "CREATE_TASK_2": 0,
+      "CREATE_TASK_3": 0,
+      "CREATE_TASK_4": 0,
+      "CREATE_TASK_5": 0,
+      "CREATE_TASK_6": 0,
+      "PROMOTE_TASK_0": 9,
+      "PROMOTE_TASK_1": 9,
+      "PROMOTE_TASK_2": 8,
+      "PROMOTE_TASK_3": 8,
+      "PROMOTE_TASK_4": 8,
+      "PROMOTE_TASK_5": 8,
+      "TOGGLE_FOCUS_MODE_0": 0,
+      "TOGGLE_FOCUS_MODE_1": 0,
+      "TOGGLE_FOCUS_MODE_2": 0,
+      "TOGGLE_FOCUS_MODE_3": 0,
+      "TOGGLE_FOCUS_MODE_4": 0,
+      "TOGGLE_FOCUS_MODE_5": 0
+    },
+    "TOGGLE_FOCUS_MODE": {
+      "ABSTAIN_0": 0,
+      "ABSTAIN_1": 0,
+      "ABSTAIN_2": 0,
+      "ABSTAIN_3": 0,
+      "ABSTAIN_4": 0,
+      "ABSTAIN_5": 0,
+      "ABSTAIN_6": 0,
+      "ABSTAIN_7": 0,
+      "ABSTAIN_8": 0,
+      "ABSTAIN_9": 0,
+      "ARCHIVE_COMPLETED_0": 0,
+      "ARCHIVE_COMPLETED_1": 0,
+      "ARCHIVE_COMPLETED_2": 0,
+      "ARCHIVE_COMPLETED_3": 0,
+      "ARCHIVE_COMPLETED_4": 0,
+      "ARCHIVE_COMPLETED_5": 0,
+      "COMPLETE_ACTIVE_0": 0,
+      "COMPLETE_ACTIVE_1": 0,
+      "COMPLETE_ACTIVE_2": 0,
+      "COMPLETE_ACTIVE_3": 0,
+      "COMPLETE_ACTIVE_4": 0,
+      "COMPLETE_ACTIVE_5": 0,
+      "CREATE_TASK_0": 0,
+      "CREATE_TASK_1": 0,
+      "CREATE_TASK_2": 0,
+      "CREATE_TASK_3": 0,
+      "CREATE_TASK_4": 0,
+      "CREATE_TASK_5": 0,
+      "CREATE_TASK_6": 0,
+      "PROMOTE_TASK_0": 0,
+      "PROMOTE_TASK_1": 0,
+      "PROMOTE_TASK_2": 0,
+      "PROMOTE_TASK_3": 0,
+      "PROMOTE_TASK_4": 0,
+      "PROMOTE_TASK_5": 0,
+      "TOGGLE_FOCUS_MODE_0": 9,
+      "TOGGLE_FOCUS_MODE_1": 9,
+      "TOGGLE_FOCUS_MODE_2": 8,
+      "TOGGLE_FOCUS_MODE_3": 8,
+      "TOGGLE_FOCUS_MODE_4": 8,
+      "TOGGLE_FOCUS_MODE_5": 8
+    }
+  },
+  "abstain_diversity": {
+    "rows": 100,
+    "unique_normalized_text": 92,
+    "unique_template_families": 10,
+    "mean_token_count": 8.03
+  },
+  "leakage_flags": {
+    "has_exact_split_overlap": true,
+    "has_template_family_overlap": true,
+    "has_cross_split_near_duplicates": true
+  }
+}

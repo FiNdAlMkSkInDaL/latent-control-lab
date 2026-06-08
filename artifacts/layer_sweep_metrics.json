@@ -1,0 +1,86 @@
+{
+  "timestamp": "2026-06-08T21:28:11.646545+00:00",
+  "model_id": "distilgpt2",
+  "dataset": "data\\intent_dataset.csv",
+  "hard_dataset": "data\\hard_eval.csv",
+  "sample_size": 180,
+  "hard_sample_size": 160,
+  "rows": [
+    {
+      "layer_spec": "block_0",
+      "layer_name": "block_0",
+      "feature_space": "block_0_last_token",
+      "activation_shape": [
+        180,
+        768
+      ],
+      "train_accuracy": 1.0,
+      "validation_accuracy": 0.9259259259259259,
+      "test_accuracy": 0.8888888888888888,
+      "macro_f1": 0.8849867724867725,
+      "abstain_precision": 0.875,
+      "abstain_recall": 0.875,
+      "hard_eval_accuracy": 0.41875,
+      "hard_eval_macro_f1": 0.4654479664206108,
+      "hard_eval_abstain_precision": 0.75,
+      "hard_eval_abstain_recall": 0.10465116279069768
+    },
+    {
+      "layer_spec": "block_mid",
+      "layer_name": "block_3",
+      "feature_space": "block_3_last_token",
+      "activation_shape": [
+        180,
+        768
+      ],
+      "train_accuracy": 1.0,
+      "validation_accuracy": 0.8888888888888888,
+      "test_accuracy": 0.8518518518518519,
+      "macro_f1": 0.8211640211640212,
+      "abstain_precision": 1.0,
+      "abstain_recall": 1.0,
+      "hard_eval_accuracy": 0.4625,
+      "hard_eval_macro_f1": 0.5113133950932439,
+      "hard_eval_abstain_precision": 1.0,
+      "hard_eval_abstain_recall": 0.12790697674418605
+    },
+    {
+      "layer_spec": "block_last",
+      "layer_name": "block_5",
+      "feature_space": "block_5_last_token",
+      "activation_shape": [
+        180,
+        768
+      ],
+      "train_accuracy": 1.0,
+      "validation_accuracy": 0.9259259259259259,
+      "test_accuracy": 0.9629629629629629,
+      "macro_f1": 0.9481481481481481,
+      "abstain_precision": 1.0,
+      "abstain_recall": 1.0,
+      "hard_eval_accuracy": 0.48125,
+      "hard_eval_macro_f1": 0.518666547111906,
+      "hard_eval_abstain_precision": 1.0,
+      "hard_eval_abstain_recall": 0.18604651162790697
+    },
+    {
+      "layer_spec": "pre_lm_head",
+      "layer_name": "pre_lm_head",
+      "feature_space": "pre_lm_head_last_token",
+      "activation_shape": [
+        180,
+        768
+      ],
+      "train_accuracy": 1.0,
+      "validation_accuracy": 0.9629629629629629,
+      "test_accuracy": 0.9629629629629629,
+      "macro_f1": 0.9481481481481481,
+      "abstain_precision": 1.0,
+      "abstain_recall": 1.0,
+      "hard_eval_accuracy": 0.475,
+      "hard_eval_macro_f1": 0.5121006357322442,
+      "hard_eval_abstain_precision": 1.0,
+      "hard_eval_abstain_recall": 0.1744186046511628
+    }
+  ]
+}

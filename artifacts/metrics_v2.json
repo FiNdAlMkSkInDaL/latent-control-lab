@@ -1,0 +1,526 @@
+{
+  "model_id": "distilgpt2",
+  "prompt_template": "You are a latent action router for a sandboxed task controller.\n\nUser request:\n{text}\n\nRepresent the intended controller action:",
+  "feature_space": "pre_lm_head_last_token",
+  "dataset_size": 480,
+  "train_size": 335,
+  "validation_size": 72,
+  "test_size": 73,
+  "labels": [
+    "ABSTAIN",
+    "ARCHIVE_COMPLETED",
+    "COMPLETE_ACTIVE",
+    "CREATE_TASK",
+    "PROMOTE_TASK",
+    "TOGGLE_FOCUS_MODE"
+  ],
+  "accuracy": 1.0,
+  "macro_f1": 1.0,
+  "per_class_precision_recall_f1": {
+    "ABSTAIN": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 28.0
+    },
+    "ARCHIVE_COMPLETED": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 9.0
+    },
+    "COMPLETE_ACTIVE": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 9.0
+    },
+    "CREATE_TASK": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 9.0
+    },
+    "PROMOTE_TASK": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 9.0
+    },
+    "TOGGLE_FOCUS_MODE": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 9.0
+    }
+  },
+  "abstain_precision": 1.0,
+  "abstain_recall": 1.0,
+  "timestamp": "2026-06-08T21:54:36.798998+00:00",
+  "real_hf_model": true,
+  "fallback_run": false,
+  "split_source": "metadata",
+  "recommended_thresholds": {
+    "min_confidence": 0.9717154502868652,
+    "min_margin": 0.9548585414886475,
+    "max_centroid_distance": 26.004375457763672
+  },
+  "class_counts": {
+    "ABSTAIN": 180,
+    "ARCHIVE_COMPLETED": 60,
+    "COMPLETE_ACTIVE": 60,
+    "CREATE_TASK": 60,
+    "PROMOTE_TASK": 60,
+    "TOGGLE_FOCUS_MODE": 60
+  },
+  "detailed_metrics": {
+    "classification_report": {
+      "ABSTAIN": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 28.0
+      },
+      "ARCHIVE_COMPLETED": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 9.0
+      },
+      "COMPLETE_ACTIVE": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 9.0
+      },
+      "CREATE_TASK": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 9.0
+      },
+      "PROMOTE_TASK": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 9.0
+      },
+      "TOGGLE_FOCUS_MODE": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 9.0
+      },
+      "accuracy": 1.0,
+      "macro avg": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 73.0
+      },
+      "weighted avg": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 73.0
+      }
+    },
+    "confusion_matrix": [
+      [
+        28,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        9,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        9,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        9,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        9,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        9
+      ]
+    ],
+    "labels": [
+      "ABSTAIN",
+      "ARCHIVE_COMPLETED",
+      "COMPLETE_ACTIVE",
+      "CREATE_TASK",
+      "PROMOTE_TASK",
+      "TOGGLE_FOCUS_MODE"
+    ],
+    "split_source": "metadata",
+    "splits": {
+      "train": {
+        "n": 335,
+        "accuracy": 1.0,
+        "macro_f1": 1.0,
+        "classification_report": {
+          "ABSTAIN": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 125.0
+          },
+          "ARCHIVE_COMPLETED": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 42.0
+          },
+          "COMPLETE_ACTIVE": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 42.0
+          },
+          "CREATE_TASK": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 42.0
+          },
+          "PROMOTE_TASK": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 42.0
+          },
+          "TOGGLE_FOCUS_MODE": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 42.0
+          },
+          "accuracy": 1.0,
+          "macro avg": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 335.0
+          },
+          "weighted avg": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 335.0
+          }
+        },
+        "confusion_matrix": [
+          [
+            125,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            42,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            42,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            42,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            42,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            42
+          ]
+        ]
+      },
+      "validation": {
+        "n": 72,
+        "accuracy": 1.0,
+        "macro_f1": 1.0,
+        "classification_report": {
+          "ABSTAIN": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 27.0
+          },
+          "ARCHIVE_COMPLETED": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 9.0
+          },
+          "COMPLETE_ACTIVE": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 9.0
+          },
+          "CREATE_TASK": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 9.0
+          },
+          "PROMOTE_TASK": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 9.0
+          },
+          "TOGGLE_FOCUS_MODE": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 9.0
+          },
+          "accuracy": 1.0,
+          "macro avg": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 72.0
+          },
+          "weighted avg": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 72.0
+          }
+        },
+        "confusion_matrix": [
+          [
+            27,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            9,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            9,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            9,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            9,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            9
+          ]
+        ]
+      },
+      "test": {
+        "n": 73,
+        "accuracy": 1.0,
+        "macro_f1": 1.0,
+        "classification_report": {
+          "ABSTAIN": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 28.0
+          },
+          "ARCHIVE_COMPLETED": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 9.0
+          },
+          "COMPLETE_ACTIVE": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 9.0
+          },
+          "CREATE_TASK": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 9.0
+          },
+          "PROMOTE_TASK": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 9.0
+          },
+          "TOGGLE_FOCUS_MODE": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 9.0
+          },
+          "accuracy": 1.0,
+          "macro avg": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 73.0
+          },
+          "weighted avg": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 73.0
+          }
+        },
+        "confusion_matrix": [
+          [
+            28,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            9,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            9,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            9,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            9,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            9
+          ]
+        ]
+      }
+    },
+    "recommended_thresholds": {
+      "min_confidence": 0.9717154502868652,
+      "min_margin": 0.9548585414886475,
+      "max_centroid_distance": 26.004375457763672
+    },
+    "class_counts": {
+      "ABSTAIN": 180,
+      "ARCHIVE_COMPLETED": 60,
+      "COMPLETE_ACTIVE": 60,
+      "CREATE_TASK": 60,
+      "PROMOTE_TASK": 60,
+      "TOGGLE_FOCUS_MODE": 60
+    },
+    "split_counts": {
+      "test": 73,
+      "train": 335,
+      "validation": 72
+    }
+  }
+}

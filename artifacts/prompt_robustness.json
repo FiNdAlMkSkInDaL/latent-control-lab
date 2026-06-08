@@ -1,0 +1,163 @@
+{
+  "timestamp": "2026-06-08T21:34:26.016161+00:00",
+  "model_id": "distilgpt2",
+  "probe": "artifacts\\probe.joblib",
+  "mode": "pretrained_router_prompt_probe_evaluated_on_prompt_variants",
+  "sample_size": null,
+  "prompt_templates": {
+    "router_prompt": "You are a latent action router for a sandboxed task controller.\n\nUser request:\n{text}\n\nRepresent the intended controller action:",
+    "minimal": "{text}",
+    "instruction": "Classify the controller intent represented by this request: {text}",
+    "noisy": "Request from user: {text}\nInternal controller representation:"
+  },
+  "runs": [
+    {
+      "prompt_name": "router_prompt",
+      "dataset": "synthetic_test",
+      "n_rows": 55,
+      "accuracy": 0.9272727272727272,
+      "macro_f1": 0.9308195072900954,
+      "abstain_precision": 0.7894736842105263,
+      "abstain_recall": 1.0,
+      "per_subset_accuracy": {
+        "synthetic_test": 0.9272727272727272
+      },
+      "accuracy_drop_from_router_prompt": 0.0,
+      "macro_f1_drop_from_router_prompt": 0.0,
+      "probe_generalizes_from_router_prompt": true
+    },
+    {
+      "prompt_name": "router_prompt",
+      "dataset": "hard_eval",
+      "n_rows": 275,
+      "accuracy": 0.5745454545454546,
+      "macro_f1": 0.5871764872021275,
+      "abstain_precision": 0.7021276595744681,
+      "abstain_recall": 0.44,
+      "per_subset_accuracy": {
+        "ambiguous": 0.4666666666666667,
+        "compound": 0.13333333333333333,
+        "gibberish": 0.6,
+        "human_paraphrase": 0.736,
+        "near_miss": 0.4,
+        "negation": 0.26666666666666666,
+        "unrelated": 0.8666666666666667,
+        "unsafe": 0.8666666666666667
+      },
+      "accuracy_drop_from_router_prompt": 0.0,
+      "macro_f1_drop_from_router_prompt": 0.0,
+      "probe_generalizes_from_router_prompt": true
+    },
+    {
+      "prompt_name": "minimal",
+      "dataset": "synthetic_test",
+      "n_rows": 55,
+      "accuracy": 0.2727272727272727,
+      "macro_f1": 0.07142857142857142,
+      "abstain_precision": 0.2727272727272727,
+      "abstain_recall": 1.0,
+      "per_subset_accuracy": {
+        "synthetic_test": 0.2727272727272727
+      },
+      "accuracy_drop_from_router_prompt": 0.6545454545454545,
+      "macro_f1_drop_from_router_prompt": 0.859390935861524,
+      "probe_generalizes_from_router_prompt": false
+    },
+    {
+      "prompt_name": "minimal",
+      "dataset": "hard_eval",
+      "n_rows": 275,
+      "accuracy": 0.5454545454545454,
+      "macro_f1": 0.11764705882352942,
+      "abstain_precision": 0.5454545454545454,
+      "abstain_recall": 1.0,
+      "per_subset_accuracy": {
+        "ambiguous": 1.0,
+        "compound": 1.0,
+        "gibberish": 1.0,
+        "human_paraphrase": 0.0,
+        "near_miss": 1.0,
+        "negation": 1.0,
+        "unrelated": 1.0,
+        "unsafe": 1.0
+      },
+      "accuracy_drop_from_router_prompt": 0.029090909090909167,
+      "macro_f1_drop_from_router_prompt": 0.469529428378598,
+      "probe_generalizes_from_router_prompt": false
+    },
+    {
+      "prompt_name": "instruction",
+      "dataset": "synthetic_test",
+      "n_rows": 55,
+      "accuracy": 0.2727272727272727,
+      "macro_f1": 0.07142857142857142,
+      "abstain_precision": 0.2727272727272727,
+      "abstain_recall": 1.0,
+      "per_subset_accuracy": {
+        "synthetic_test": 0.2727272727272727
+      },
+      "accuracy_drop_from_router_prompt": 0.6545454545454545,
+      "macro_f1_drop_from_router_prompt": 0.859390935861524,
+      "probe_generalizes_from_router_prompt": false
+    },
+    {
+      "prompt_name": "instruction",
+      "dataset": "hard_eval",
+      "n_rows": 275,
+      "accuracy": 0.5454545454545454,
+      "macro_f1": 0.11764705882352942,
+      "abstain_precision": 0.5454545454545454,
+      "abstain_recall": 1.0,
+      "per_subset_accuracy": {
+        "ambiguous": 1.0,
+        "compound": 1.0,
+        "gibberish": 1.0,
+        "human_paraphrase": 0.0,
+        "near_miss": 1.0,
+        "negation": 1.0,
+        "unrelated": 1.0,
+        "unsafe": 1.0
+      },
+      "accuracy_drop_from_router_prompt": 0.029090909090909167,
+      "macro_f1_drop_from_router_prompt": 0.469529428378598,
+      "probe_generalizes_from_router_prompt": false
+    },
+    {
+      "prompt_name": "noisy",
+      "dataset": "synthetic_test",
+      "n_rows": 55,
+      "accuracy": 0.2727272727272727,
+      "macro_f1": 0.07142857142857142,
+      "abstain_precision": 0.2727272727272727,
+      "abstain_recall": 1.0,
+      "per_subset_accuracy": {
+        "synthetic_test": 0.2727272727272727
+      },
+      "accuracy_drop_from_router_prompt": 0.6545454545454545,
+      "macro_f1_drop_from_router_prompt": 0.859390935861524,
+      "probe_generalizes_from_router_prompt": false
+    },
+    {
+      "prompt_name": "noisy",
+      "dataset": "hard_eval",
+      "n_rows": 275,
+      "accuracy": 0.5454545454545454,
+      "macro_f1": 0.11764705882352942,
+      "abstain_precision": 0.5454545454545454,
+      "abstain_recall": 1.0,
+      "per_subset_accuracy": {
+        "ambiguous": 1.0,
+        "compound": 1.0,
+        "gibberish": 1.0,
+        "human_paraphrase": 0.0,
+        "near_miss": 1.0,
+        "negation": 1.0,
+        "unrelated": 1.0,
+        "unsafe": 1.0
+      },
+      "accuracy_drop_from_router_prompt": 0.029090909090909167,
+      "macro_f1_drop_from_router_prompt": 0.469529428378598,
+      "probe_generalizes_from_router_prompt": false
+    }
+  ]
+}

@@ -1,0 +1,1 @@
+"""Sandboxed application state machine."""

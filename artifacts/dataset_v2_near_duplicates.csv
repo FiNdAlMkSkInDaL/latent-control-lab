@@ -1,0 +1,8 @@
+row_a,row_b,split_a,split_b,label_a,label_b,similarity,text_a,text_b
+67,125,train,train,PROMOTE_TASK,PROMOTE_TASK,0.8333333333333334,move the next waiting item into active work for invoice review,move the next waiting item into active work for metrics review
+67,145,train,train,PROMOTE_TASK,PROMOTE_TASK,0.8333333333333334,move the next waiting item into active work for invoice review,move the next waiting item into active work for budget review
+125,145,train,train,PROMOTE_TASK,PROMOTE_TASK,0.8333333333333334,move the next waiting item into active work for metrics review,move the next waiting item into active work for budget review
+195,380,train,train,TOGGLE_FOCUS_MODE,TOGGLE_FOCUS_MODE,0.8333333333333334,focus mode needs to move to its other state for roadmap note,focus mode needs to move to its other state for handoff note
+327,414,train,train,PROMOTE_TASK,PROMOTE_TASK,0.8333333333333334,the active slot should take the next pending task for migration note,the active slot should take the next pending task for roadmap note
+327,463,train,train,PROMOTE_TASK,PROMOTE_TASK,0.8333333333333334,the active slot should take the next pending task for migration note,the active slot should take the next pending task for handoff note
+414,463,train,train,PROMOTE_TASK,PROMOTE_TASK,0.8333333333333334,the active slot should take the next pending task for roadmap note,the active slot should take the next pending task for handoff note

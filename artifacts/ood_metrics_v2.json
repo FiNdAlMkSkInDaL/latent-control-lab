@@ -1,0 +1,6 @@
+{
+  "max_probability": 0.5508703703703705,
+  "top2_margin": 0.5567777777777778,
+  "negative_entropy": 0.5474629629629629,
+  "negative_executable_centroid_distance": 0.415462962962963
+}

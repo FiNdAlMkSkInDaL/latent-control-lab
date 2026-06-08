@@ -1,0 +1,59 @@
+{
+  "timestamp": "2026-06-08T21:28:27.579496+00:00",
+  "features": "artifacts\\features_distilgpt2_pre_lm_head.npz",
+  "hard_features": "artifacts\\hard_eval_features_distilgpt2_pre_lm_head.npz",
+  "model_id": "distilgpt2",
+  "feature_space": "pre_lm_head_last_token",
+  "rows": [
+    {
+      "examples_per_class": 5,
+      "total_train_examples": 30,
+      "test_accuracy": 0.6909090909090909,
+      "test_macro_f1": 0.6935949975053489,
+      "hard_eval_accuracy": 0.3018181818181818,
+      "hard_eval_macro_f1": 0.3025802453560014,
+      "abstain_precision": 1.0,
+      "abstain_recall": 0.08666666666666667
+    },
+    {
+      "examples_per_class": 10,
+      "total_train_examples": 60,
+      "test_accuracy": 0.7454545454545455,
+      "test_macro_f1": 0.7320313809284397,
+      "hard_eval_accuracy": 0.4072727272727273,
+      "hard_eval_macro_f1": 0.4283932200442067,
+      "abstain_precision": 0.95,
+      "abstain_recall": 0.12666666666666668
+    },
+    {
+      "examples_per_class": 20,
+      "total_train_examples": 120,
+      "test_accuracy": 0.9272727272727272,
+      "test_macro_f1": 0.9261593526299409,
+      "hard_eval_accuracy": 0.48363636363636364,
+      "hard_eval_macro_f1": 0.5235744075077787,
+      "abstain_precision": 0.9655172413793104,
+      "abstain_recall": 0.18666666666666668
+    },
+    {
+      "examples_per_class": 30,
+      "total_train_examples": 180,
+      "test_accuracy": 1.0,
+      "test_macro_f1": 1.0,
+      "hard_eval_accuracy": 0.5127272727272727,
+      "hard_eval_macro_f1": 0.5531901907451807,
+      "abstain_precision": 0.9705882352941176,
+      "abstain_recall": 0.22
+    },
+    {
+      "examples_per_class": 50,
+      "total_train_examples": 225,
+      "test_accuracy": 0.9818181818181818,
+      "test_macro_f1": 0.984448951994591,
+      "hard_eval_accuracy": 0.5127272727272727,
+      "hard_eval_macro_f1": 0.5595324080167757,
+      "abstain_precision": 1.0,
+      "abstain_recall": 0.19333333333333333
+    }
+  ]
+}

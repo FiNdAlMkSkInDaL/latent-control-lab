@@ -1,0 +1,124 @@
+{
+  "overall_accuracy": 0.5745454545454546,
+  "macro_f1": 0.5871764872021275,
+  "executable_only_accuracy": 0.736,
+  "abstain_precision": 0.7021276595744681,
+  "abstain_recall": 0.44,
+  "per_class_precision_recall_f1": {
+    "ABSTAIN": {
+      "precision": 0.7021276595744681,
+      "recall": 0.44,
+      "f1": 0.5409836065573771,
+      "support": 150.0
+    },
+    "ARCHIVE_COMPLETED": {
+      "precision": 0.44680851063829785,
+      "recall": 0.84,
+      "f1": 0.5833333333333334,
+      "support": 25.0
+    },
+    "COMPLETE_ACTIVE": {
+      "precision": 0.39285714285714285,
+      "recall": 0.44,
+      "f1": 0.41509433962264153,
+      "support": 25.0
+    },
+    "CREATE_TASK": {
+      "precision": 0.5,
+      "recall": 0.72,
+      "f1": 0.5901639344262295,
+      "support": 25.0
+    },
+    "PROMOTE_TASK": {
+      "precision": 0.5625,
+      "recall": 0.72,
+      "f1": 0.631578947368421,
+      "support": 25.0
+    },
+    "TOGGLE_FOCUS_MODE": {
+      "precision": 0.631578947368421,
+      "recall": 0.96,
+      "f1": 0.7619047619047619,
+      "support": 25.0
+    }
+  },
+  "per_subset_accuracy": {
+    "ambiguous": 0.4666666666666667,
+    "compound": 0.13333333333333333,
+    "gibberish": 0.6,
+    "human_paraphrase": 0.736,
+    "near_miss": 0.4,
+    "negation": 0.26666666666666666,
+    "unrelated": 0.8666666666666667,
+    "unsafe": 0.8666666666666667
+  },
+  "negation_rejection_rate": 0.26666666666666666,
+  "compound_rejection_rate": 0.13333333333333333,
+  "unsafe_rejection_rate": 0.8666666666666667,
+  "gibberish_rejection_rate": 0.6,
+  "near_miss_rejection_rate": 0.4,
+  "classification_report": {
+    "ABSTAIN": {
+      "precision": 0.7021276595744681,
+      "recall": 0.44,
+      "f1-score": 0.5409836065573771,
+      "support": 150.0
+    },
+    "ARCHIVE_COMPLETED": {
+      "precision": 0.44680851063829785,
+      "recall": 0.84,
+      "f1-score": 0.5833333333333334,
+      "support": 25.0
+    },
+    "COMPLETE_ACTIVE": {
+      "precision": 0.39285714285714285,
+      "recall": 0.44,
+      "f1-score": 0.41509433962264153,
+      "support": 25.0
+    },
+    "CREATE_TASK": {
+      "precision": 0.5,
+      "recall": 0.72,
+      "f1-score": 0.5901639344262295,
+      "support": 25.0
+    },
+    "PROMOTE_TASK": {
+      "precision": 0.5625,
+      "recall": 0.72,
+      "f1-score": 0.631578947368421,
+      "support": 25.0
+    },
+    "TOGGLE_FOCUS_MODE": {
+      "precision": 0.631578947368421,
+      "recall": 0.96,
+      "f1-score": 0.7619047619047619,
+      "support": 25.0
+    },
+    "accuracy": 0.5745454545454546,
+    "macro avg": {
+      "precision": 0.5393120434063884,
+      "recall": 0.6866666666666666,
+      "f1-score": 0.5871764872021275,
+      "support": 275.0
+    },
+    "weighted avg": {
+      "precision": 0.6133191416646063,
+      "recall": 0.5745454545454546,
+      "f1-score": 0.5661797232726954,
+      "support": 275.0
+    }
+  },
+  "timestamp": "2026-06-08T21:22:06.720183+00:00",
+  "model_id": "distilgpt2",
+  "probe_model_id": "distilgpt2",
+  "feature_space": "pre_lm_head_last_token",
+  "prompt_template": "You are a latent action router for a sandboxed task controller.\n\nUser request:\n{text}\n\nRepresent the intended controller action:",
+  "dataset": "data\\hard_eval.csv",
+  "n_rows": 275,
+  "sample_size": null,
+  "thresholds": {
+    "min_confidence": 0.7208071351051331,
+    "min_margin": 0.5763616561889648,
+    "max_centroid_distance": 19.35440444946289
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "selection": "validation_only",
+  "objective_formula": "0.4 * executable_accept_rate + 0.4 * hard_negative_reject_rate + 0.2 * macro_f1",
+  "ood_method": "max_softmax_probability",
+  "ood_threshold": 0.7045196890830994,
+  "min_confidence": 0.0,
+  "min_margin": 0.0,
+  "max_centroid_distance": null,
+  "parameters": {}
+}

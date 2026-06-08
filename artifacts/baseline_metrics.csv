@@ -1,0 +1,9 @@
+baseline,dataset,accuracy,macro_f1,abstain_precision,abstain_recall,notes
+latent_probe_router,synthetic_test,1.0,1.0,1.0,1.0,Frozen-LM hidden state plus linear probe.
+latent_probe_router,hard_eval,0.5745454545454546,0.5871764872021275,0.7021276595744681,0.44,Frozen-LM hidden state plus linear probe and gates.
+tfidf_logreg_text,synthetic_test,1.0,1.0,1.0,1.0,Surface-text baseline; not used by the zero-generation app route.
+tfidf_logreg_text,hard_eval,0.5454545454545454,0.5983400515874604,0.9714285714285714,0.22666666666666666,Surface-text baseline; not used by the zero-generation app route.
+random_stratified,synthetic_test,0.2,0.1847860791826309,0.35714285714285715,0.3333333333333333,Non-semantic reference baseline.
+random_stratified,hard_eval,0.20727272727272728,0.1414274582461457,0.5466666666666666,0.2733333333333333,Non-semantic reference baseline.
+majority_class,synthetic_test,0.2727272727272727,0.07142857142857142,0.2727272727272727,1.0,Non-semantic reference baseline.
+majority_class,hard_eval,0.5454545454545454,0.11764705882352942,0.5454545454545454,1.0,Non-semantic reference baseline.

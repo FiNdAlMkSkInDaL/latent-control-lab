@@ -1,0 +1,4 @@
+model_id,status,semantic_evidence,feature_shape,test_accuracy,test_macro_f1,hard_eval_accuracy,hard_eval_macro_f1,error
+distilgpt2,ok,True,"[120, 768]",0.8461538461538461,0.7151515151515151,0.625,0.4420053045372738,
+gpt2,failed,False,,,,,,"Can't load the configuration of 'gpt2'. If you were trying to load it from 'https://huggingface.co/models', make sure you don't have a local directory with the same name. Otherwise, make sure 'gpt2' is the correct path to a directory containing a config.json file"
+sshleifer/tiny-gpt2,ok,False,"[120, 2]",0.23076923076923078,0.17142857142857143,0.1,0.03137254901960784,

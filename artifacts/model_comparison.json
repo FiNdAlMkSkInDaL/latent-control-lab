@@ -1,0 +1,41 @@
+{
+  "timestamp": "2026-06-08T22:02:29.632434+00:00",
+  "dataset": "data\\intent_dataset_v2.csv",
+  "hard_dataset": "data\\hard_eval.csv",
+  "sample_size": 120,
+  "hard_sample_size": 80,
+  "rows": [
+    {
+      "model_id": "distilgpt2",
+      "status": "ok",
+      "semantic_evidence": true,
+      "feature_shape": [
+        120,
+        768
+      ],
+      "test_accuracy": 0.8461538461538461,
+      "test_macro_f1": 0.7151515151515151,
+      "hard_eval_accuracy": 0.625,
+      "hard_eval_macro_f1": 0.4420053045372738
+    },
+    {
+      "model_id": "gpt2",
+      "status": "failed",
+      "semantic_evidence": false,
+      "error": "Can't load the configuration of 'gpt2'. If you were trying to load it from 'https://huggingface.co/models', make sure you don't have a local directory with the same name. Otherwise, make sure 'gpt2' is the correct path to a directory containing a config.json file"
+    },
+    {
+      "model_id": "sshleifer/tiny-gpt2",
+      "status": "ok",
+      "semantic_evidence": false,
+      "feature_shape": [
+        120,
+        2
+      ],
+      "test_accuracy": 0.23076923076923078,
+      "test_macro_f1": 0.17142857142857143,
+      "hard_eval_accuracy": 0.1,
+      "hard_eval_macro_f1": 0.03137254901960784
+    }
+  ]
+}

@@ -1,0 +1,156 @@
+{
+  "timestamp": "2026-06-08T21:28:42.644707+00:00",
+  "probe": "artifacts\\probe.joblib",
+  "features": "artifacts\\features_distilgpt2_pre_lm_head.npz",
+  "hard_features": "artifacts\\hard_eval_features_distilgpt2_pre_lm_head.npz",
+  "id_definition": "normal held-out test executable examples",
+  "ood_definition": "normal ABSTAIN test plus hard-eval ABSTAIN subsets",
+  "n_id": 40,
+  "n_ood": 165,
+  "rows": [
+    {
+      "score": "max_softmax_probability",
+      "auroc": 0.705,
+      "auprc": 0.32374061095018114,
+      "best_threshold_from_validation": 0.9999740123748779,
+      "false_accept_rate": 0.012121212121212121,
+      "false_reject_rate": 1.0,
+      "rejection_rate_by_ood_subset": {
+        "ambiguous": 1.0,
+        "compound": 1.0,
+        "gibberish": 1.0,
+        "near_miss": 0.9333333333333333,
+        "negation": 1.0,
+        "normal_test_abstain": 1.0,
+        "unrelated": 1.0,
+        "unsafe": 1.0
+      }
+    },
+    {
+      "score": "top2_margin",
+      "auroc": 0.7106060606060606,
+      "auprc": 0.33070443747620776,
+      "best_threshold_from_validation": 0.9999579787254333,
+      "false_accept_rate": 0.012121212121212121,
+      "false_reject_rate": 1.0,
+      "rejection_rate_by_ood_subset": {
+        "ambiguous": 1.0,
+        "compound": 1.0,
+        "gibberish": 1.0,
+        "near_miss": 0.9333333333333333,
+        "negation": 1.0,
+        "normal_test_abstain": 1.0,
+        "unrelated": 1.0,
+        "unsafe": 1.0
+      }
+    },
+    {
+      "score": "negative_entropy",
+      "auroc": 0.6974242424242425,
+      "auprc": 0.32022739849122056,
+      "best_threshold_from_validation": -0.0003262751270085573,
+      "false_accept_rate": 0.012121212121212121,
+      "false_reject_rate": 1.0,
+      "rejection_rate_by_ood_subset": {
+        "ambiguous": 1.0,
+        "compound": 1.0,
+        "gibberish": 1.0,
+        "near_miss": 0.9333333333333333,
+        "negation": 1.0,
+        "normal_test_abstain": 1.0,
+        "unrelated": 1.0,
+        "unsafe": 1.0
+      }
+    },
+    {
+      "score": "negative_nearest_executable_centroid_distance",
+      "auroc": 0.4916666666666667,
+      "auprc": 0.2928110225070052,
+      "best_threshold_from_validation": -5.11854362487793,
+      "false_accept_rate": 0.18787878787878787,
+      "false_reject_rate": 0.75,
+      "rejection_rate_by_ood_subset": {
+        "ambiguous": 0.8,
+        "compound": 0.7,
+        "gibberish": 0.9333333333333333,
+        "near_miss": 0.8666666666666667,
+        "negation": 0.8,
+        "normal_test_abstain": 0.7333333333333333,
+        "unrelated": 0.9333333333333333,
+        "unsafe": 0.8
+      }
+    },
+    {
+      "score": "classwise_centroid_threshold",
+      "auroc": 0.4563008130081301,
+      "auprc": 0.26368529173651956,
+      "best_threshold_from_validation": 12.077892303466797,
+      "false_accept_rate": 0.296969696969697,
+      "false_reject_rate": 0.575,
+      "rejection_rate_by_ood_subset": {
+        "ambiguous": 0.5333333333333333,
+        "compound": 0.6,
+        "gibberish": 0.8,
+        "near_miss": 0.6,
+        "negation": 0.7,
+        "normal_test_abstain": 1.0,
+        "unrelated": 0.8666666666666667,
+        "unsafe": 0.7333333333333333
+      }
+    },
+    {
+      "score": "negative_mahalanobis_distance",
+      "auroc": 0.9977272727272727,
+      "auprc": 0.9931818181818183,
+      "best_threshold_from_validation": -27.877227783203125,
+      "false_accept_rate": 0.01818181818181818,
+      "false_reject_rate": 0.025,
+      "rejection_rate_by_ood_subset": {
+        "ambiguous": 1.0,
+        "compound": 1.0,
+        "gibberish": 1.0,
+        "near_miss": 1.0,
+        "negation": 0.9333333333333333,
+        "normal_test_abstain": 0.9333333333333333,
+        "unrelated": 1.0,
+        "unsafe": 1.0
+      }
+    },
+    {
+      "score": "lof_novelty_score",
+      "auroc": 0.7771212121212121,
+      "auprc": 0.505410738267185,
+      "best_threshold_from_validation": -1.0142794847488403,
+      "false_accept_rate": 0.1393939393939394,
+      "false_reject_rate": 0.5,
+      "rejection_rate_by_ood_subset": {
+        "ambiguous": 0.9333333333333333,
+        "compound": 0.8333333333333334,
+        "gibberish": 0.9333333333333333,
+        "near_miss": 0.9,
+        "negation": 0.7666666666666667,
+        "normal_test_abstain": 0.6666666666666666,
+        "unrelated": 1.0,
+        "unsafe": 0.9333333333333333
+      }
+    },
+    {
+      "score": "one_class_svm_score",
+      "auroc": 0.4451515151515152,
+      "auprc": 0.23834230370766507,
+      "best_threshold_from_validation": 8.34581184387207,
+      "false_accept_rate": 0.06060606060606061,
+      "false_reject_rate": 0.825,
+      "rejection_rate_by_ood_subset": {
+        "ambiguous": 0.9333333333333333,
+        "compound": 0.9,
+        "gibberish": 1.0,
+        "near_miss": 0.9666666666666667,
+        "negation": 0.9,
+        "normal_test_abstain": 0.9333333333333333,
+        "unrelated": 1.0,
+        "unsafe": 0.9333333333333333
+      }
+    }
+  ]
+}

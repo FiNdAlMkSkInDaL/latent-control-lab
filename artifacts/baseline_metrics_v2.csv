@@ -1,0 +1,14 @@
+baseline,dataset,accuracy,macro_f1,abstain_precision,abstain_recall,notes
+latent_probe_router,synthetic_test,1.0,1.0,1.0,1.0,Frozen-LM hidden state plus linear probe.
+latent_probe_router,hard_eval,0.5745454545454546,0.5871764872021275,0.7021276595744681,0.44,Frozen-LM hidden state plus linear probe and gates.
+latent_probe_router_v2,v2_test,1.0,1.0,1.0,1.0,V2 frozen-LM hidden state plus linear probe.
+latent_probe_router_v2,hard_eval,0.6072727272727273,0.349126494054536,0.5870445344129555,0.9666666666666667,V2 latent probe with default router thresholds.
+prompt_augmented_latent_v2,v2_test,1.0,1.0,1.0,1.0,Single latent probe trained across multiple prompt templates.
+prompt_augmented_latent_v2,hard_eval,0.6509090909090909,0.5159434906338931,0.6684210526315789,0.8466666666666667,Single latent probe trained across multiple prompt templates.
+calibrated_latent_v2,hard_eval,0.6472727272727272,0.48270248829199786,0.6325581395348837,0.9066666666666666,V2 latent probe with validation-selected calibrated OOD threshold.
+tfidf_logreg_text,synthetic_test,1.0,1.0,1.0,1.0,Surface-text baseline; not used by the zero-generation app route.
+tfidf_logreg_text,hard_eval,0.6654545454545454,0.5871657571654251,0.672316384180791,0.7933333333333333,Surface-text baseline; not used by the zero-generation app route.
+random_stratified,synthetic_test,0.2054794520547945,0.16059552475961145,0.32142857142857145,0.32142857142857145,Non-semantic reference baseline.
+random_stratified,hard_eval,0.22181818181818183,0.1299014676936705,0.4803921568627451,0.32666666666666666,Non-semantic reference baseline.
+majority_class,synthetic_test,0.3835616438356164,0.09240924092409242,0.3835616438356164,1.0,Non-semantic reference baseline.
+majority_class,hard_eval,0.5454545454545454,0.11764705882352942,0.5454545454545454,1.0,Non-semantic reference baseline.
