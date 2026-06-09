@@ -5,9 +5,9 @@ from typing import Any
 
 
 def load_causal_lm(
-    model_id: str = "google/gemma-2-2b-it",
+    model_id: str = "distilgpt2",
     *,
-    use_4bit: bool = True,
+    use_4bit: bool = False,
     trust_remote_code: bool = False,
 ) -> tuple[Any, Any]:
     """

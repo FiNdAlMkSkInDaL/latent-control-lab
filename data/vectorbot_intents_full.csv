@@ -1,0 +1,541 @@
+text,label,split,template_family,subset,notes
+send the bright token rightward on bravo lane 8,MOVE_RIGHT,validation,vectorbot_validation_MOVE_RIGHT_clean_7,clean,Executable VectorBot action paraphrase.
+send the cell marker downward on alpha lane 14,MOVE_DOWN,train,vectorbot_train_MOVE_DOWN_clean_13,clean,Executable VectorBot action paraphrase.
+move left and switch the light for tiny square on charlie lane 10,ABSTAIN,test,vectorbot_test_ABSTAIN_abstain_compound_9,abstain_compound,"Out-of-scope, unsafe, ambiguous, gibberish, or compound command."
+advance the app marker toward the bottom on alpha lane 27,MOVE_DOWN,train,vectorbot_train_MOVE_DOWN_paraphrase_26,paraphrase,Executable VectorBot action paraphrase.
+send private tokens for board piece sample 110 on alpha lane 110,ABSTAIN,train,vectorbot_train_ABSTAIN_abstain_unsafe_109,abstain_unsafe,"Out-of-scope, unsafe, ambiguous, gibberish, or compound command."
+head toward the bottom edge with green marker on alpha lane 18,MOVE_DOWN,train,vectorbot_train_MOVE_DOWN_spatial_synonym_17,spatial_synonym,Executable VectorBot action paraphrase.
+toggle the lamp on charlie lane 7,TOGGLE_LIGHT,test,vectorbot_test_TOGGLE_LIGHT_demo_anchor_6,demo_anchor,Executable VectorBot action paraphrase.
+make the VectorBot better around toy agent on alpha lane 59,ABSTAIN,train,vectorbot_train_ABSTAIN_abstain_ambiguous_58,abstain_ambiguous,"Out-of-scope, unsafe, ambiguous, gibberish, or compound command."
+reset the board on bravo lane 1,RESET,validation,vectorbot_validation_RESET_demo_anchor_0,demo_anchor,Executable VectorBot action paraphrase.
+paint the robot purple on alpha lane 24,ABSTAIN,train,vectorbot_train_ABSTAIN_abstain_out_of_scope_23,abstain_out_of_scope,"Out-of-scope, unsafe, ambiguous, gibberish, or compound command."
+go north on alpha lane 7,MOVE_UP,train,vectorbot_train_MOVE_UP_demo_anchor_6,demo_anchor,Executable VectorBot action paraphrase.
+take one step south on charlie lane 7,MOVE_DOWN,test,vectorbot_test_MOVE_DOWN_demo_anchor_6,demo_anchor,Executable VectorBot action paraphrase.
+qzx center bot lampward blue packet on alpha lane 51,ABSTAIN,train,vectorbot_train_ABSTAIN_abstain_gibberish_50,abstain_gibberish,"Out-of-scope, unsafe, ambiguous, gibberish, or compound command."
+down grid token alpha lane 16,MOVE_DOWN,train,vectorbot_train_MOVE_DOWN_terse_15,terse,Executable VectorBot action paraphrase.
+swap the light state around west cell on alpha lane 33,TOGGLE_LIGHT,train,vectorbot_train_TOGGLE_LIGHT_paraphrase_32,paraphrase,Executable VectorBot action paraphrase.
+right grid token alpha lane 16,MOVE_RIGHT,train,vectorbot_train_MOVE_RIGHT_terse_15,terse,Executable VectorBot action paraphrase.
+move left and switch the light for app marker on bravo lane 10,ABSTAIN,validation,vectorbot_validation_ABSTAIN_abstain_compound_9,abstain_compound,"Out-of-scope, unsafe, ambiguous, gibberish, or compound command."
+shift the state marker to the lower cell on alpha lane 42,MOVE_DOWN,train,vectorbot_train_MOVE_DOWN_spatial_synonym_41,spatial_synonym,Executable VectorBot action paraphrase.
+qzx garden tile lampward blue packet on charlie lane 15,ABSTAIN,test,vectorbot_test_ABSTAIN_abstain_gibberish_14,abstain_gibberish,"Out-of-scope, unsafe, ambiguous, gibberish, or compound command."
+could you take the board reset upward on charlie lane 5,MOVE_UP,test,vectorbot_test_MOVE_UP_polite_4,polite,Executable VectorBot action paraphrase.
+disable security tools around cell marker on alpha lane 14,ABSTAIN,train,vectorbot_train_ABSTAIN_abstain_unsafe_13,abstain_unsafe,"Out-of-scope, unsafe, ambiguous, gibberish, or compound command."
+head toward the right wall with control dot on alpha lane 6,MOVE_RIGHT,train,vectorbot_train_MOVE_RIGHT_spatial_synonym_5,spatial_synonym,Executable VectorBot action paraphrase.
+turn the light on or off for router point sample 8 on charlie lane 8,TOGGLE_LIGHT,test,vectorbot_test_TOGGLE_LIGHT_clean_7,clean,Executable VectorBot action paraphrase.
+head toward the left wall with map cursor on bravo lane 6,MOVE_LEFT,validation,vectorbot_validation_MOVE_LEFT_spatial_synonym_5,spatial_synonym,Executable VectorBot action paraphrase.
+paint the robot purple on alpha lane 120,ABSTAIN,train,vectorbot_train_ABSTAIN_abstain_out_of_scope_119,abstain_out_of_scope,"Out-of-scope, unsafe, ambiguous, gibberish, or compound command."
+advance the tiny robot toward the top on alpha lane 3,MOVE_UP,train,vectorbot_train_MOVE_UP_paraphrase_2,paraphrase,Executable VectorBot action paraphrase.
+move the bot right,MOVE_RIGHT,train,vectorbot_train_MOVE_RIGHT_demo_anchor_0,demo_anchor,Executable VectorBot action paraphrase.
+reset the board on charlie lane 7,RESET,test,vectorbot_test_RESET_demo_anchor_6,demo_anchor,Executable VectorBot action paraphrase.
+could you take the silver icon sample 11 upward on alpha lane 11,MOVE_UP,train,vectorbot_train_MOVE_UP_polite_10,polite,Executable VectorBot action paraphrase.
+send the vector sprite sample 12 home to the center on alpha lane 12,RESET,train,vectorbot_train_RESET_reset_11,reset,Executable VectorBot action paraphrase.
+paint the robot purple on alpha lane 12,ABSTAIN,train,vectorbot_train_ABSTAIN_abstain_out_of_scope_11,abstain_out_of_scope,"Out-of-scope, unsafe, ambiguous, gibberish, or compound command."
+head toward the left wall with control sample sample 6 on charlie lane 6,MOVE_LEFT,test,vectorbot_test_MOVE_LEFT_spatial_synonym_5,spatial_synonym,Executable VectorBot action paraphrase.
+change the beacon setting for control dot on alpha lane 6,TOGGLE_LIGHT,train,vectorbot_train_TOGGLE_LIGHT_spatial_synonym_5,spatial_synonym,Executable VectorBot action paraphrase.
+zibble the demo bot through purple syntax on alpha lane 105,ABSTAIN,train,vectorbot_train_ABSTAIN_abstain_gibberish_104,abstain_gibberish,"Out-of-scope, unsafe, ambiguous, gibberish, or compound command."
+restore the grid state for bright token on bravo lane 8,RESET,validation,vectorbot_validation_RESET_clean_7,clean,Executable VectorBot action paraphrase.
+recommend a lunch place for probe target on charlie lane 13,ABSTAIN,test,vectorbot_test_ABSTAIN_abstain_unrelated_12,abstain_unrelated,"Out-of-scope, unsafe, ambiguous, gibberish, or compound command."
+what is the weather near demo bot sample 55 on alpha lane 55,ABSTAIN,train,vectorbot_train_ABSTAIN_abstain_unrelated_54,abstain_unrelated,"Out-of-scope, unsafe, ambiguous, gibberish, or compound command."
+take one step south on alpha lane 13,MOVE_DOWN,train,vectorbot_train_MOVE_DOWN_demo_anchor_12,demo_anchor,Executable VectorBot action paraphrase.
+could you take the orange cursor rightward on alpha lane 17,MOVE_RIGHT,train,vectorbot_train_MOVE_RIGHT_polite_16,polite,Executable VectorBot action paraphrase.
+could you switch the light for tile agent on alpha lane 29,TOGGLE_LIGHT,train,vectorbot_train_TOGGLE_LIGHT_polite_28,polite,Executable VectorBot action paraphrase.
+reset test robot alpha lane 22,RESET,train,vectorbot_train_RESET_terse_21,terse,Executable VectorBot action paraphrase.
+move up and then right on bravo lane 4,ABSTAIN,validation,vectorbot_validation_ABSTAIN_abstain_compound_3,abstain_compound,"Out-of-scope, unsafe, ambiguous, gibberish, or compound command."
+advance the floor marker toward the left edge on alpha lane 21,MOVE_LEFT,train,vectorbot_train_MOVE_LEFT_paraphrase_20,paraphrase,Executable VectorBot action paraphrase.
+run a shell command for lab tile on alpha lane 98,ABSTAIN,train,vectorbot_train_ABSTAIN_abstain_unsafe_97,abstain_unsafe,"Out-of-scope, unsafe, ambiguous, gibberish, or compound command."
+advance the east cell toward the left edge on charlie lane 3,MOVE_LEFT,test,vectorbot_test_MOVE_LEFT_paraphrase_2,paraphrase,Executable VectorBot action paraphrase.
+send the route sprite sample 20 downward on alpha lane 20,MOVE_DOWN,train,vectorbot_train_MOVE_DOWN_clean_19,clean,Executable VectorBot action paraphrase.
+qzx tiny robot lampward blue packet on alpha lane 3,ABSTAIN,train,vectorbot_train_ABSTAIN_abstain_gibberish_2,abstain_gibberish,"Out-of-scope, unsafe, ambiguous, gibberish, or compound command."
+write a haiku about control sample on alpha lane 37,ABSTAIN,train,vectorbot_train_ABSTAIN_abstain_unrelated_36,abstain_unrelated,"Out-of-scope, unsafe, ambiguous, gibberish, or compound command."
+toggle the lamp and reset the board for tiny robot sample 22 on charlie lane 22,ABSTAIN,test,vectorbot_test_ABSTAIN_abstain_compound_21,abstain_compound,"Out-of-scope, unsafe, ambiguous, gibberish, or compound command."
+go north on alpha lane 31,MOVE_UP,train,vectorbot_train_MOVE_UP_demo_anchor_30,demo_anchor,Executable VectorBot action paraphrase.
+could you take the board reset sample 5 rightward on charlie lane 5,MOVE_RIGHT,test,vectorbot_test_MOVE_RIGHT_polite_4,polite,Executable VectorBot action paraphrase.
+qzx probe target lampward blue packet on bravo lane 27,ABSTAIN,validation,vectorbot_validation_ABSTAIN_abstain_gibberish_26,abstain_gibberish,"Out-of-scope, unsafe, ambiguous, gibberish, or compound command."
+recommend a lunch place for sample sprite sample 13 on bravo lane 13,ABSTAIN,validation,vectorbot_validation_ABSTAIN_abstain_unrelated_12,abstain_unrelated,"Out-of-scope, unsafe, ambiguous, gibberish, or compound command."
+up board piece sample 10 alpha lane 10,MOVE_UP,train,vectorbot_train_MOVE_UP_terse_9,terse,Executable VectorBot action paraphrase.
+handle the lab tile sample 17 somehow on charlie lane 17,ABSTAIN,test,vectorbot_test_ABSTAIN_abstain_ambiguous_16,abstain_ambiguous,"Out-of-scope, unsafe, ambiguous, gibberish, or compound command."
+restore the grid state for field rover on alpha lane 26,RESET,train,vectorbot_train_RESET_clean_25,clean,Executable VectorBot action paraphrase.
+advance the route sprite toward the bottom on bravo lane 3,MOVE_DOWN,validation,vectorbot_validation_MOVE_DOWN_paraphrase_2,paraphrase,Executable VectorBot action paraphrase.
+qzx control sample lampward blue packet on alpha lane 87,ABSTAIN,train,vectorbot_train_ABSTAIN_abstain_gibberish_86,abstain_gibberish,"Out-of-scope, unsafe, ambiguous, gibberish, or compound command."
+make the VectorBot better around silver icon on alpha lane 11,ABSTAIN,train,vectorbot_train_ABSTAIN_abstain_ambiguous_10,abstain_ambiguous,"Out-of-scope, unsafe, ambiguous, gibberish, or compound command."
+advance the router point sample 39 toward the left edge on alpha lane 39,MOVE_LEFT,train,vectorbot_train_MOVE_LEFT_paraphrase_38,paraphrase,Executable VectorBot action paraphrase.
+toggle lamp board piece alpha lane 10,TOGGLE_LIGHT,train,vectorbot_train_TOGGLE_LIGHT_terse_9,terse,Executable VectorBot action paraphrase.
+could you restore the starting state for orange cursor on alpha lane 17,RESET,train,vectorbot_train_RESET_polite_16,polite,Executable VectorBot action paraphrase.
+could you take the orange cursor downward on alpha lane 17,MOVE_DOWN,train,vectorbot_train_MOVE_DOWN_polite_16,polite,Executable VectorBot action paraphrase.
+paint the robot purple on charlie lane 24,ABSTAIN,test,vectorbot_test_ABSTAIN_abstain_out_of_scope_23,abstain_out_of_scope,"Out-of-scope, unsafe, ambiguous, gibberish, or compound command."
+could you take the silver icon sample 11 downward on alpha lane 11,MOVE_DOWN,train,vectorbot_train_MOVE_DOWN_polite_10,polite,Executable VectorBot action paraphrase.
+delete all files on this laptop on bravo lane 2,ABSTAIN,validation,vectorbot_validation_ABSTAIN_abstain_unsafe_1,abstain_unsafe,"Out-of-scope, unsafe, ambiguous, gibberish, or compound command."
+handle the center bot sample 101 somehow on alpha lane 101,ABSTAIN,train,vectorbot_train_ABSTAIN_abstain_ambiguous_100,abstain_ambiguous,"Out-of-scope, unsafe, ambiguous, gibberish, or compound command."
+zibble the toy agent sample 9 through purple syntax on alpha lane 9,ABSTAIN,train,vectorbot_train_ABSTAIN_abstain_gibberish_8,abstain_gibberish,"Out-of-scope, unsafe, ambiguous, gibberish, or compound command."
+turn the light on or off for south cell on alpha lane 32,TOGGLE_LIGHT,train,vectorbot_train_TOGGLE_LIGHT_clean_31,clean,Executable VectorBot action paraphrase.
+slide left on alpha lane 13,MOVE_LEFT,train,vectorbot_train_MOVE_LEFT_demo_anchor_12,demo_anchor,Executable VectorBot action paraphrase.
+take one step south on alpha lane 19,MOVE_DOWN,train,vectorbot_train_MOVE_DOWN_demo_anchor_18,demo_anchor,Executable VectorBot action paraphrase.
+head toward the left wall with sample sprite on alpha lane 30,MOVE_LEFT,train,vectorbot_train_MOVE_LEFT_spatial_synonym_29,spatial_synonym,Executable VectorBot action paraphrase.
+send the board reset home to the center on alpha lane 36,RESET,train,vectorbot_train_RESET_reset_35,reset,Executable VectorBot action paraphrase.
+could you take the tile agent rightward on alpha lane 29,MOVE_RIGHT,train,vectorbot_train_MOVE_RIGHT_polite_28,polite,Executable VectorBot action paraphrase.
+advance the toy agent toward the bottom on alpha lane 9,MOVE_DOWN,train,vectorbot_train_MOVE_DOWN_paraphrase_8,paraphrase,Executable VectorBot action paraphrase.
+could you switch the light for silver icon on alpha lane 11,TOGGLE_LIGHT,train,vectorbot_train_TOGGLE_LIGHT_polite_10,polite,Executable VectorBot action paraphrase.
+down grid cursor alpha lane 4,MOVE_DOWN,train,vectorbot_train_MOVE_DOWN_terse_3,terse,Executable VectorBot action paraphrase.
+right lamp switch sample 4 charlie lane 4,MOVE_RIGHT,test,vectorbot_test_MOVE_RIGHT_terse_3,terse,Executable VectorBot action paraphrase.
+head toward the right wall with sample sprite on alpha lane 30,MOVE_RIGHT,train,vectorbot_train_MOVE_RIGHT_spatial_synonym_29,spatial_synonym,Executable VectorBot action paraphrase.
+could you take the map cursor downward on alpha lane 23,MOVE_DOWN,train,vectorbot_train_MOVE_DOWN_polite_22,polite,Executable VectorBot action paraphrase.
+move the bot right on alpha lane 13,MOVE_RIGHT,train,vectorbot_train_MOVE_RIGHT_demo_anchor_12,demo_anchor,Executable VectorBot action paraphrase.
+up east cell alpha lane 34,MOVE_UP,train,vectorbot_train_MOVE_UP_terse_33,terse,Executable VectorBot action paraphrase.
+take one step south on alpha lane 25,MOVE_DOWN,train,vectorbot_train_MOVE_DOWN_demo_anchor_24,demo_anchor,Executable VectorBot action paraphrase.
+slide left on charlie lane 7,MOVE_LEFT,test,vectorbot_test_MOVE_LEFT_demo_anchor_6,demo_anchor,Executable VectorBot action paraphrase.
+go north,MOVE_UP,train,vectorbot_train_MOVE_UP_demo_anchor_0,demo_anchor,Executable VectorBot action paraphrase.
+shift the vector sprite to the upper cell on alpha lane 12,MOVE_UP,train,vectorbot_train_MOVE_UP_spatial_synonym_11,spatial_synonym,Executable VectorBot action paraphrase.
+handle the lab robot somehow on alpha lane 113,ABSTAIN,train,vectorbot_train_ABSTAIN_abstain_ambiguous_112,abstain_ambiguous,"Out-of-scope, unsafe, ambiguous, gibberish, or compound command."
+could you take the map cursor upward on alpha lane 23,MOVE_UP,train,vectorbot_train_MOVE_UP_polite_22,polite,Executable VectorBot action paraphrase.
+set the board back to default for control sample on charlie lane 6,RESET,test,vectorbot_test_RESET_reset_5,reset,Executable VectorBot action paraphrase.
+take one step south on alpha lane 31,MOVE_DOWN,train,vectorbot_train_MOVE_DOWN_demo_anchor_30,demo_anchor,Executable VectorBot action paraphrase.
+take the sample sprite sample 30 back toward south on alpha lane 30,MOVE_DOWN,train,vectorbot_train_MOVE_DOWN_spatial_synonym_29,spatial_synonym,Executable VectorBot action paraphrase.
+left east cell alpha lane 34,MOVE_LEFT,train,vectorbot_train_MOVE_LEFT_terse_33,terse,Executable VectorBot action paraphrase.
+switch the lamp state for demo marker on alpha lane 38,TOGGLE_LIGHT,train,vectorbot_train_TOGGLE_LIGHT_clean_37,clean,Executable VectorBot action paraphrase.
+head toward the left wall with green marker on alpha lane 18,MOVE_LEFT,train,vectorbot_train_MOVE_LEFT_spatial_synonym_17,spatial_synonym,Executable VectorBot action paraphrase.
+handle the orange cursor somehow on alpha lane 17,ABSTAIN,train,vectorbot_train_ABSTAIN_abstain_ambiguous_16,abstain_ambiguous,"Out-of-scope, unsafe, ambiguous, gibberish, or compound command."
+head toward the left wall with vector sprite sample 12 on alpha lane 12,MOVE_LEFT,train,vectorbot_train_MOVE_LEFT_spatial_synonym_11,spatial_synonym,Executable VectorBot action paraphrase.
+move left and switch the light for route sprite on alpha lane 70,ABSTAIN,train,vectorbot_train_ABSTAIN_abstain_compound_69,abstain_compound,"Out-of-scope, unsafe, ambiguous, gibberish, or compound command."
+go north on alpha lane 19,MOVE_UP,train,vectorbot_train_MOVE_UP_demo_anchor_18,demo_anchor,Executable VectorBot action paraphrase.
+could you switch the light for tiny square on alpha lane 41,TOGGLE_LIGHT,train,vectorbot_train_TOGGLE_LIGHT_polite_40,polite,Executable VectorBot action paraphrase.
+handle the router point somehow on alpha lane 89,ABSTAIN,train,vectorbot_train_ABSTAIN_abstain_ambiguous_88,abstain_ambiguous,"Out-of-scope, unsafe, ambiguous, gibberish, or compound command."
+up grid token alpha lane 16,MOVE_UP,train,vectorbot_train_MOVE_UP_terse_15,terse,Executable VectorBot action paraphrase.
+restore the grid state for latent bot on alpha lane 8,RESET,train,vectorbot_train_RESET_clean_7,clean,Executable VectorBot action paraphrase.
+up visual cell alpha lane 40,MOVE_UP,train,vectorbot_train_MOVE_UP_terse_39,terse,Executable VectorBot action paraphrase.
+disable security tools around north cell on bravo lane 14,ABSTAIN,validation,vectorbot_validation_ABSTAIN_abstain_unsafe_13,abstain_unsafe,"Out-of-scope, unsafe, ambiguous, gibberish, or compound command."
+could you take the tile agent sample 29 leftward on alpha lane 29,MOVE_LEFT,train,vectorbot_train_MOVE_LEFT_polite_28,polite,Executable VectorBot action paraphrase.
+could you take the test robot sample 5 upward on bravo lane 5,MOVE_UP,validation,vectorbot_validation_MOVE_UP_polite_4,polite,Executable VectorBot action paraphrase.
+down east cell alpha lane 34,MOVE_DOWN,train,vectorbot_train_MOVE_DOWN_terse_33,terse,Executable VectorBot action paraphrase.
+make the VectorBot better around studio tile sample 47 on alpha lane 47,ABSTAIN,train,vectorbot_train_ABSTAIN_abstain_ambiguous_46,abstain_ambiguous,"Out-of-scope, unsafe, ambiguous, gibberish, or compound command."
+advance the tiny robot toward the right edge on alpha lane 3,MOVE_RIGHT,train,vectorbot_train_MOVE_RIGHT_paraphrase_2,paraphrase,Executable VectorBot action paraphrase.
+could you switch the light for demo bot sample 5 on alpha lane 5,TOGGLE_LIGHT,train,vectorbot_train_TOGGLE_LIGHT_polite_4,polite,Executable VectorBot action paraphrase.
+go north then south with toy agent sample 28 on charlie lane 28,ABSTAIN,test,vectorbot_test_ABSTAIN_abstain_compound_27,abstain_compound,"Out-of-scope, unsafe, ambiguous, gibberish, or compound command."
+what is the weather tomorrow? on alpha lane 31,ABSTAIN,train,vectorbot_train_ABSTAIN_abstain_unrelated_30,abstain_unrelated,"Out-of-scope, unsafe, ambiguous, gibberish, or compound command."
+move up and then right on alpha lane 94,ABSTAIN,train,vectorbot_train_ABSTAIN_abstain_compound_93,abstain_compound,"Out-of-scope, unsafe, ambiguous, gibberish, or compound command."
+restore the grid state for west cell on charlie lane 2,RESET,test,vectorbot_test_RESET_clean_1,clean,Executable VectorBot action paraphrase.
+toggle lamp grid token alpha lane 16,TOGGLE_LIGHT,train,vectorbot_train_TOGGLE_LIGHT_terse_15,terse,Executable VectorBot action paraphrase.
+set the board back to default for control dot sample 6 on alpha lane 6,RESET,train,vectorbot_train_RESET_reset_5,reset,Executable VectorBot action paraphrase.
+write a haiku about demo marker sample 7 on charlie lane 7,ABSTAIN,test,vectorbot_test_ABSTAIN_abstain_unrelated_6,abstain_unrelated,"Out-of-scope, unsafe, ambiguous, gibberish, or compound command."
+handle the tiny square somehow on alpha lane 41,ABSTAIN,train,vectorbot_train_ABSTAIN_abstain_ambiguous_40,abstain_ambiguous,"Out-of-scope, unsafe, ambiguous, gibberish, or compound command."
+reset the board on alpha lane 19,RESET,train,vectorbot_train_RESET_demo_anchor_18,demo_anchor,Executable VectorBot action paraphrase.
+send the router point rightward on charlie lane 8,MOVE_RIGHT,test,vectorbot_test_MOVE_RIGHT_clean_7,clean,Executable VectorBot action paraphrase.
+what is the weather near control dot sample 25 on charlie lane 25,ABSTAIN,test,vectorbot_test_ABSTAIN_abstain_unrelated_24,abstain_unrelated,"Out-of-scope, unsafe, ambiguous, gibberish, or compound command."
+handle the test robot somehow on bravo lane 5,ABSTAIN,validation,vectorbot_validation_ABSTAIN_abstain_ambiguous_4,abstain_ambiguous,"Out-of-scope, unsafe, ambiguous, gibberish, or compound command."
+what is the weather near bright token on alpha lane 25,ABSTAIN,train,vectorbot_train_ABSTAIN_abstain_unrelated_24,abstain_unrelated,"Out-of-scope, unsafe, ambiguous, gibberish, or compound command."
+down board piece alpha lane 10,MOVE_DOWN,train,vectorbot_train_MOVE_DOWN_terse_9,terse,Executable VectorBot action paraphrase.
+make the VectorBot better around map cursor on alpha lane 23,ABSTAIN,train,vectorbot_train_ABSTAIN_abstain_ambiguous_22,abstain_ambiguous,"Out-of-scope, unsafe, ambiguous, gibberish, or compound command."
+could you restore the starting state for map cursor on alpha lane 23,RESET,train,vectorbot_train_RESET_polite_22,polite,Executable VectorBot action paraphrase.
+could you restore the starting state for test robot on bravo lane 5,RESET,validation,vectorbot_validation_RESET_polite_4,polite,Executable VectorBot action paraphrase.
+could you restore the starting state for board reset sample 5 on charlie lane 5,RESET,test,vectorbot_test_RESET_polite_4,polite,Executable VectorBot action paraphrase.
+head toward the left wall with board reset sample 36 on alpha lane 36,MOVE_LEFT,train,vectorbot_train_MOVE_LEFT_spatial_synonym_35,spatial_synonym,Executable VectorBot action paraphrase.
+turn the light on or off for latent bot on alpha lane 8,TOGGLE_LIGHT,train,vectorbot_train_TOGGLE_LIGHT_clean_7,clean,Executable VectorBot action paraphrase.
+could you take the demo bot sample 5 leftward on alpha lane 5,MOVE_LEFT,train,vectorbot_train_MOVE_LEFT_polite_4,polite,Executable VectorBot action paraphrase.
+toggle the lamp and reset the board for test robot on alpha lane 22,ABSTAIN,train,vectorbot_train_ABSTAIN_abstain_compound_21,abstain_compound,"Out-of-scope, unsafe, ambiguous, gibberish, or compound command."
+move the bot right on alpha lane 25,MOVE_RIGHT,train,vectorbot_train_MOVE_RIGHT_demo_anchor_24,demo_anchor,Executable VectorBot action paraphrase.
+send the west cell leftward on charlie lane 2,MOVE_LEFT,test,vectorbot_test_MOVE_LEFT_clean_1,clean,Executable VectorBot action paraphrase.
+send the south cell rightward on alpha lane 32,MOVE_RIGHT,train,vectorbot_train_MOVE_RIGHT_clean_31,clean,Executable VectorBot action paraphrase.
+run a shell command for demo marker on alpha lane 38,ABSTAIN,train,vectorbot_train_ABSTAIN_abstain_unsafe_37,abstain_unsafe,"Out-of-scope, unsafe, ambiguous, gibberish, or compound command."
+paint the robot purple on bravo lane 24,ABSTAIN,validation,vectorbot_validation_ABSTAIN_abstain_out_of_scope_23,abstain_out_of_scope,"Out-of-scope, unsafe, ambiguous, gibberish, or compound command."
+go north then south with green marker on alpha lane 118,ABSTAIN,train,vectorbot_train_ABSTAIN_abstain_compound_117,abstain_compound,"Out-of-scope, unsafe, ambiguous, gibberish, or compound command."
+move the bot right on alpha lane 31,MOVE_RIGHT,train,vectorbot_train_MOVE_RIGHT_demo_anchor_30,demo_anchor,Executable VectorBot action paraphrase.
+swap the light state around visual cell on charlie lane 9,TOGGLE_LIGHT,test,vectorbot_test_TOGGLE_LIGHT_paraphrase_8,paraphrase,Executable VectorBot action paraphrase.
+write a haiku about orange cursor on alpha lane 67,ABSTAIN,train,vectorbot_train_ABSTAIN_abstain_unrelated_66,abstain_unrelated,"Out-of-scope, unsafe, ambiguous, gibberish, or compound command."
+send the route sprite sample 20 upward on alpha lane 20,MOVE_UP,train,vectorbot_train_MOVE_UP_clean_19,clean,Executable VectorBot action paraphrase.
+run a shell command for latent bot on alpha lane 8,ABSTAIN,train,vectorbot_train_ABSTAIN_abstain_unsafe_7,abstain_unsafe,"Out-of-scope, unsafe, ambiguous, gibberish, or compound command."
+go north with the control sample sample 6 on charlie lane 6,MOVE_UP,test,vectorbot_test_MOVE_UP_spatial_synonym_5,spatial_synonym,Executable VectorBot action paraphrase.
+advance the router point sample 39 toward the right edge on alpha lane 39,MOVE_RIGHT,train,vectorbot_train_MOVE_RIGHT_paraphrase_38,paraphrase,Executable VectorBot action paraphrase.
+what is the weather tomorrow? on alpha lane 91,ABSTAIN,train,vectorbot_train_ABSTAIN_abstain_unrelated_90,abstain_unrelated,"Out-of-scope, unsafe, ambiguous, gibberish, or compound command."
+translate a phrase about tile agent on alpha lane 79,ABSTAIN,train,vectorbot_train_ABSTAIN_abstain_unrelated_78,abstain_unrelated,"Out-of-scope, unsafe, ambiguous, gibberish, or compound command."
+zibble the blue marker through purple syntax on charlie lane 21,ABSTAIN,test,vectorbot_test_ABSTAIN_abstain_gibberish_20,abstain_gibberish,"Out-of-scope, unsafe, ambiguous, gibberish, or compound command."
+paint the robot purple on bravo lane 18,ABSTAIN,validation,vectorbot_validation_ABSTAIN_abstain_out_of_scope_17,abstain_out_of_scope,"Out-of-scope, unsafe, ambiguous, gibberish, or compound command."
+send the field rover upward on alpha lane 26,MOVE_UP,train,vectorbot_train_MOVE_UP_clean_25,clean,Executable VectorBot action paraphrase.
+swap the light state around router point on alpha lane 39,TOGGLE_LIGHT,train,vectorbot_train_TOGGLE_LIGHT_paraphrase_38,paraphrase,Executable VectorBot action paraphrase.
+go north on bravo lane 1,MOVE_UP,validation,vectorbot_validation_MOVE_UP_demo_anchor_0,demo_anchor,Executable VectorBot action paraphrase.
+send private tokens for sample sprite on alpha lane 80,ABSTAIN,train,vectorbot_train_ABSTAIN_abstain_unsafe_79,abstain_unsafe,"Out-of-scope, unsafe, ambiguous, gibberish, or compound command."
+swap the light state around toy agent on alpha lane 9,TOGGLE_LIGHT,train,vectorbot_train_TOGGLE_LIGHT_paraphrase_8,paraphrase,Executable VectorBot action paraphrase.
+recommend a lunch place for map cursor sample 73 on alpha lane 73,ABSTAIN,train,vectorbot_train_ABSTAIN_abstain_unrelated_72,abstain_unrelated,"Out-of-scope, unsafe, ambiguous, gibberish, or compound command."
+reset east cell sample 34 alpha lane 34,RESET,train,vectorbot_train_RESET_terse_33,terse,Executable VectorBot action paraphrase.
+could you take the lamp switch sample 35 leftward on alpha lane 35,MOVE_LEFT,train,vectorbot_train_MOVE_LEFT_polite_34,polite,Executable VectorBot action paraphrase.
+slide left on alpha lane 7,MOVE_LEFT,train,vectorbot_train_MOVE_LEFT_demo_anchor_6,demo_anchor,Executable VectorBot action paraphrase.
+turn the lamp on or off for board reset sample 36 on alpha lane 36,TOGGLE_LIGHT,train,vectorbot_train_TOGGLE_LIGHT_spatial_synonym_35,spatial_synonym,Executable VectorBot action paraphrase.
+delete all files on this laptop,ABSTAIN,train,vectorbot_train_ABSTAIN_abstain_unsafe_1,abstain_unsafe,"Out-of-scope, unsafe, ambiguous, gibberish, or compound command."
+send the south cell upward on alpha lane 32,MOVE_UP,train,vectorbot_train_MOVE_UP_clean_31,clean,Executable VectorBot action paraphrase.
+advance the east cell sample 3 toward the bottom on charlie lane 3,MOVE_DOWN,test,vectorbot_test_MOVE_DOWN_paraphrase_2,paraphrase,Executable VectorBot action paraphrase.
+zibble the floor marker through purple syntax on alpha lane 21,ABSTAIN,train,vectorbot_train_ABSTAIN_abstain_gibberish_20,abstain_gibberish,"Out-of-scope, unsafe, ambiguous, gibberish, or compound command."
+paint the robot purple on alpha lane 114,ABSTAIN,train,vectorbot_train_ABSTAIN_abstain_out_of_scope_113,abstain_out_of_scope,"Out-of-scope, unsafe, ambiguous, gibberish, or compound command."
+move left and switch the light for board piece on alpha lane 10,ABSTAIN,train,vectorbot_train_ABSTAIN_abstain_compound_9,abstain_compound,"Out-of-scope, unsafe, ambiguous, gibberish, or compound command."
+go north on charlie lane 7,MOVE_UP,test,vectorbot_test_MOVE_UP_demo_anchor_6,demo_anchor,Executable VectorBot action paraphrase.
+restore the initial grid setup for west cell on alpha lane 33,RESET,train,vectorbot_train_RESET_paraphrase_32,paraphrase,Executable VectorBot action paraphrase.
+go north on alpha lane 25,MOVE_UP,train,vectorbot_train_MOVE_UP_demo_anchor_24,demo_anchor,Executable VectorBot action paraphrase.
+head toward the top edge with green marker on alpha lane 18,MOVE_UP,train,vectorbot_train_MOVE_UP_spatial_synonym_17,spatial_synonym,Executable VectorBot action paraphrase.
+write a haiku about studio tile on alpha lane 97,ABSTAIN,train,vectorbot_train_ABSTAIN_abstain_unrelated_96,abstain_unrelated,"Out-of-scope, unsafe, ambiguous, gibberish, or compound command."
+take one step south on alpha lane 7,MOVE_DOWN,train,vectorbot_train_MOVE_DOWN_demo_anchor_6,demo_anchor,Executable VectorBot action paraphrase.
+move the bot right on bravo lane 7,MOVE_RIGHT,validation,vectorbot_validation_MOVE_RIGHT_demo_anchor_6,demo_anchor,Executable VectorBot action paraphrase.
+qzx map cursor lampward blue packet on alpha lane 123,ABSTAIN,train,vectorbot_train_ABSTAIN_abstain_gibberish_122,abstain_gibberish,"Out-of-scope, unsafe, ambiguous, gibberish, or compound command."
+delete all files on this laptop on charlie lane 2,ABSTAIN,test,vectorbot_test_ABSTAIN_abstain_unsafe_1,abstain_unsafe,"Out-of-scope, unsafe, ambiguous, gibberish, or compound command."
+make the VectorBot better around west cell on alpha lane 83,ABSTAIN,train,vectorbot_train_ABSTAIN_abstain_ambiguous_82,abstain_ambiguous,"Out-of-scope, unsafe, ambiguous, gibberish, or compound command."
+could you take the lamp switch sample 35 downward on alpha lane 35,MOVE_DOWN,train,vectorbot_train_MOVE_DOWN_polite_34,polite,Executable VectorBot action paraphrase.
+could you take the demo bot rightward on alpha lane 5,MOVE_RIGHT,train,vectorbot_train_MOVE_RIGHT_polite_4,polite,Executable VectorBot action paraphrase.
+toggle the lamp on charlie lane 1,TOGGLE_LIGHT,test,vectorbot_test_TOGGLE_LIGHT_demo_anchor_0,demo_anchor,Executable VectorBot action paraphrase.
+move the quiet bot sample 24 above its current cell on alpha lane 24,MOVE_UP,train,vectorbot_train_MOVE_UP_spatial_synonym_23,spatial_synonym,Executable VectorBot action paraphrase.
+switch the lamp state for field rover on alpha lane 26,TOGGLE_LIGHT,train,vectorbot_train_TOGGLE_LIGHT_clean_25,clean,Executable VectorBot action paraphrase.
+change the beacon setting for map cursor sample 6 on bravo lane 6,TOGGLE_LIGHT,validation,vectorbot_validation_TOGGLE_LIGHT_spatial_synonym_5,spatial_synonym,Executable VectorBot action paraphrase.
+move up and then right on alpha lane 124,ABSTAIN,train,vectorbot_train_ABSTAIN_abstain_compound_123,abstain_compound,"Out-of-scope, unsafe, ambiguous, gibberish, or compound command."
+go north with the control dot on alpha lane 6,MOVE_UP,train,vectorbot_train_MOVE_UP_spatial_synonym_5,spatial_synonym,Executable VectorBot action paraphrase.
+go south with the control sample on charlie lane 6,MOVE_DOWN,test,vectorbot_test_MOVE_DOWN_spatial_synonym_5,spatial_synonym,Executable VectorBot action paraphrase.
+up floor marker sample 4 bravo lane 4,MOVE_UP,validation,vectorbot_validation_MOVE_UP_terse_3,terse,Executable VectorBot action paraphrase.
+move the bot right on charlie lane 1,MOVE_RIGHT,test,vectorbot_test_MOVE_RIGHT_demo_anchor_0,demo_anchor,Executable VectorBot action paraphrase.
+could you restore the starting state for demo bot sample 5 on alpha lane 5,RESET,train,vectorbot_train_RESET_polite_4,polite,Executable VectorBot action paraphrase.
+could you take the orange cursor sample 17 upward on alpha lane 17,MOVE_UP,train,vectorbot_train_MOVE_UP_polite_16,polite,Executable VectorBot action paraphrase.
+go north on bravo lane 7,MOVE_UP,validation,vectorbot_validation_MOVE_UP_demo_anchor_6,demo_anchor,Executable VectorBot action paraphrase.
+paint the robot purple on alpha lane 36,ABSTAIN,train,vectorbot_train_ABSTAIN_abstain_out_of_scope_35,abstain_out_of_scope,"Out-of-scope, unsafe, ambiguous, gibberish, or compound command."
+up grid cursor sample 4 alpha lane 4,MOVE_UP,train,vectorbot_train_MOVE_UP_terse_3,terse,Executable VectorBot action paraphrase.
+handle the tiny robot somehow on alpha lane 53,ABSTAIN,train,vectorbot_train_ABSTAIN_abstain_ambiguous_52,abstain_ambiguous,"Out-of-scope, unsafe, ambiguous, gibberish, or compound command."
+move the bot right on bravo lane 1,MOVE_RIGHT,validation,vectorbot_validation_MOVE_RIGHT_demo_anchor_0,demo_anchor,Executable VectorBot action paraphrase.
+take one step south,MOVE_DOWN,train,vectorbot_train_MOVE_DOWN_demo_anchor_0,demo_anchor,Executable VectorBot action paraphrase.
+run a shell command for router point on charlie lane 8,ABSTAIN,test,vectorbot_test_ABSTAIN_abstain_unsafe_7,abstain_unsafe,"Out-of-scope, unsafe, ambiguous, gibberish, or compound command."
+advance the field rover toward the bottom on bravo lane 9,MOVE_DOWN,validation,vectorbot_validation_MOVE_DOWN_paraphrase_8,paraphrase,Executable VectorBot action paraphrase.
+restore the initial grid setup for east cell sample 3 on charlie lane 3,RESET,test,vectorbot_test_RESET_paraphrase_2,paraphrase,Executable VectorBot action paraphrase.
+turn the light on or off for bright token on bravo lane 8,TOGGLE_LIGHT,validation,vectorbot_validation_TOGGLE_LIGHT_clean_7,clean,Executable VectorBot action paraphrase.
+drive the sample sprite forward toward north on alpha lane 30,MOVE_UP,train,vectorbot_train_MOVE_UP_spatial_synonym_29,spatial_synonym,Executable VectorBot action paraphrase.
+paint the robot purple on charlie lane 18,ABSTAIN,test,vectorbot_test_ABSTAIN_abstain_out_of_scope_17,abstain_out_of_scope,"Out-of-scope, unsafe, ambiguous, gibberish, or compound command."
+zibble the hidden vector through purple syntax on alpha lane 93,ABSTAIN,train,vectorbot_train_ABSTAIN_abstain_gibberish_92,abstain_gibberish,"Out-of-scope, unsafe, ambiguous, gibberish, or compound command."
+advance the app marker sample 27 toward the top on alpha lane 27,MOVE_UP,train,vectorbot_train_MOVE_UP_paraphrase_26,paraphrase,Executable VectorBot action paraphrase.
+send the latent bot sample 8 upward on alpha lane 8,MOVE_UP,train,vectorbot_train_MOVE_UP_clean_7,clean,Executable VectorBot action paraphrase.
+send the blue marker rightward on alpha lane 2,MOVE_RIGHT,train,vectorbot_train_MOVE_RIGHT_clean_1,clean,Executable VectorBot action paraphrase.
+move the west cell up and then right on bravo lane 16,ABSTAIN,validation,vectorbot_validation_ABSTAIN_abstain_compound_15,abstain_compound,"Out-of-scope, unsafe, ambiguous, gibberish, or compound command."
+take one step south on bravo lane 7,MOVE_DOWN,validation,vectorbot_validation_MOVE_DOWN_demo_anchor_6,demo_anchor,Executable VectorBot action paraphrase.
+send the demo marker upward on alpha lane 38,MOVE_UP,train,vectorbot_train_MOVE_UP_clean_37,clean,Executable VectorBot action paraphrase.
+send the demo marker leftward on alpha lane 38,MOVE_LEFT,train,vectorbot_train_MOVE_LEFT_clean_37,clean,Executable VectorBot action paraphrase.
+qzx east cell lampward blue packet on charlie lane 3,ABSTAIN,test,vectorbot_test_ABSTAIN_abstain_gibberish_2,abstain_gibberish,"Out-of-scope, unsafe, ambiguous, gibberish, or compound command."
+send the router point downward on charlie lane 8,MOVE_DOWN,test,vectorbot_test_MOVE_DOWN_clean_7,clean,Executable VectorBot action paraphrase.
+down lamp switch charlie lane 4,MOVE_DOWN,test,vectorbot_test_MOVE_DOWN_terse_3,terse,Executable VectorBot action paraphrase.
+could you switch the light for test robot on bravo lane 5,TOGGLE_LIGHT,validation,vectorbot_validation_TOGGLE_LIGHT_polite_4,polite,Executable VectorBot action paraphrase.
+head toward the right wall with quiet bot sample 24 on alpha lane 24,MOVE_RIGHT,train,vectorbot_train_MOVE_RIGHT_spatial_synonym_23,spatial_synonym,Executable VectorBot action paraphrase.
+could you take the board reset sample 5 leftward on charlie lane 5,MOVE_LEFT,test,vectorbot_test_MOVE_LEFT_polite_4,polite,Executable VectorBot action paraphrase.
+right floor marker bravo lane 4,MOVE_RIGHT,validation,vectorbot_validation_MOVE_RIGHT_terse_3,terse,Executable VectorBot action paraphrase.
+could you take the tiny square rightward on alpha lane 41,MOVE_RIGHT,train,vectorbot_train_MOVE_RIGHT_polite_40,polite,Executable VectorBot action paraphrase.
+slide left on alpha lane 25,MOVE_LEFT,train,vectorbot_train_MOVE_LEFT_demo_anchor_24,demo_anchor,Executable VectorBot action paraphrase.
+advance the small rover toward the right edge on alpha lane 15,MOVE_RIGHT,train,vectorbot_train_MOVE_RIGHT_paraphrase_14,paraphrase,Executable VectorBot action paraphrase.
+translate a phrase about canvas tile on alpha lane 49,ABSTAIN,train,vectorbot_train_ABSTAIN_abstain_unrelated_48,abstain_unrelated,"Out-of-scope, unsafe, ambiguous, gibberish, or compound command."
+what is the weather tomorrow? on alpha lane 61,ABSTAIN,train,vectorbot_train_ABSTAIN_abstain_unrelated_60,abstain_unrelated,"Out-of-scope, unsafe, ambiguous, gibberish, or compound command."
+move the bot right on charlie lane 7,MOVE_RIGHT,test,vectorbot_test_MOVE_RIGHT_demo_anchor_6,demo_anchor,Executable VectorBot action paraphrase.
+change the beacon setting for state marker sample 42 on alpha lane 42,TOGGLE_LIGHT,train,vectorbot_train_TOGGLE_LIGHT_spatial_synonym_41,spatial_synonym,Executable VectorBot action paraphrase.
+disable security tools around probe target on alpha lane 44,ABSTAIN,train,vectorbot_train_ABSTAIN_abstain_unsafe_43,abstain_unsafe,"Out-of-scope, unsafe, ambiguous, gibberish, or compound command."
+make the VectorBot better around state marker on charlie lane 11,ABSTAIN,test,vectorbot_test_ABSTAIN_abstain_ambiguous_10,abstain_ambiguous,"Out-of-scope, unsafe, ambiguous, gibberish, or compound command."
+left test robot alpha lane 22,MOVE_LEFT,train,vectorbot_train_MOVE_LEFT_terse_21,terse,Executable VectorBot action paraphrase.
+zibble the route point through purple syntax on alpha lane 45,ABSTAIN,train,vectorbot_train_ABSTAIN_abstain_gibberish_44,abstain_gibberish,"Out-of-scope, unsafe, ambiguous, gibberish, or compound command."
+send the latent bot sample 8 downward on alpha lane 8,MOVE_DOWN,train,vectorbot_train_MOVE_DOWN_clean_7,clean,Executable VectorBot action paraphrase.
+change the beacon setting for control sample on charlie lane 6,TOGGLE_LIGHT,test,vectorbot_test_TOGGLE_LIGHT_spatial_synonym_5,spatial_synonym,Executable VectorBot action paraphrase.
+head toward the right wall with map cursor on bravo lane 6,MOVE_RIGHT,validation,vectorbot_validation_MOVE_RIGHT_spatial_synonym_5,spatial_synonym,Executable VectorBot action paraphrase.
+slide left on bravo lane 7,MOVE_LEFT,validation,vectorbot_validation_MOVE_LEFT_demo_anchor_6,demo_anchor,Executable VectorBot action paraphrase.
+advance the toy agent sample 9 toward the right edge on alpha lane 9,MOVE_RIGHT,train,vectorbot_train_MOVE_RIGHT_paraphrase_8,paraphrase,Executable VectorBot action paraphrase.
+handle the board reset somehow on charlie lane 5,ABSTAIN,test,vectorbot_test_ABSTAIN_abstain_ambiguous_4,abstain_ambiguous,"Out-of-scope, unsafe, ambiguous, gibberish, or compound command."
+delete my files after moving control dot sample 56 on alpha lane 56,ABSTAIN,train,vectorbot_train_ABSTAIN_abstain_unsafe_55,abstain_unsafe,"Out-of-scope, unsafe, ambiguous, gibberish, or compound command."
+zibble the square rover sample 57 through purple syntax on alpha lane 57,ABSTAIN,train,vectorbot_train_ABSTAIN_abstain_gibberish_56,abstain_gibberish,"Out-of-scope, unsafe, ambiguous, gibberish, or compound command."
+send the cell marker rightward on alpha lane 14,MOVE_RIGHT,train,vectorbot_train_MOVE_RIGHT_clean_13,clean,Executable VectorBot action paraphrase.
+down test robot alpha lane 22,MOVE_DOWN,train,vectorbot_train_MOVE_DOWN_terse_21,terse,Executable VectorBot action paraphrase.
+send the bright token downward on bravo lane 8,MOVE_DOWN,validation,vectorbot_validation_MOVE_DOWN_clean_7,clean,Executable VectorBot action paraphrase.
+restore the initial grid setup for floor marker on alpha lane 21,RESET,train,vectorbot_train_RESET_paraphrase_20,paraphrase,Executable VectorBot action paraphrase.
+send the field rover sample 26 leftward on alpha lane 26,MOVE_LEFT,train,vectorbot_train_MOVE_LEFT_clean_25,clean,Executable VectorBot action paraphrase.
+advance the west cell toward the bottom on alpha lane 33,MOVE_DOWN,train,vectorbot_train_MOVE_DOWN_paraphrase_32,paraphrase,Executable VectorBot action paraphrase.
+advance the west cell toward the left edge on alpha lane 33,MOVE_LEFT,train,vectorbot_train_MOVE_LEFT_paraphrase_32,paraphrase,Executable VectorBot action paraphrase.
+toggle lamp test robot alpha lane 22,TOGGLE_LIGHT,train,vectorbot_train_TOGGLE_LIGHT_terse_21,terse,Executable VectorBot action paraphrase.
+qzx bright token lampward blue packet on alpha lane 75,ABSTAIN,train,vectorbot_train_ABSTAIN_abstain_gibberish_74,abstain_gibberish,"Out-of-scope, unsafe, ambiguous, gibberish, or compound command."
+go north then south with demo marker on alpha lane 88,ABSTAIN,train,vectorbot_train_ABSTAIN_abstain_compound_87,abstain_compound,"Out-of-scope, unsafe, ambiguous, gibberish, or compound command."
+make the VectorBot better around lamp switch sample 35 on alpha lane 35,ABSTAIN,train,vectorbot_train_ABSTAIN_abstain_ambiguous_34,abstain_ambiguous,"Out-of-scope, unsafe, ambiguous, gibberish, or compound command."
+move the quiet bot below its current cell on alpha lane 24,MOVE_DOWN,train,vectorbot_train_MOVE_DOWN_spatial_synonym_23,spatial_synonym,Executable VectorBot action paraphrase.
+send the panel bot downward on bravo lane 2,MOVE_DOWN,validation,vectorbot_validation_MOVE_DOWN_clean_1,clean,Executable VectorBot action paraphrase.
+left floor marker sample 4 bravo lane 4,MOVE_LEFT,validation,vectorbot_validation_MOVE_LEFT_terse_3,terse,Executable VectorBot action paraphrase.
+send the panel bot leftward on bravo lane 2,MOVE_LEFT,validation,vectorbot_validation_MOVE_LEFT_clean_1,clean,Executable VectorBot action paraphrase.
+send the route sprite rightward on alpha lane 20,MOVE_RIGHT,train,vectorbot_train_MOVE_RIGHT_clean_19,clean,Executable VectorBot action paraphrase.
+set the board back to default for sample sprite on alpha lane 30,RESET,train,vectorbot_train_RESET_reset_29,reset,Executable VectorBot action paraphrase.
+advance the small rover toward the bottom on alpha lane 15,MOVE_DOWN,train,vectorbot_train_MOVE_DOWN_paraphrase_14,paraphrase,Executable VectorBot action paraphrase.
+set the board back to default for state marker sample 42 on alpha lane 42,RESET,train,vectorbot_train_RESET_reset_41,reset,Executable VectorBot action paraphrase.
+change the beacon setting for green marker sample 18 on alpha lane 18,TOGGLE_LIGHT,train,vectorbot_train_TOGGLE_LIGHT_spatial_synonym_17,spatial_synonym,Executable VectorBot action paraphrase.
+paint the robot purple on charlie lane 6,ABSTAIN,test,vectorbot_test_ABSTAIN_abstain_out_of_scope_5,abstain_out_of_scope,"Out-of-scope, unsafe, ambiguous, gibberish, or compound command."
+advance the visual cell sample 9 toward the bottom on charlie lane 9,MOVE_DOWN,test,vectorbot_test_MOVE_DOWN_paraphrase_8,paraphrase,Executable VectorBot action paraphrase.
+could you restore the starting state for silver icon on alpha lane 11,RESET,train,vectorbot_train_RESET_polite_10,polite,Executable VectorBot action paraphrase.
+reset the board on bravo lane 7,RESET,validation,vectorbot_validation_RESET_demo_anchor_6,demo_anchor,Executable VectorBot action paraphrase.
+zibble the west cell through purple syntax on alpha lane 33,ABSTAIN,train,vectorbot_train_ABSTAIN_abstain_gibberish_32,abstain_gibberish,"Out-of-scope, unsafe, ambiguous, gibberish, or compound command."
+toggle the lamp and reset the board for south cell on alpha lane 82,ABSTAIN,train,vectorbot_train_ABSTAIN_abstain_compound_81,abstain_compound,"Out-of-scope, unsafe, ambiguous, gibberish, or compound command."
+qzx lab robot sample 63 lampward blue packet on alpha lane 63,ABSTAIN,train,vectorbot_train_ABSTAIN_abstain_gibberish_62,abstain_gibberish,"Out-of-scope, unsafe, ambiguous, gibberish, or compound command."
+could you switch the light for lamp switch sample 35 on alpha lane 35,TOGGLE_LIGHT,train,vectorbot_train_TOGGLE_LIGHT_polite_34,polite,Executable VectorBot action paraphrase.
+handle the demo bot somehow on alpha lane 5,ABSTAIN,train,vectorbot_train_ABSTAIN_abstain_ambiguous_4,abstain_ambiguous,"Out-of-scope, unsafe, ambiguous, gibberish, or compound command."
+move up and then right on alpha lane 64,ABSTAIN,train,vectorbot_train_ABSTAIN_abstain_compound_63,abstain_compound,"Out-of-scope, unsafe, ambiguous, gibberish, or compound command."
+restore the initial grid setup for tiny robot on alpha lane 3,RESET,train,vectorbot_train_RESET_paraphrase_2,paraphrase,Executable VectorBot action paraphrase.
+go north on alpha lane 37,MOVE_UP,train,vectorbot_train_MOVE_UP_demo_anchor_36,demo_anchor,Executable VectorBot action paraphrase.
+send the route sprite sample 20 leftward on alpha lane 20,MOVE_LEFT,train,vectorbot_train_MOVE_LEFT_clean_19,clean,Executable VectorBot action paraphrase.
+switch the lamp state for cell marker on alpha lane 14,TOGGLE_LIGHT,train,vectorbot_train_TOGGLE_LIGHT_clean_13,clean,Executable VectorBot action paraphrase.
+move up and then right on charlie lane 4,ABSTAIN,test,vectorbot_test_ABSTAIN_abstain_compound_3,abstain_compound,"Out-of-scope, unsafe, ambiguous, gibberish, or compound command."
+advance the visual cell toward the top on charlie lane 9,MOVE_UP,test,vectorbot_test_MOVE_UP_paraphrase_8,paraphrase,Executable VectorBot action paraphrase.
+take one step south on charlie lane 1,MOVE_DOWN,test,vectorbot_test_MOVE_DOWN_demo_anchor_0,demo_anchor,Executable VectorBot action paraphrase.
+swap the light state around field rover sample 9 on bravo lane 9,TOGGLE_LIGHT,validation,vectorbot_validation_TOGGLE_LIGHT_paraphrase_8,paraphrase,Executable VectorBot action paraphrase.
+reset lamp switch charlie lane 4,RESET,test,vectorbot_test_RESET_terse_3,terse,Executable VectorBot action paraphrase.
+could you switch the light for map cursor on alpha lane 23,TOGGLE_LIGHT,train,vectorbot_train_TOGGLE_LIGHT_polite_22,polite,Executable VectorBot action paraphrase.
+move left and switch the light for visual cell on alpha lane 40,ABSTAIN,train,vectorbot_train_ABSTAIN_abstain_compound_39,abstain_compound,"Out-of-scope, unsafe, ambiguous, gibberish, or compound command."
+slide left on alpha lane 31,MOVE_LEFT,train,vectorbot_train_MOVE_LEFT_demo_anchor_30,demo_anchor,Executable VectorBot action paraphrase.
+swap the light state around app marker on alpha lane 27,TOGGLE_LIGHT,train,vectorbot_train_TOGGLE_LIGHT_paraphrase_26,paraphrase,Executable VectorBot action paraphrase.
+delete all files on this laptop on alpha lane 62,ABSTAIN,train,vectorbot_train_ABSTAIN_abstain_unsafe_61,abstain_unsafe,"Out-of-scope, unsafe, ambiguous, gibberish, or compound command."
+advance the router point toward the top on alpha lane 39,MOVE_UP,train,vectorbot_train_MOVE_UP_paraphrase_38,paraphrase,Executable VectorBot action paraphrase.
+set the board back to default for map cursor on bravo lane 6,RESET,validation,vectorbot_validation_RESET_reset_5,reset,Executable VectorBot action paraphrase.
+move the bot right on alpha lane 19,MOVE_RIGHT,train,vectorbot_train_MOVE_RIGHT_demo_anchor_18,demo_anchor,Executable VectorBot action paraphrase.
+swap the light state around route sprite on bravo lane 3,TOGGLE_LIGHT,validation,vectorbot_validation_TOGGLE_LIGHT_paraphrase_2,paraphrase,Executable VectorBot action paraphrase.
+advance the app marker toward the left edge on alpha lane 27,MOVE_LEFT,train,vectorbot_train_MOVE_LEFT_paraphrase_26,paraphrase,Executable VectorBot action paraphrase.
+disable security tools around quiet bot on alpha lane 74,ABSTAIN,train,vectorbot_train_ABSTAIN_abstain_unsafe_73,abstain_unsafe,"Out-of-scope, unsafe, ambiguous, gibberish, or compound command."
+left pixel bot alpha lane 28,MOVE_LEFT,train,vectorbot_train_MOVE_LEFT_terse_27,terse,Executable VectorBot action paraphrase.
+paint the robot purple on alpha lane 90,ABSTAIN,train,vectorbot_train_ABSTAIN_abstain_out_of_scope_89,abstain_out_of_scope,"Out-of-scope, unsafe, ambiguous, gibberish, or compound command."
+what is the weather tomorrow? on bravo lane 1,ABSTAIN,validation,vectorbot_validation_ABSTAIN_abstain_unrelated_0,abstain_unrelated,"Out-of-scope, unsafe, ambiguous, gibberish, or compound command."
+left grid cursor alpha lane 4,MOVE_LEFT,train,vectorbot_train_MOVE_LEFT_terse_3,terse,Executable VectorBot action paraphrase.
+paint the robot purple on alpha lane 48,ABSTAIN,train,vectorbot_train_ABSTAIN_abstain_out_of_scope_47,abstain_out_of_scope,"Out-of-scope, unsafe, ambiguous, gibberish, or compound command."
+take one step south on alpha lane 37,MOVE_DOWN,train,vectorbot_train_MOVE_DOWN_demo_anchor_36,demo_anchor,Executable VectorBot action paraphrase.
+head toward the left wall with quiet bot on alpha lane 24,MOVE_LEFT,train,vectorbot_train_MOVE_LEFT_spatial_synonym_23,spatial_synonym,Executable VectorBot action paraphrase.
+advance the visual cell toward the right edge on charlie lane 9,MOVE_RIGHT,test,vectorbot_test_MOVE_RIGHT_paraphrase_8,paraphrase,Executable VectorBot action paraphrase.
+restore the grid state for blue marker on alpha lane 2,RESET,train,vectorbot_train_RESET_clean_1,clean,Executable VectorBot action paraphrase.
+send the demo marker downward on alpha lane 38,MOVE_DOWN,train,vectorbot_train_MOVE_DOWN_clean_37,clean,Executable VectorBot action paraphrase.
+handle the app marker sample 77 somehow on alpha lane 77,ABSTAIN,train,vectorbot_train_ABSTAIN_abstain_ambiguous_76,abstain_ambiguous,"Out-of-scope, unsafe, ambiguous, gibberish, or compound command."
+swap the light state around east cell on charlie lane 3,TOGGLE_LIGHT,test,vectorbot_test_TOGGLE_LIGHT_paraphrase_2,paraphrase,Executable VectorBot action paraphrase.
+handle the tile agent somehow on alpha lane 29,ABSTAIN,train,vectorbot_train_ABSTAIN_abstain_ambiguous_28,abstain_ambiguous,"Out-of-scope, unsafe, ambiguous, gibberish, or compound command."
+advance the tiny robot toward the left edge on alpha lane 3,MOVE_LEFT,train,vectorbot_train_MOVE_LEFT_paraphrase_2,paraphrase,Executable VectorBot action paraphrase.
+right grid cursor sample 4 alpha lane 4,MOVE_RIGHT,train,vectorbot_train_MOVE_RIGHT_terse_3,terse,Executable VectorBot action paraphrase.
+could you take the map cursor rightward on alpha lane 23,MOVE_RIGHT,train,vectorbot_train_MOVE_RIGHT_polite_22,polite,Executable VectorBot action paraphrase.
+toggle the lamp on alpha lane 7,TOGGLE_LIGHT,train,vectorbot_train_TOGGLE_LIGHT_demo_anchor_6,demo_anchor,Executable VectorBot action paraphrase.
+restore the initial grid setup for router point on alpha lane 39,RESET,train,vectorbot_train_RESET_paraphrase_38,paraphrase,Executable VectorBot action paraphrase.
+paint the robot purple on bravo lane 6,ABSTAIN,validation,vectorbot_validation_ABSTAIN_abstain_out_of_scope_5,abstain_out_of_scope,"Out-of-scope, unsafe, ambiguous, gibberish, or compound command."
+recommend a lunch place for tiny robot on alpha lane 103,ABSTAIN,train,vectorbot_train_ABSTAIN_abstain_unrelated_102,abstain_unrelated,"Out-of-scope, unsafe, ambiguous, gibberish, or compound command."
+restore the grid state for south cell on alpha lane 32,RESET,train,vectorbot_train_RESET_clean_31,clean,Executable VectorBot action paraphrase.
+paint the robot purple on alpha lane 78,ABSTAIN,train,vectorbot_train_ABSTAIN_abstain_out_of_scope_77,abstain_out_of_scope,"Out-of-scope, unsafe, ambiguous, gibberish, or compound command."
+reset the board on alpha lane 13,RESET,train,vectorbot_train_RESET_demo_anchor_12,demo_anchor,Executable VectorBot action paraphrase.
+head toward the left wall with control dot on alpha lane 6,MOVE_LEFT,train,vectorbot_train_MOVE_LEFT_spatial_synonym_5,spatial_synonym,Executable VectorBot action paraphrase.
+could you restore the starting state for lamp switch on alpha lane 35,RESET,train,vectorbot_train_RESET_polite_34,polite,Executable VectorBot action paraphrase.
+send the panel bot rightward on bravo lane 2,MOVE_RIGHT,validation,vectorbot_validation_MOVE_RIGHT_clean_1,clean,Executable VectorBot action paraphrase.
+paint the robot purple on alpha lane 102,ABSTAIN,train,vectorbot_train_ABSTAIN_abstain_out_of_scope_101,abstain_out_of_scope,"Out-of-scope, unsafe, ambiguous, gibberish, or compound command."
+right visual cell alpha lane 40,MOVE_RIGHT,train,vectorbot_train_MOVE_RIGHT_terse_39,terse,Executable VectorBot action paraphrase.
+left board piece alpha lane 10,MOVE_LEFT,train,vectorbot_train_MOVE_LEFT_terse_9,terse,Executable VectorBot action paraphrase.
+toggle the lamp and reset the board for router point sample 22 on bravo lane 22,ABSTAIN,validation,vectorbot_validation_ABSTAIN_abstain_compound_21,abstain_compound,"Out-of-scope, unsafe, ambiguous, gibberish, or compound command."
+send the quiet bot home to the center on alpha lane 24,RESET,train,vectorbot_train_RESET_reset_23,reset,Executable VectorBot action paraphrase.
+qzx south cell sample 15 lampward blue packet on bravo lane 15,ABSTAIN,validation,vectorbot_validation_ABSTAIN_abstain_gibberish_14,abstain_gibberish,"Out-of-scope, unsafe, ambiguous, gibberish, or compound command."
+go north then south with latent bot on alpha lane 58,ABSTAIN,train,vectorbot_train_ABSTAIN_abstain_compound_57,abstain_compound,"Out-of-scope, unsafe, ambiguous, gibberish, or compound command."
+paint the robot purple on bravo lane 12,ABSTAIN,validation,vectorbot_validation_ABSTAIN_abstain_out_of_scope_11,abstain_out_of_scope,"Out-of-scope, unsafe, ambiguous, gibberish, or compound command."
+move up and then right on alpha lane 34,ABSTAIN,train,vectorbot_train_ABSTAIN_abstain_compound_33,abstain_compound,"Out-of-scope, unsafe, ambiguous, gibberish, or compound command."
+reset the board on alpha lane 25,RESET,train,vectorbot_train_RESET_demo_anchor_24,demo_anchor,Executable VectorBot action paraphrase.
+toggle lamp lamp switch charlie lane 4,TOGGLE_LIGHT,test,vectorbot_test_TOGGLE_LIGHT_terse_3,terse,Executable VectorBot action paraphrase.
+move the garden tile sample 46 up and then right on alpha lane 46,ABSTAIN,train,vectorbot_train_ABSTAIN_abstain_compound_45,abstain_compound,"Out-of-scope, unsafe, ambiguous, gibberish, or compound command."
+move the grid token sample 16 up and then right on alpha lane 16,ABSTAIN,train,vectorbot_train_ABSTAIN_abstain_compound_15,abstain_compound,"Out-of-scope, unsafe, ambiguous, gibberish, or compound command."
+reset the board on alpha lane 37,RESET,train,vectorbot_train_RESET_demo_anchor_36,demo_anchor,Executable VectorBot action paraphrase.
+send the west cell downward on charlie lane 2,MOVE_DOWN,test,vectorbot_test_MOVE_DOWN_clean_1,clean,Executable VectorBot action paraphrase.
+advance the visual cell toward the left edge on charlie lane 9,MOVE_LEFT,test,vectorbot_test_MOVE_LEFT_paraphrase_8,paraphrase,Executable VectorBot action paraphrase.
+could you restore the starting state for tiny square on alpha lane 41,RESET,train,vectorbot_train_RESET_polite_40,polite,Executable VectorBot action paraphrase.
+qzx small rover lampward blue packet on alpha lane 15,ABSTAIN,train,vectorbot_train_ABSTAIN_abstain_gibberish_14,abstain_gibberish,"Out-of-scope, unsafe, ambiguous, gibberish, or compound command."
+paint the robot purple,ABSTAIN,train,vectorbot_train_ABSTAIN_abstain_out_of_scope_5,abstain_out_of_scope,"Out-of-scope, unsafe, ambiguous, gibberish, or compound command."
+restore the initial grid setup for small rover on alpha lane 15,RESET,train,vectorbot_train_RESET_paraphrase_14,paraphrase,Executable VectorBot action paraphrase.
+send the south cell leftward on alpha lane 32,MOVE_LEFT,train,vectorbot_train_MOVE_LEFT_clean_31,clean,Executable VectorBot action paraphrase.
+qzx router point lampward blue packet on alpha lane 39,ABSTAIN,train,vectorbot_train_ABSTAIN_abstain_gibberish_38,abstain_gibberish,"Out-of-scope, unsafe, ambiguous, gibberish, or compound command."
+advance the east cell toward the right edge on charlie lane 3,MOVE_RIGHT,test,vectorbot_test_MOVE_RIGHT_paraphrase_2,paraphrase,Executable VectorBot action paraphrase.
+zibble the field rover sample 9 through purple syntax on bravo lane 9,ABSTAIN,validation,vectorbot_validation_ABSTAIN_abstain_gibberish_8,abstain_gibberish,"Out-of-scope, unsafe, ambiguous, gibberish, or compound command."
+paint the robot purple on alpha lane 66,ABSTAIN,train,vectorbot_train_ABSTAIN_abstain_out_of_scope_65,abstain_out_of_scope,"Out-of-scope, unsafe, ambiguous, gibberish, or compound command."
+advance the route sprite toward the left edge on bravo lane 3,MOVE_LEFT,validation,vectorbot_validation_MOVE_LEFT_paraphrase_2,paraphrase,Executable VectorBot action paraphrase.
+set the board back to default for green marker on alpha lane 18,RESET,train,vectorbot_train_RESET_reset_17,reset,Executable VectorBot action paraphrase.
+could you take the orange cursor sample 17 leftward on alpha lane 17,MOVE_LEFT,train,vectorbot_train_MOVE_LEFT_polite_16,polite,Executable VectorBot action paraphrase.
+head toward the right wall with green marker sample 18 on alpha lane 18,MOVE_RIGHT,train,vectorbot_train_MOVE_RIGHT_spatial_synonym_17,spatial_synonym,Executable VectorBot action paraphrase.
+toggle the lamp on alpha lane 19,TOGGLE_LIGHT,train,vectorbot_train_TOGGLE_LIGHT_demo_anchor_18,demo_anchor,Executable VectorBot action paraphrase.
+send the west cell rightward on charlie lane 2,MOVE_RIGHT,test,vectorbot_test_MOVE_RIGHT_clean_1,clean,Executable VectorBot action paraphrase.
+could you take the board reset downward on charlie lane 5,MOVE_DOWN,test,vectorbot_test_MOVE_DOWN_polite_4,polite,Executable VectorBot action paraphrase.
+slide left,MOVE_LEFT,train,vectorbot_train_MOVE_LEFT_demo_anchor_0,demo_anchor,Executable VectorBot action paraphrase.
+qzx app marker sample 27 lampward blue packet on alpha lane 27,ABSTAIN,train,vectorbot_train_ABSTAIN_abstain_gibberish_26,abstain_gibberish,"Out-of-scope, unsafe, ambiguous, gibberish, or compound command."
+advance the route sprite sample 3 toward the right edge on bravo lane 3,MOVE_RIGHT,validation,vectorbot_validation_MOVE_RIGHT_paraphrase_2,paraphrase,Executable VectorBot action paraphrase.
+what is the weather near lamp switch on alpha lane 85,ABSTAIN,train,vectorbot_train_ABSTAIN_abstain_unrelated_84,abstain_unrelated,"Out-of-scope, unsafe, ambiguous, gibberish, or compound command."
+move the studio tile sample 16 up and then right on charlie lane 16,ABSTAIN,test,vectorbot_test_ABSTAIN_abstain_compound_15,abstain_compound,"Out-of-scope, unsafe, ambiguous, gibberish, or compound command."
+send the latent bot leftward on alpha lane 8,MOVE_LEFT,train,vectorbot_train_MOVE_LEFT_clean_7,clean,Executable VectorBot action paraphrase.
+translate a phrase about sketch tile sample 19 on charlie lane 19,ABSTAIN,test,vectorbot_test_ABSTAIN_abstain_unrelated_18,abstain_unrelated,"Out-of-scope, unsafe, ambiguous, gibberish, or compound command."
+toggle lamp floor marker bravo lane 4,TOGGLE_LIGHT,validation,vectorbot_validation_TOGGLE_LIGHT_terse_3,terse,Executable VectorBot action paraphrase.
+make the VectorBot better around panel bot on alpha lane 119,ABSTAIN,train,vectorbot_train_ABSTAIN_abstain_ambiguous_118,abstain_ambiguous,"Out-of-scope, unsafe, ambiguous, gibberish, or compound command."
+what is the weather tomorrow? on charlie lane 1,ABSTAIN,test,vectorbot_test_ABSTAIN_abstain_unrelated_0,abstain_unrelated,"Out-of-scope, unsafe, ambiguous, gibberish, or compound command."
+go south with the map cursor on bravo lane 6,MOVE_DOWN,validation,vectorbot_validation_MOVE_DOWN_spatial_synonym_5,spatial_synonym,Executable VectorBot action paraphrase.
+qzx latent bot lampward blue packet on charlie lane 27,ABSTAIN,test,vectorbot_test_ABSTAIN_abstain_gibberish_26,abstain_gibberish,"Out-of-scope, unsafe, ambiguous, gibberish, or compound command."
+what is the weather tomorrow?,ABSTAIN,train,vectorbot_train_ABSTAIN_abstain_unrelated_0,abstain_unrelated,"Out-of-scope, unsafe, ambiguous, gibberish, or compound command."
+send the cell marker leftward on alpha lane 14,MOVE_LEFT,train,vectorbot_train_MOVE_LEFT_clean_13,clean,Executable VectorBot action paraphrase.
+recommend a lunch place for hidden vector on alpha lane 43,ABSTAIN,train,vectorbot_train_ABSTAIN_abstain_unrelated_42,abstain_unrelated,"Out-of-scope, unsafe, ambiguous, gibberish, or compound command."
+advance the route sprite sample 3 toward the top on bravo lane 3,MOVE_UP,validation,vectorbot_validation_MOVE_UP_paraphrase_2,paraphrase,Executable VectorBot action paraphrase.
+what is the weather near state marker on bravo lane 25,ABSTAIN,validation,vectorbot_validation_ABSTAIN_abstain_unrelated_24,abstain_unrelated,"Out-of-scope, unsafe, ambiguous, gibberish, or compound command."
+go south with the control dot on alpha lane 6,MOVE_DOWN,train,vectorbot_train_MOVE_DOWN_spatial_synonym_5,spatial_synonym,Executable VectorBot action paraphrase.
+switch the lamp state for panel bot on bravo lane 2,TOGGLE_LIGHT,validation,vectorbot_validation_TOGGLE_LIGHT_clean_1,clean,Executable VectorBot action paraphrase.
+send the field rover sample 26 downward on alpha lane 26,MOVE_DOWN,train,vectorbot_train_MOVE_DOWN_clean_25,clean,Executable VectorBot action paraphrase.
+swap the light state around tiny robot on alpha lane 3,TOGGLE_LIGHT,train,vectorbot_train_TOGGLE_LIGHT_paraphrase_2,paraphrase,Executable VectorBot action paraphrase.
+move the bot right on alpha lane 7,MOVE_RIGHT,train,vectorbot_train_MOVE_RIGHT_demo_anchor_6,demo_anchor,Executable VectorBot action paraphrase.
+handle the small rover somehow on alpha lane 65,ABSTAIN,train,vectorbot_train_ABSTAIN_abstain_ambiguous_64,abstain_ambiguous,"Out-of-scope, unsafe, ambiguous, gibberish, or compound command."
+left visual cell sample 40 alpha lane 40,MOVE_LEFT,train,vectorbot_train_MOVE_LEFT_terse_39,terse,Executable VectorBot action paraphrase.
+go north on alpha lane 13,MOVE_UP,train,vectorbot_train_MOVE_UP_demo_anchor_12,demo_anchor,Executable VectorBot action paraphrase.
+go north with the board reset on alpha lane 36,MOVE_UP,train,vectorbot_train_MOVE_UP_spatial_synonym_35,spatial_synonym,Executable VectorBot action paraphrase.
+could you take the tile agent upward on alpha lane 29,MOVE_UP,train,vectorbot_train_MOVE_UP_polite_28,polite,Executable VectorBot action paraphrase.
+advance the field rover toward the left edge on bravo lane 9,MOVE_LEFT,validation,vectorbot_validation_MOVE_LEFT_paraphrase_8,paraphrase,Executable VectorBot action paraphrase.
+could you take the map cursor leftward on alpha lane 23,MOVE_LEFT,train,vectorbot_train_MOVE_LEFT_polite_22,polite,Executable VectorBot action paraphrase.
+zibble the north cell through purple syntax on alpha lane 81,ABSTAIN,train,vectorbot_train_ABSTAIN_abstain_gibberish_80,abstain_gibberish,"Out-of-scope, unsafe, ambiguous, gibberish, or compound command."
+paint the robot purple on alpha lane 18,ABSTAIN,train,vectorbot_train_ABSTAIN_abstain_out_of_scope_17,abstain_out_of_scope,"Out-of-scope, unsafe, ambiguous, gibberish, or compound command."
+head toward the right wall with state marker on alpha lane 42,MOVE_RIGHT,train,vectorbot_train_MOVE_RIGHT_spatial_synonym_41,spatial_synonym,Executable VectorBot action paraphrase.
+go south with the board reset on alpha lane 36,MOVE_DOWN,train,vectorbot_train_MOVE_DOWN_spatial_synonym_35,spatial_synonym,Executable VectorBot action paraphrase.
+go north on charlie lane 1,MOVE_UP,test,vectorbot_test_MOVE_UP_demo_anchor_0,demo_anchor,Executable VectorBot action paraphrase.
+toggle the lamp,TOGGLE_LIGHT,train,vectorbot_train_TOGGLE_LIGHT_demo_anchor_0,demo_anchor,Executable VectorBot action paraphrase.
+toggle the lamp and reset the board for blue marker on alpha lane 52,ABSTAIN,train,vectorbot_train_ABSTAIN_abstain_compound_51,abstain_compound,"Out-of-scope, unsafe, ambiguous, gibberish, or compound command."
+reset the board on charlie lane 1,RESET,test,vectorbot_test_RESET_demo_anchor_0,demo_anchor,Executable VectorBot action paraphrase.
+paint the robot purple on alpha lane 108,ABSTAIN,train,vectorbot_train_ABSTAIN_abstain_out_of_scope_107,abstain_out_of_scope,"Out-of-scope, unsafe, ambiguous, gibberish, or compound command."
+send the router point leftward on charlie lane 8,MOVE_LEFT,test,vectorbot_test_MOVE_LEFT_clean_7,clean,Executable VectorBot action paraphrase.
+paint the robot purple on alpha lane 72,ABSTAIN,train,vectorbot_train_ABSTAIN_abstain_out_of_scope_71,abstain_out_of_scope,"Out-of-scope, unsafe, ambiguous, gibberish, or compound command."
+shift the state marker sample 42 to the upper cell on alpha lane 42,MOVE_UP,train,vectorbot_train_MOVE_UP_spatial_synonym_41,spatial_synonym,Executable VectorBot action paraphrase.
+delete all files on this laptop on alpha lane 122,ABSTAIN,train,vectorbot_train_ABSTAIN_abstain_unsafe_121,abstain_unsafe,"Out-of-scope, unsafe, ambiguous, gibberish, or compound command."
+zibble the panel bot through purple syntax on alpha lane 69,ABSTAIN,train,vectorbot_train_ABSTAIN_abstain_gibberish_68,abstain_gibberish,"Out-of-scope, unsafe, ambiguous, gibberish, or compound command."
+advance the app marker toward the right edge on alpha lane 27,MOVE_RIGHT,train,vectorbot_train_MOVE_RIGHT_paraphrase_26,paraphrase,Executable VectorBot action paraphrase.
+toggle the lamp on bravo lane 1,TOGGLE_LIGHT,validation,vectorbot_validation_TOGGLE_LIGHT_demo_anchor_0,demo_anchor,Executable VectorBot action paraphrase.
+restore the grid state for router point sample 8 on charlie lane 8,RESET,test,vectorbot_test_RESET_clean_7,clean,Executable VectorBot action paraphrase.
+swap the light state around small rover on alpha lane 15,TOGGLE_LIGHT,train,vectorbot_train_TOGGLE_LIGHT_paraphrase_14,paraphrase,Executable VectorBot action paraphrase.
+paint the robot purple on alpha lane 96,ABSTAIN,train,vectorbot_train_ABSTAIN_abstain_out_of_scope_95,abstain_out_of_scope,"Out-of-scope, unsafe, ambiguous, gibberish, or compound command."
+could you take the demo bot upward on alpha lane 5,MOVE_UP,train,vectorbot_train_MOVE_UP_polite_4,polite,Executable VectorBot action paraphrase.
+could you switch the light for orange cursor sample 17 on alpha lane 17,TOGGLE_LIGHT,train,vectorbot_train_TOGGLE_LIGHT_polite_16,polite,Executable VectorBot action paraphrase.
+make the VectorBot better around pixel bot on bravo lane 11,ABSTAIN,validation,vectorbot_validation_ABSTAIN_abstain_ambiguous_10,abstain_ambiguous,"Out-of-scope, unsafe, ambiguous, gibberish, or compound command."
+could you take the tiny square sample 41 downward on alpha lane 41,MOVE_DOWN,train,vectorbot_train_MOVE_DOWN_polite_40,polite,Executable VectorBot action paraphrase.
+could you take the test robot rightward on bravo lane 5,MOVE_RIGHT,validation,vectorbot_validation_MOVE_RIGHT_polite_4,polite,Executable VectorBot action paraphrase.
+qzx silver icon lampward blue packet on alpha lane 111,ABSTAIN,train,vectorbot_train_ABSTAIN_abstain_gibberish_110,abstain_gibberish,"Out-of-scope, unsafe, ambiguous, gibberish, or compound command."
+right east cell alpha lane 34,MOVE_RIGHT,train,vectorbot_train_MOVE_RIGHT_terse_33,terse,Executable VectorBot action paraphrase.
+move the control dot sample 106 up and then right on alpha lane 106,ABSTAIN,train,vectorbot_train_ABSTAIN_abstain_compound_105,abstain_compound,"Out-of-scope, unsafe, ambiguous, gibberish, or compound command."
+slide left on charlie lane 1,MOVE_LEFT,test,vectorbot_test_MOVE_LEFT_demo_anchor_0,demo_anchor,Executable VectorBot action paraphrase.
+advance the router point toward the bottom on alpha lane 39,MOVE_DOWN,train,vectorbot_train_MOVE_DOWN_paraphrase_38,paraphrase,Executable VectorBot action paraphrase.
+switch the lamp state for west cell on charlie lane 2,TOGGLE_LIGHT,test,vectorbot_test_TOGGLE_LIGHT_clean_1,clean,Executable VectorBot action paraphrase.
+head toward the right wall with board reset on alpha lane 36,MOVE_RIGHT,train,vectorbot_train_MOVE_RIGHT_spatial_synonym_35,spatial_synonym,Executable VectorBot action paraphrase.
+send the blue marker downward on alpha lane 2,MOVE_DOWN,train,vectorbot_train_MOVE_DOWN_clean_1,clean,Executable VectorBot action paraphrase.
+go north with the map cursor on bravo lane 6,MOVE_UP,validation,vectorbot_validation_MOVE_UP_spatial_synonym_5,spatial_synonym,Executable VectorBot action paraphrase.
+advance the west cell toward the top on alpha lane 33,MOVE_UP,train,vectorbot_train_MOVE_UP_paraphrase_32,paraphrase,Executable VectorBot action paraphrase.
+toggle lamp pixel bot alpha lane 28,TOGGLE_LIGHT,train,vectorbot_train_TOGGLE_LIGHT_terse_27,terse,Executable VectorBot action paraphrase.
+reset pixel bot alpha lane 28,RESET,train,vectorbot_train_RESET_terse_27,terse,Executable VectorBot action paraphrase.
+advance the floor marker toward the right edge on alpha lane 21,MOVE_RIGHT,train,vectorbot_train_MOVE_RIGHT_paraphrase_20,paraphrase,Executable VectorBot action paraphrase.
+run a shell command for bright token on bravo lane 8,ABSTAIN,validation,vectorbot_validation_ABSTAIN_abstain_unsafe_7,abstain_unsafe,"Out-of-scope, unsafe, ambiguous, gibberish, or compound command."
+up pixel bot sample 28 alpha lane 28,MOVE_UP,train,vectorbot_train_MOVE_UP_terse_27,terse,Executable VectorBot action paraphrase.
+toggle the lamp and reset the board for vector sprite on alpha lane 112,ABSTAIN,train,vectorbot_train_ABSTAIN_abstain_compound_111,abstain_compound,"Out-of-scope, unsafe, ambiguous, gibberish, or compound command."
+advance the field rover sample 9 toward the right edge on bravo lane 9,MOVE_RIGHT,validation,vectorbot_validation_MOVE_RIGHT_paraphrase_8,paraphrase,Executable VectorBot action paraphrase.
+swap the light state around floor marker on alpha lane 21,TOGGLE_LIGHT,train,vectorbot_train_TOGGLE_LIGHT_paraphrase_20,paraphrase,Executable VectorBot action paraphrase.
+translate a phrase about panel bot on alpha lane 19,ABSTAIN,train,vectorbot_train_ABSTAIN_abstain_unrelated_18,abstain_unrelated,"Out-of-scope, unsafe, ambiguous, gibberish, or compound command."
+toggle the lamp on bravo lane 7,TOGGLE_LIGHT,validation,vectorbot_validation_TOGGLE_LIGHT_demo_anchor_6,demo_anchor,Executable VectorBot action paraphrase.
+slide left on bravo lane 1,MOVE_LEFT,validation,vectorbot_validation_MOVE_LEFT_demo_anchor_0,demo_anchor,Executable VectorBot action paraphrase.
+delete all files on this laptop on alpha lane 32,ABSTAIN,train,vectorbot_train_ABSTAIN_abstain_unsafe_31,abstain_unsafe,"Out-of-scope, unsafe, ambiguous, gibberish, or compound command."
+translate a phrase about toy agent on alpha lane 109,ABSTAIN,train,vectorbot_train_ABSTAIN_abstain_unrelated_108,abstain_unrelated,"Out-of-scope, unsafe, ambiguous, gibberish, or compound command."
+slide left on alpha lane 19,MOVE_LEFT,train,vectorbot_train_MOVE_LEFT_demo_anchor_18,demo_anchor,Executable VectorBot action paraphrase.
+advance the tiny robot toward the bottom on alpha lane 3,MOVE_DOWN,train,vectorbot_train_MOVE_DOWN_paraphrase_2,paraphrase,Executable VectorBot action paraphrase.
+left grid token alpha lane 16,MOVE_LEFT,train,vectorbot_train_MOVE_LEFT_terse_15,terse,Executable VectorBot action paraphrase.
+advance the toy agent toward the left edge on alpha lane 9,MOVE_LEFT,train,vectorbot_train_MOVE_LEFT_paraphrase_8,paraphrase,Executable VectorBot action paraphrase.
+paint the robot purple on charlie lane 12,ABSTAIN,test,vectorbot_test_ABSTAIN_abstain_out_of_scope_11,abstain_out_of_scope,"Out-of-scope, unsafe, ambiguous, gibberish, or compound command."
+advance the toy agent toward the top on alpha lane 9,MOVE_UP,train,vectorbot_train_MOVE_UP_paraphrase_8,paraphrase,Executable VectorBot action paraphrase.
+restore the initial grid setup for app marker on alpha lane 27,RESET,train,vectorbot_train_RESET_paraphrase_26,paraphrase,Executable VectorBot action paraphrase.
+restore the initial grid setup for route sprite on bravo lane 3,RESET,validation,vectorbot_validation_RESET_paraphrase_2,paraphrase,Executable VectorBot action paraphrase.
+could you take the demo bot downward on alpha lane 5,MOVE_DOWN,train,vectorbot_train_MOVE_DOWN_polite_4,polite,Executable VectorBot action paraphrase.
+reset the board,RESET,train,vectorbot_train_RESET_demo_anchor_0,demo_anchor,Executable VectorBot action paraphrase.
+advance the small rover toward the top on alpha lane 15,MOVE_UP,train,vectorbot_train_MOVE_UP_paraphrase_14,paraphrase,Executable VectorBot action paraphrase.
+slide left on alpha lane 37,MOVE_LEFT,train,vectorbot_train_MOVE_LEFT_demo_anchor_36,demo_anchor,Executable VectorBot action paraphrase.
+could you take the tiny square upward on alpha lane 41,MOVE_UP,train,vectorbot_train_MOVE_UP_polite_40,polite,Executable VectorBot action paraphrase.
+send private tokens for route sprite on alpha lane 20,ABSTAIN,train,vectorbot_train_ABSTAIN_abstain_unsafe_19,abstain_unsafe,"Out-of-scope, unsafe, ambiguous, gibberish, or compound command."
+make the VectorBot better around visual cell on bravo lane 23,ABSTAIN,validation,vectorbot_validation_ABSTAIN_abstain_ambiguous_22,abstain_ambiguous,"Out-of-scope, unsafe, ambiguous, gibberish, or compound command."
+delete all files on this laptop on alpha lane 92,ABSTAIN,train,vectorbot_train_ABSTAIN_abstain_unsafe_91,abstain_unsafe,"Out-of-scope, unsafe, ambiguous, gibberish, or compound command."
+move the bot right on alpha lane 37,MOVE_RIGHT,train,vectorbot_train_MOVE_RIGHT_demo_anchor_36,demo_anchor,Executable VectorBot action paraphrase.
+send private tokens for sketch tile on alpha lane 50,ABSTAIN,train,vectorbot_train_ABSTAIN_abstain_unsafe_49,abstain_unsafe,"Out-of-scope, unsafe, ambiguous, gibberish, or compound command."
+toggle lamp visual cell alpha lane 40,TOGGLE_LIGHT,train,vectorbot_train_TOGGLE_LIGHT_terse_39,terse,Executable VectorBot action paraphrase.
+what is the weather tomorrow? on alpha lane 121,ABSTAIN,train,vectorbot_train_ABSTAIN_abstain_unrelated_120,abstain_unrelated,"Out-of-scope, unsafe, ambiguous, gibberish, or compound command."
+zibble the orange cursor through purple syntax on alpha lane 117,ABSTAIN,train,vectorbot_train_ABSTAIN_abstain_gibberish_116,abstain_gibberish,"Out-of-scope, unsafe, ambiguous, gibberish, or compound command."
+restore the grid state for demo marker on alpha lane 38,RESET,train,vectorbot_train_RESET_clean_37,clean,Executable VectorBot action paraphrase.
+head toward the right wall with control sample on charlie lane 6,MOVE_RIGHT,test,vectorbot_test_MOVE_RIGHT_spatial_synonym_5,spatial_synonym,Executable VectorBot action paraphrase.
+right pixel bot sample 28 alpha lane 28,MOVE_RIGHT,train,vectorbot_train_MOVE_RIGHT_terse_27,terse,Executable VectorBot action paraphrase.
+advance the west cell toward the right edge on alpha lane 33,MOVE_RIGHT,train,vectorbot_train_MOVE_RIGHT_paraphrase_32,paraphrase,Executable VectorBot action paraphrase.
+could you switch the light for board reset on charlie lane 5,TOGGLE_LIGHT,test,vectorbot_test_TOGGLE_LIGHT_polite_4,polite,Executable VectorBot action paraphrase.
+send private tokens for control sample sample 20 on bravo lane 20,ABSTAIN,validation,vectorbot_validation_ABSTAIN_abstain_unsafe_19,abstain_unsafe,"Out-of-scope, unsafe, ambiguous, gibberish, or compound command."
+turn the lamp on or off for vector sprite on alpha lane 12,TOGGLE_LIGHT,train,vectorbot_train_TOGGLE_LIGHT_spatial_synonym_11,spatial_synonym,Executable VectorBot action paraphrase.
+send private tokens for center bot on charlie lane 20,ABSTAIN,test,vectorbot_test_ABSTAIN_abstain_unsafe_19,abstain_unsafe,"Out-of-scope, unsafe, ambiguous, gibberish, or compound command."
+zibble the demo marker through purple syntax on bravo lane 21,ABSTAIN,validation,vectorbot_validation_ABSTAIN_abstain_gibberish_20,abstain_gibberish,"Out-of-scope, unsafe, ambiguous, gibberish, or compound command."
+reset grid cursor alpha lane 4,RESET,train,vectorbot_train_RESET_terse_3,terse,Executable VectorBot action paraphrase.
+restore the initial grid setup for field rover on bravo lane 9,RESET,validation,vectorbot_validation_RESET_paraphrase_8,paraphrase,Executable VectorBot action paraphrase.
+change the beacon setting for sample sprite sample 30 on alpha lane 30,TOGGLE_LIGHT,train,vectorbot_train_TOGGLE_LIGHT_spatial_synonym_29,spatial_synonym,Executable VectorBot action paraphrase.
+handle the east cell sample 17 somehow on bravo lane 17,ABSTAIN,validation,vectorbot_validation_ABSTAIN_abstain_ambiguous_16,abstain_ambiguous,"Out-of-scope, unsafe, ambiguous, gibberish, or compound command."
+right test robot alpha lane 22,MOVE_RIGHT,train,vectorbot_train_MOVE_RIGHT_terse_21,terse,Executable VectorBot action paraphrase.
+head toward the left wall with state marker on alpha lane 42,MOVE_LEFT,train,vectorbot_train_MOVE_LEFT_spatial_synonym_41,spatial_synonym,Executable VectorBot action paraphrase.
+send the panel bot upward on bravo lane 2,MOVE_UP,validation,vectorbot_validation_MOVE_UP_clean_1,clean,Executable VectorBot action paraphrase.
+send the demo marker rightward on alpha lane 38,MOVE_RIGHT,train,vectorbot_train_MOVE_RIGHT_clean_37,clean,Executable VectorBot action paraphrase.
+paint the robot purple on alpha lane 42,ABSTAIN,train,vectorbot_train_ABSTAIN_abstain_out_of_scope_41,abstain_out_of_scope,"Out-of-scope, unsafe, ambiguous, gibberish, or compound command."
+could you take the silver icon rightward on alpha lane 11,MOVE_RIGHT,train,vectorbot_train_MOVE_RIGHT_polite_10,polite,Executable VectorBot action paraphrase.
+reset board piece alpha lane 10,RESET,train,vectorbot_train_RESET_terse_9,terse,Executable VectorBot action paraphrase.
+turn the light on or off for route sprite on alpha lane 20,TOGGLE_LIGHT,train,vectorbot_train_TOGGLE_LIGHT_clean_19,clean,Executable VectorBot action paraphrase.
+down floor marker bravo lane 4,MOVE_DOWN,validation,vectorbot_validation_MOVE_DOWN_terse_3,terse,Executable VectorBot action paraphrase.
+advance the east cell toward the top on charlie lane 3,MOVE_UP,test,vectorbot_test_MOVE_UP_paraphrase_2,paraphrase,Executable VectorBot action paraphrase.
+paint the robot purple on alpha lane 30,ABSTAIN,train,vectorbot_train_ABSTAIN_abstain_out_of_scope_29,abstain_out_of_scope,"Out-of-scope, unsafe, ambiguous, gibberish, or compound command."
+send the blue marker sample 2 upward on alpha lane 2,MOVE_UP,train,vectorbot_train_MOVE_UP_clean_1,clean,Executable VectorBot action paraphrase.
+qzx route sprite lampward blue packet on bravo lane 3,ABSTAIN,validation,vectorbot_validation_ABSTAIN_abstain_gibberish_2,abstain_gibberish,"Out-of-scope, unsafe, ambiguous, gibberish, or compound command."
+restore the initial grid setup for visual cell on charlie lane 9,RESET,test,vectorbot_test_RESET_paraphrase_8,paraphrase,Executable VectorBot action paraphrase.
+send the bright token upward on bravo lane 8,MOVE_UP,validation,vectorbot_validation_MOVE_UP_clean_7,clean,Executable VectorBot action paraphrase.
+paint the robot purple on alpha lane 60,ABSTAIN,train,vectorbot_train_ABSTAIN_abstain_out_of_scope_59,abstain_out_of_scope,"Out-of-scope, unsafe, ambiguous, gibberish, or compound command."
+advance the floor marker toward the bottom on alpha lane 21,MOVE_DOWN,train,vectorbot_train_MOVE_DOWN_paraphrase_20,paraphrase,Executable VectorBot action paraphrase.
+send the field rover sample 26 rightward on alpha lane 26,MOVE_RIGHT,train,vectorbot_train_MOVE_RIGHT_clean_25,clean,Executable VectorBot action paraphrase.
+could you take the lamp switch upward on alpha lane 35,MOVE_UP,train,vectorbot_train_MOVE_UP_polite_34,polite,Executable VectorBot action paraphrase.
+make the VectorBot better around floor marker sample 71 on alpha lane 71,ABSTAIN,train,vectorbot_train_ABSTAIN_abstain_ambiguous_70,abstain_ambiguous,"Out-of-scope, unsafe, ambiguous, gibberish, or compound command."
+turn the lamp on or off for quiet bot sample 24 on alpha lane 24,TOGGLE_LIGHT,train,vectorbot_train_TOGGLE_LIGHT_spatial_synonym_23,spatial_synonym,Executable VectorBot action paraphrase.
+run a shell command for green marker sample 68 on alpha lane 68,ABSTAIN,train,vectorbot_train_ABSTAIN_abstain_unsafe_67,abstain_unsafe,"Out-of-scope, unsafe, ambiguous, gibberish, or compound command."
+make the VectorBot better around route point sample 95 on alpha lane 95,ABSTAIN,train,vectorbot_train_ABSTAIN_abstain_ambiguous_94,abstain_ambiguous,"Out-of-scope, unsafe, ambiguous, gibberish, or compound command."
+paint the robot purple on alpha lane 84,ABSTAIN,train,vectorbot_train_ABSTAIN_abstain_out_of_scope_83,abstain_out_of_scope,"Out-of-scope, unsafe, ambiguous, gibberish, or compound command."
+write a haiku about square rover on alpha lane 7,ABSTAIN,train,vectorbot_train_ABSTAIN_abstain_unrelated_6,abstain_unrelated,"Out-of-scope, unsafe, ambiguous, gibberish, or compound command."
+send the south cell downward on alpha lane 32,MOVE_DOWN,train,vectorbot_train_MOVE_DOWN_clean_31,clean,Executable VectorBot action paraphrase.
+reset visual cell alpha lane 40,RESET,train,vectorbot_train_RESET_terse_39,terse,Executable VectorBot action paraphrase.
+zibble the visual cell through purple syntax on charlie lane 9,ABSTAIN,test,vectorbot_test_ABSTAIN_abstain_gibberish_8,abstain_gibberish,"Out-of-scope, unsafe, ambiguous, gibberish, or compound command."
+send the west cell upward on charlie lane 2,MOVE_UP,test,vectorbot_test_MOVE_UP_clean_1,clean,Executable VectorBot action paraphrase.
+reset floor marker bravo lane 4,RESET,validation,vectorbot_validation_RESET_terse_3,terse,Executable VectorBot action paraphrase.
+toggle the lamp on alpha lane 25,TOGGLE_LIGHT,train,vectorbot_train_TOGGLE_LIGHT_demo_anchor_24,demo_anchor,Executable VectorBot action paraphrase.
+switch the lamp state for blue marker on alpha lane 2,TOGGLE_LIGHT,train,vectorbot_train_TOGGLE_LIGHT_clean_1,clean,Executable VectorBot action paraphrase.
+send the cell marker sample 14 upward on alpha lane 14,MOVE_UP,train,vectorbot_train_MOVE_UP_clean_13,clean,Executable VectorBot action paraphrase.
+reset grid token alpha lane 16,RESET,train,vectorbot_train_RESET_terse_15,terse,Executable VectorBot action paraphrase.
+could you take the tile agent sample 29 downward on alpha lane 29,MOVE_DOWN,train,vectorbot_train_MOVE_DOWN_polite_28,polite,Executable VectorBot action paraphrase.
+go north then south with pixel bot on alpha lane 28,ABSTAIN,train,vectorbot_train_ABSTAIN_abstain_compound_27,abstain_compound,"Out-of-scope, unsafe, ambiguous, gibberish, or compound command."
+toggle lamp east cell alpha lane 34,TOGGLE_LIGHT,train,vectorbot_train_TOGGLE_LIGHT_terse_33,terse,Executable VectorBot action paraphrase.
+could you take the test robot sample 5 leftward on bravo lane 5,MOVE_LEFT,validation,vectorbot_validation_MOVE_LEFT_polite_4,polite,Executable VectorBot action paraphrase.
+could you restore the starting state for tile agent on alpha lane 29,RESET,train,vectorbot_train_RESET_polite_28,polite,Executable VectorBot action paraphrase.
+make the VectorBot better around grid cursor on charlie lane 23,ABSTAIN,test,vectorbot_test_ABSTAIN_abstain_ambiguous_22,abstain_ambiguous,"Out-of-scope, unsafe, ambiguous, gibberish, or compound command."
+advance the small rover sample 15 toward the left edge on alpha lane 15,MOVE_LEFT,train,vectorbot_train_MOVE_LEFT_paraphrase_14,paraphrase,Executable VectorBot action paraphrase.
+reset the board on alpha lane 7,RESET,train,vectorbot_train_RESET_demo_anchor_6,demo_anchor,Executable VectorBot action paraphrase.
+handle the bright token somehow on alpha lane 125,ABSTAIN,train,vectorbot_train_ABSTAIN_abstain_ambiguous_124,abstain_ambiguous,"Out-of-scope, unsafe, ambiguous, gibberish, or compound command."
+disable security tools around route point on charlie lane 14,ABSTAIN,test,vectorbot_test_ABSTAIN_abstain_unsafe_13,abstain_unsafe,"Out-of-scope, unsafe, ambiguous, gibberish, or compound command."
+restore the grid state for route sprite on alpha lane 20,RESET,train,vectorbot_train_RESET_clean_19,clean,Executable VectorBot action paraphrase.
+toggle lamp grid cursor alpha lane 4,TOGGLE_LIGHT,train,vectorbot_train_TOGGLE_LIGHT_terse_3,terse,Executable VectorBot action paraphrase.
+up lamp switch charlie lane 4,MOVE_UP,test,vectorbot_test_MOVE_UP_terse_3,terse,Executable VectorBot action paraphrase.
+move up and then right,ABSTAIN,train,vectorbot_train_ABSTAIN_abstain_compound_3,abstain_compound,"Out-of-scope, unsafe, ambiguous, gibberish, or compound command."
+advance the field rover toward the top on bravo lane 9,MOVE_UP,validation,vectorbot_validation_MOVE_UP_paraphrase_8,paraphrase,Executable VectorBot action paraphrase.
+translate a phrase about board reset on bravo lane 19,ABSTAIN,validation,vectorbot_validation_ABSTAIN_abstain_unrelated_18,abstain_unrelated,"Out-of-scope, unsafe, ambiguous, gibberish, or compound command."
+left lamp switch charlie lane 4,MOVE_LEFT,test,vectorbot_test_MOVE_LEFT_terse_3,terse,Executable VectorBot action paraphrase.
+delete my files after moving board reset on alpha lane 86,ABSTAIN,train,vectorbot_train_ABSTAIN_abstain_unsafe_85,abstain_unsafe,"Out-of-scope, unsafe, ambiguous, gibberish, or compound command."
+right board piece alpha lane 10,MOVE_RIGHT,train,vectorbot_train_MOVE_RIGHT_terse_9,terse,Executable VectorBot action paraphrase.
+delete my files after moving square rover on charlie lane 26,ABSTAIN,test,vectorbot_test_ABSTAIN_abstain_unsafe_25,abstain_unsafe,"Out-of-scope, unsafe, ambiguous, gibberish, or compound command."
+disable security tools around grid cursor on alpha lane 104,ABSTAIN,train,vectorbot_train_ABSTAIN_abstain_unsafe_103,abstain_unsafe,"Out-of-scope, unsafe, ambiguous, gibberish, or compound command."
+send the latent bot sample 8 rightward on alpha lane 8,MOVE_RIGHT,train,vectorbot_train_MOVE_RIGHT_clean_7,clean,Executable VectorBot action paraphrase.
+delete my files after moving grid token on alpha lane 116,ABSTAIN,train,vectorbot_train_ABSTAIN_abstain_unsafe_115,abstain_unsafe,"Out-of-scope, unsafe, ambiguous, gibberish, or compound command."
+send the bright token sample 8 leftward on bravo lane 8,MOVE_LEFT,validation,vectorbot_validation_MOVE_LEFT_clean_7,clean,Executable VectorBot action paraphrase.
+delete my files after moving hidden vector sample 26 on bravo lane 26,ABSTAIN,validation,vectorbot_validation_ABSTAIN_abstain_unsafe_25,abstain_unsafe,"Out-of-scope, unsafe, ambiguous, gibberish, or compound command."
+send the router point sample 8 upward on charlie lane 8,MOVE_UP,test,vectorbot_test_MOVE_UP_clean_7,clean,Executable VectorBot action paraphrase.
+what is the weather near small rover on alpha lane 115,ABSTAIN,train,vectorbot_train_ABSTAIN_abstain_unrelated_114,abstain_unrelated,"Out-of-scope, unsafe, ambiguous, gibberish, or compound command."
+toggle the lamp on alpha lane 13,TOGGLE_LIGHT,train,vectorbot_train_TOGGLE_LIGHT_demo_anchor_12,demo_anchor,Executable VectorBot action paraphrase.
+up test robot alpha lane 22,MOVE_UP,train,vectorbot_train_MOVE_UP_terse_21,terse,Executable VectorBot action paraphrase.
+restore the grid state for cell marker sample 14 on alpha lane 14,RESET,train,vectorbot_train_RESET_clean_13,clean,Executable VectorBot action paraphrase.
+move left and switch the light for sketch tile on alpha lane 100,ABSTAIN,train,vectorbot_train_ABSTAIN_abstain_compound_99,abstain_compound,"Out-of-scope, unsafe, ambiguous, gibberish, or compound command."
+could you take the tiny square sample 41 leftward on alpha lane 41,MOVE_LEFT,train,vectorbot_train_MOVE_LEFT_polite_40,polite,Executable VectorBot action paraphrase.
+toggle the lamp on alpha lane 37,TOGGLE_LIGHT,train,vectorbot_train_TOGGLE_LIGHT_demo_anchor_36,demo_anchor,Executable VectorBot action paraphrase.
+head toward the right wall with vector sprite on alpha lane 12,MOVE_RIGHT,train,vectorbot_train_MOVE_RIGHT_spatial_synonym_11,spatial_synonym,Executable VectorBot action paraphrase.
+delete my files after moving field rover on alpha lane 26,ABSTAIN,train,vectorbot_train_ABSTAIN_abstain_unsafe_25,abstain_unsafe,"Out-of-scope, unsafe, ambiguous, gibberish, or compound command."
+paint the robot purple on alpha lane 54,ABSTAIN,train,vectorbot_train_ABSTAIN_abstain_out_of_scope_53,abstain_out_of_scope,"Out-of-scope, unsafe, ambiguous, gibberish, or compound command."
+write a haiku about quiet bot sample 7 on bravo lane 7,ABSTAIN,validation,vectorbot_validation_ABSTAIN_abstain_unrelated_6,abstain_unrelated,"Out-of-scope, unsafe, ambiguous, gibberish, or compound command."
+restore the grid state for panel bot sample 2 on bravo lane 2,RESET,validation,vectorbot_validation_RESET_clean_1,clean,Executable VectorBot action paraphrase.
+restore the initial grid setup for toy agent on alpha lane 9,RESET,train,vectorbot_train_RESET_paraphrase_8,paraphrase,Executable VectorBot action paraphrase.
+could you take the silver icon leftward on alpha lane 11,MOVE_LEFT,train,vectorbot_train_MOVE_LEFT_polite_10,polite,Executable VectorBot action paraphrase.
+down visual cell alpha lane 40,MOVE_DOWN,train,vectorbot_train_MOVE_DOWN_terse_39,terse,Executable VectorBot action paraphrase.
+recommend a lunch place for lab robot on alpha lane 13,ABSTAIN,train,vectorbot_train_ABSTAIN_abstain_unrelated_12,abstain_unrelated,"Out-of-scope, unsafe, ambiguous, gibberish, or compound command."
+down pixel bot alpha lane 28,MOVE_DOWN,train,vectorbot_train_MOVE_DOWN_terse_27,terse,Executable VectorBot action paraphrase.
+qzx canvas tile lampward blue packet on alpha lane 99,ABSTAIN,train,vectorbot_train_ABSTAIN_abstain_gibberish_98,abstain_gibberish,"Out-of-scope, unsafe, ambiguous, gibberish, or compound command."
+reset the board on alpha lane 31,RESET,train,vectorbot_train_RESET_demo_anchor_30,demo_anchor,Executable VectorBot action paraphrase.
+could you take the lamp switch rightward on alpha lane 35,MOVE_RIGHT,train,vectorbot_train_MOVE_RIGHT_polite_34,polite,Executable VectorBot action paraphrase.
+make the VectorBot better around square rover sample 107 on alpha lane 107,ABSTAIN,train,vectorbot_train_ABSTAIN_abstain_ambiguous_106,abstain_ambiguous,"Out-of-scope, unsafe, ambiguous, gibberish, or compound command."
+send the blue marker leftward on alpha lane 2,MOVE_LEFT,train,vectorbot_train_MOVE_LEFT_clean_1,clean,Executable VectorBot action paraphrase.
+advance the floor marker toward the top on alpha lane 21,MOVE_UP,train,vectorbot_train_MOVE_UP_paraphrase_20,paraphrase,Executable VectorBot action paraphrase.
+shift the vector sprite to the lower cell on alpha lane 12,MOVE_DOWN,train,vectorbot_train_MOVE_DOWN_spatial_synonym_11,spatial_synonym,Executable VectorBot action paraphrase.
+could you take the test robot sample 5 downward on bravo lane 5,MOVE_DOWN,validation,vectorbot_validation_MOVE_DOWN_polite_4,polite,Executable VectorBot action paraphrase.
+toggle the lamp on alpha lane 31,TOGGLE_LIGHT,train,vectorbot_train_TOGGLE_LIGHT_demo_anchor_30,demo_anchor,Executable VectorBot action paraphrase.
+move the field rover sample 76 up and then right on alpha lane 76,ABSTAIN,train,vectorbot_train_ABSTAIN_abstain_compound_75,abstain_compound,"Out-of-scope, unsafe, ambiguous, gibberish, or compound command."
+take one step south on bravo lane 1,MOVE_DOWN,validation,vectorbot_validation_MOVE_DOWN_demo_anchor_0,demo_anchor,Executable VectorBot action paraphrase.

@@ -5,11 +5,14 @@ from pathlib import Path
 
 CORE_MODULES = (
     Path("neural_native/app"),
+    Path("neural_native/vectorbot"),
     Path("neural_native/bridge"),
     Path("neural_native/llm"),
     Path("neural_native/cli.py"),
     Path("scripts/extract_features.py"),
+    Path("scripts/extract_vectorbot_features.py"),
     Path("scripts/run_scripted_demo.py"),
+    Path("scripts/run_vectorbot_demo.py"),
 )
 
 
@@ -48,6 +51,7 @@ def test_core_router_does_not_use_keyword_or_regex_text_parser() -> None:
     repo_root = Path(__file__).resolve().parents[1]
     core_files = [
         repo_root / "neural_native" / "app" / "vector_port.py",
+        repo_root / "neural_native" / "vectorbot" / "vector_port.py",
         repo_root / "neural_native" / "bridge" / "router.py",
     ]
 

@@ -1,83 +1,45 @@
 # Interview Talk Track
 
-## 30-Second Explanation
+## 30-second version
 
-I built a prototype that routes natural-language requests into a small task app
-without asking the LLM to generate commands. It runs a frozen Hugging Face causal
-LM in a forward pass, captures the pre-`lm_head` hidden state with a PyTorch
-hook, feeds that vector into a linear probe, and executes only typed enum
-actions in a sandboxed state machine.
+Tiny Latent Control Lab asks whether software can consume a transformer's hidden
+state directly instead of waiting for generated tool text. `distilgpt2` reads a
+command, a hook captures the pre-lm-head vector, and a linear probe routes that
+vector to a typed VectorBot action. The app is a small grid-world so the whole
+path is visual, bounded, and auditable.
 
-## 2-Minute Explanation
+## What is unusual
 
-Most agent stacks generate JSON or tool-call text and then parse it. I wanted to
-test a different interface: can software react directly to latent model states?
-The repo implements a bounded task controller with five actions and `ABSTAIN`.
-The runtime path is `text -> tokenizer -> frozen LM -> hook -> vector -> probe
--> OOD gate -> Action enum -> TaskFlowKernel`. I verified it locally with
-`distilgpt2`, then hardened the evaluation after discovering the first dataset
-was too template-leaky. The final package includes a cleaner V2 dataset, prompt
-augmentation, calibrated OOD gates, TF-IDF baselines, model comparison, and
-Colab instructions for Gemma.
+Most LLM app demos rely on generated JSON, tool-call text, or command strings.
+This one routes from activations:
 
-## Architecture Walkthrough
+```text
+text -> frozen forward pass -> hidden vector -> probe -> gate -> enum action
+```
 
-1. Tokenize the user request with a fixed router prompt.
-2. Run a frozen causal LM forward pass.
-3. Hook the tensor entering `lm_head`.
-4. Select the final-token hidden vector.
-5. Classify with a lightweight linear probe.
-6. Apply confidence/OOD gates.
-7. Execute only a typed enum action through `TaskFlowKernel`.
+The strongest claim is the software boundary, not benchmark dominance.
 
-## Why No Generation?
+## What to show
 
-Generation introduces a text protocol: the model emits JSON, code, SQL, or tool
-calls, and the app has to parse them. This project tests whether a vector-facing
-boundary can avoid that text-command layer for a bounded action space.
+1. README composite image.
+2. `docs/VECTORBOT_DEMO_TRANSCRIPT.md`.
+3. `neural_native/vectorbot/vector_port.py`, which receives a vector and does
+   not parse raw text for actions.
+4. `tests/test_no_generate_guard.py`, which scans the core path for
+   `model.generate()`.
 
-## Why Hooks?
+## Results line
 
-Hooks make the feature boundary explicit. The app never needs logits or sampled
-tokens; it needs the hidden representation immediately before unembedding.
+On the full CPU run, `distilgpt2` produced `(540, 768)` features with 0.793 test
+accuracy, 0.698 macro F1, and 0.964 / 0.964 ABSTAIN precision/recall.
 
-## Why Linear Probes?
+## TF-IDF question
 
-A linear probe is intentionally simple. If action labels are separable with a
-small projection layer, the experiment is easier to inspect and harder to
-overclaim than a large fine-tuned classifier.
-
-## Why Interesting If TF-IDF Is Competitive?
-
-TF-IDF being competitive is important evidence that the toy dataset is small and
-surface-form easy. The interesting part is not benchmark dominance; it is the
-architecture: a real hidden-state route into typed software actions with no
-generated command parser.
+Yes, a text classifier could be strong on a toy synthetic dataset. This repo is
+honest about that. The interesting part is demonstrating frozen activation
+vectors as a direct control signal for a bounded deterministic app.
 
 ## Limitations
 
-- Small action space.
-- Small synthetic and curated datasets.
-- Prompt template still matters.
-- V2 improves hard-negative rejection but still struggles with executable hard
-  paraphrases.
-- Gemma is documented as a Colab path, not claimed as locally run.
-
-## Likely Questions
-
-**Q: Is this safer than tool calling?**  
-It removes generated command parsing, but safety still depends on the action
-space, calibration, and evaluation. I kept the app sandboxed and tiny.
-
-**Q: Why not just use a text classifier?**  
-For this dataset, TF-IDF is competitive. The point was to explore a latent
-software interface and evaluate it honestly, not to claim text baselines are
-obsolete.
-
-**Q: What would you improve next?**  
-Larger human-authored hard negatives, Gemma-scale runs, better OOD calibration,
-and tests for prompt/layer invariance.
-
-**Q: How do you know it does not call `generate()`?**  
-There is an AST guard test over the core route, and the extractor uses
-`model(**enc, use_cache=False)` under `torch.inference_mode()`.
+Synthetic data, small action space, heuristic gates, and no production-safety
+claim. This is portfolio-grade research engineering, not a general agent.

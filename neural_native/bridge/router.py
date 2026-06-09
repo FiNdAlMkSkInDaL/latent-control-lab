@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import json
+from collections.abc import Mapping
 from dataclasses import dataclass
 from pathlib import Path
 from typing import Any
@@ -8,7 +9,8 @@ from typing import Any
 import joblib
 import numpy as np
 
-from neural_native.app.state import LABEL_TO_ACTION, Action
+from neural_native.app.state import LABEL_TO_ACTION as TASKFLOW_LABEL_TO_ACTION
+from neural_native.app.state import Action
 from neural_native.app.vector_port import RouteDecision
 from neural_native.eval.ood import entropy, nearest_centroid_distances
 
@@ -64,12 +66,23 @@ def thresholds_from_json(path: str | Path) -> RouterThresholds:
 class LinearProbeRouter:
     """Routes activation vectors using a serialized scikit-learn probe bundle."""
 
-    def __init__(self, bundle_path: str, thresholds: RouterThresholds | None = None) -> None:
+    def __init__(
+        self,
+        bundle_path: str,
+        thresholds: RouterThresholds | None = None,
+        *,
+        label_to_action: Mapping[str, Any] | None = None,
+        abstain_action: Any | None = None,
+        abstain_label: str = "ABSTAIN",
+    ) -> None:
         bundle = joblib.load(bundle_path)
         self.probe = bundle["probe"]
         self.classes = list(bundle["classes"])
         self.thresholds = thresholds or _thresholds_from_bundle(bundle)
         self.centroids: dict[str, np.ndarray] | None = bundle.get("centroids")
+        self.label_to_action = dict(label_to_action or TASKFLOW_LABEL_TO_ACTION)
+        self.abstain_action = Action.ABSTAIN if abstain_action is None else abstain_action
+        self.abstain_label = abstain_label
         self.metadata: dict[str, Any] = {
             key: value for key, value in bundle.items() if key not in {"probe", "centroids"}
         }
@@ -88,7 +101,7 @@ class LinearProbeRouter:
         centroid_distance = self._centroid_distance(label, z2[0])
         ood_score = self._ood_score(z2[0], probs, label, centroid_distance)
 
-        action = LABEL_TO_ACTION.get(label, Action.ABSTAIN)
+        action = self.label_to_action.get(label, self.abstain_action)
         accepted = self._accepted(label, confidence, margin, centroid_distance, ood_score)
 
         return RouteDecision(
@@ -99,6 +112,15 @@ class LinearProbeRouter:
             ood_score=ood_score if ood_score is not None else 0.0,
             accepted=accepted,
         )
+
+    def top_probabilities(self, z: np.ndarray, *, k: int = 3) -> list[dict[str, float]]:
+        z2 = np.asarray(z, dtype=np.float32).reshape(1, -1)
+        probs = self.probe.predict_proba(z2)[0]
+        order = np.argsort(probs)[::-1][:k]
+        return [
+            {"label": str(self.classes[index]), "probability": float(probs[index])}
+            for index in order
+        ]
 
     def _centroid_distance(self, label: str, z: np.ndarray) -> float | None:
         if not self.centroids or label not in self.centroids:
@@ -153,7 +175,7 @@ class LinearProbeRouter:
         centroid_distance: float | None,
         ood_score: float | None,
     ) -> bool:
-        if label == "ABSTAIN":
+        if label == self.abstain_label:
             return False
         if confidence < self.thresholds.min_confidence:
             return False

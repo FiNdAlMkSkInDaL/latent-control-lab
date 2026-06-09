@@ -6,12 +6,14 @@ from typing import Any
 import typer
 from rich import print
 
-from neural_native.app.kernel import TaskFlowKernel
-from neural_native.app.vector_port import VectorActionPort
-from neural_native.bridge.router import LinearProbeRouter, RouterThresholds
+from neural_native.bridge.router import RouterThresholds
 from neural_native.llm.extractor import extract_vectors
 from neural_native.llm.hooks import PreLMHeadActivationTap
 from neural_native.llm.loader import load_causal_lm
+from neural_native.vectorbot.kernel import VectorBotKernel
+from neural_native.vectorbot.render import render_ascii
+from neural_native.vectorbot.router import VectorBotLinearProbeRouter
+from neural_native.vectorbot.vector_port import VectorBotVectorPort
 
 app = typer.Typer(help="Neural-native zero-generation action router demo.")
 
@@ -45,26 +47,26 @@ def _load_runtime(
     max_centroid_distance: float | None,
     *,
     use_4bit: bool,
-) -> tuple[Any, Any, PreLMHeadActivationTap, VectorActionPort]:
+) -> tuple[Any, Any, PreLMHeadActivationTap, VectorBotVectorPort]:
     tokenizer, model = load_causal_lm(model_id=model_id, use_4bit=use_4bit)
     tap = PreLMHeadActivationTap(model)
 
-    kernel = TaskFlowKernel()
+    kernel = VectorBotKernel()
     thresholds = _build_thresholds(min_confidence, min_margin, max_centroid_distance)
-    router = LinearProbeRouter(bundle_path=probe_path, thresholds=thresholds)
-    port = VectorActionPort(router=router, app=kernel)
+    router = VectorBotLinearProbeRouter(bundle_path=probe_path, thresholds=thresholds)
+    port = VectorBotVectorPort(router=router, app=kernel)
     return tokenizer, model, tap, port
 
 
 @app.command()
 def run(
     model_id: str = typer.Option(
-        "google/gemma-2-2b-it",
+        "distilgpt2",
         help="Hugging Face causal LM id used for frozen activation extraction.",
     ),
     probe_path: str = typer.Option(
-        "artifacts/probe.joblib",
-        help="Serialized linear-probe bundle from scripts/train_probe.py.",
+        "artifacts/vectorbot_probe_distilgpt2.joblib",
+        help="Serialized VectorBot probe bundle from scripts/train_vectorbot_probe.py.",
     ),
     min_confidence: float | None = typer.Option(
         None,
@@ -96,8 +98,9 @@ def run(
         use_4bit=not no_4bit,
     )
 
-    print("[bold]Neural-native TaskFlow Kernel[/bold]")
+    print("[bold]VectorBot latent-control demo[/bold]")
     print("Type 'exit' or 'quit' to stop. Core route uses no generated tokens.\n")
+    print(render_ascii(port.app.snapshot()))
 
     try:
         while True:
@@ -114,6 +117,7 @@ def run(
             )[0]
             result = port.ingest(z=z, raw_text=text)
             print(result)
+            print(render_ascii(port.app.snapshot()))
     finally:
         tap.close()
 
@@ -122,12 +126,12 @@ def run(
 def route(
     text: str = typer.Argument(..., help="Natural-language user request to route."),
     model_id: str = typer.Option(
-        "google/gemma-2-2b-it",
+        "distilgpt2",
         help="Hugging Face causal LM id used for frozen activation extraction.",
     ),
     probe_path: str = typer.Option(
-        "artifacts/probe.joblib",
-        help="Serialized linear-probe bundle from scripts/train_probe.py.",
+        "artifacts/vectorbot_probe_distilgpt2.joblib",
+        help="Serialized VectorBot probe bundle from scripts/train_vectorbot_probe.py.",
     ),
     min_confidence: float | None = typer.Option(
         None,

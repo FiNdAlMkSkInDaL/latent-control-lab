@@ -1,0 +1,33 @@
+{
+  "rows": 540,
+  "normalized_duplicate_count": 0,
+  "split_overlap_count": 0,
+  "template_family_overlap_count": 0,
+  "class_counts": {
+    "ABSTAIN": 180,
+    "MOVE_DOWN": 60,
+    "MOVE_LEFT": 60,
+    "MOVE_RIGHT": 60,
+    "MOVE_UP": 60,
+    "RESET": 60,
+    "TOGGLE_LIGHT": 60
+  },
+  "subset_counts": {
+    "abstain_ambiguous": 29,
+    "abstain_compound": 30,
+    "abstain_gibberish": 31,
+    "abstain_out_of_scope": 28,
+    "abstain_unrelated": 31,
+    "abstain_unsafe": 31,
+    "clean": 66,
+    "demo_anchor": 66,
+    "paraphrase": 66,
+    "polite": 54,
+    "reset": 9,
+    "spatial_synonym": 45,
+    "terse": 54
+  },
+  "duplicate_normalized_examples": [],
+  "split_overlap_examples": [],
+  "template_overlap_examples": []
+}

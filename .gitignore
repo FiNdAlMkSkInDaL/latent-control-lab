@@ -16,6 +16,8 @@ artifacts/*.gguf
 artifacts/features*
 !artifacts/example_routes.jsonl
 !artifacts/example_routes_v2.jsonl
+!artifacts/vectorbot_routes.jsonl
+!artifacts/vectorbot_routes_full.jsonl
 tmp/
 .pytest_tmp/
 .pytest_cache/

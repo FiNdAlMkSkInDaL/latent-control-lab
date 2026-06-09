@@ -1,110 +1,35 @@
 # Architecture
 
-The production inference path is intentionally narrow:
+The current repository centers VectorBot, a sandboxed 2D grid-world controlled
+by hidden-state vectors from a frozen tiny transformer.
 
 ```text
-Text -> tokenizer -> frozen LLM forward pass -> pre_lm_head hook -> vector -> linear probe -> OOD gate -> typed action -> TaskFlowKernel
+Text input -> tokenizer -> frozen LLM forward pass -> pre-lm-head hook
+-> final non-padding token vector -> probe -> gate -> enum action
+-> VectorBotKernel.execute()
 ```
 
-## System Diagram
+## Runtime Boundary
 
-```mermaid
-flowchart LR
-    U["Natural-language request"] --> Tok["Tokenizer"]
-    Tok --> LM["Frozen Hugging Face causal LM"]
-    LM --> Hook["PyTorch forward hook on lm_head input"]
-    Hook --> Vec["Final-token activation vector"]
-    Vec --> Probe["StandardScaler + LogisticRegression probe"]
-    Probe --> Gate["Confidence, margin, centroid-distance gates"]
-    Gate -->|"accepted"| Enum["Action enum"]
-    Gate -->|"rejected"| Abstain["ABSTAIN"]
-    Enum --> Kernel["TaskFlowKernel.execute()"]
-    Abstain --> Kernel
-    Kernel --> State["Sandboxed task state"]
-```
+`VectorBotVectorPort` accepts an activation vector and a raw text audit string.
+The route decision comes from the router's vector prediction. Raw text is not
+parsed to select actions.
 
-## Sequence Diagram
+## Core modules
 
-```mermaid
-sequenceDiagram
-    participant User
-    participant Extractor
-    participant LM as Frozen LM
-    participant Tap as PreLMHeadActivationTap
-    participant Router as LinearProbeRouter
-    participant Port as VectorActionPort
-    participant Kernel as TaskFlowKernel
+- `neural_native/llm/loader.py` loads CPU-friendly causal LMs, defaulting to
+  `distilgpt2`.
+- `neural_native/llm/hooks.py` captures the hidden state passed into `lm_head`.
+- `neural_native/llm/extractor.py` selects the final non-padding token vector.
+- `neural_native/bridge/router.py` loads a scikit-learn probe bundle and applies
+  confidence/OOD gates.
+- `neural_native/vectorbot/kernel.py` executes only typed VectorBot enum actions.
 
-    User->>Extractor: raw text
-    Extractor->>LM: tokenizer(prompt), forward pass only
-    LM->>Tap: lm_head receives hidden state
-    Tap-->>Extractor: [batch, seq, hidden] activation
-    Extractor-->>Router: final-token vector
-    Router-->>Port: RouteDecision(action, confidence, margin, ood_score)
-    Port->>Kernel: execute(Action enum, context)
-    Kernel-->>Port: deterministic state transition result
-```
+## Invariants
 
-## Pre-lm_head Activation Capture
-
-`PreLMHeadActivationTap` registers a PyTorch forward hook on `model.lm_head` and
-stores `inputs[0]`, the hidden state consumed by the unembedding layer. The
-extractor selects the final non-padding token for each prompt, producing one
-vector per user request.
-
-The extractor uses:
-
-```text
-model(**encoded_inputs, use_cache=False)
-```
-
-It does not call `model.generate()`.
-
-## Projection Layer
-
-The MVP trains a lightweight scikit-learn probe:
-
-```text
-StandardScaler -> LogisticRegression
-```
-
-The base language model remains frozen. The only trained parameters are the
-probe/projection layer. The serialized probe bundle records model id, prompt
-template, feature space, label classes, centroids, split metrics, and recommended
-thresholds.
-
-## OOD Gating
-
-Routing is accepted only when:
-
-- the predicted class is not `ABSTAIN`,
-- max class probability clears `min_confidence`,
-- top-1/top-2 probability margin clears `min_margin`,
-- predicted-class centroid distance is below `max_centroid_distance` when set.
-
-The evaluator additionally reports ABSTAIN-vs-executable AUROC for max
-probability, margin, and nearest executable centroid distance.
-
-## Why This Avoids API Parsing
-
-The app never consumes generated commands. Raw text is used only as input to the
-tokenizer and as audit metadata in task records. Action selection happens from a
-frozen hidden-state vector through a probe and gate, then dispatches a typed
-`Action` enum to `TaskFlowKernel.execute()`.
-
-Forbidden surfaces remain outside the toy app:
-
-- no generated JSON/tool calls,
-- no generated SQL or shell,
-- no regex, keyword matching, or text parser for action choice,
-- no arbitrary filesystem, network, or OS-control actions.
-
-## Limitations
-
-- The checked-in dataset is synthetic and small.
-- `ABSTAIN` is trained as a class; it is not a complete open-world OOD solution.
-- The `distilgpt2` run proves the real-model path locally, while Gemma is the
-  richer portfolio target for GPU/Colab.
-- Linear probes demonstrate separability but are not calibrated production
-  policies.
-- The app kernel is intentionally a bounded deterministic task state machine.
+- No `model.generate()` in the action route.
+- No generated JSON or tool-call parsing.
+- No regex or keyword action parser.
+- No arbitrary shell, filesystem, network, or OS control actions.
+- The model is frozen; only the probe is trained.
+- `ABSTAIN` remains a first-class route.

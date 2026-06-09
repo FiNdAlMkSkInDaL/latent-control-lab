@@ -1,0 +1,8 @@
+{
+  "min_confidence": 0.5095968246459961,
+  "min_margin": 0.033788833767175674,
+  "max_centroid_distance": null,
+  "centroid_distance_reference": 10.04001522064209,
+  "selection_method": "5th percentile confidence/margin on validation split when present, otherwise training split. The centroid reference is reported but not activated by default for the small VectorBot demo.",
+  "threshold_source": "validation"
+}

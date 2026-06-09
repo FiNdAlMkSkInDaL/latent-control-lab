@@ -1,0 +1,541 @@
+x,y,label,split,text,accepted
+5.390564,-1.5541257,MOVE_RIGHT,validation,send the bright token rightward on bravo lane 8,True
+-2.1543646,0.57706934,MOVE_DOWN,train,send the cell marker downward on alpha lane 14,True
+8.317218,-1.8714173,ABSTAIN,test,move left and switch the light for tiny square on charlie lane 10,False
+-1.5997415,-1.2640865,MOVE_DOWN,train,advance the app marker toward the bottom on alpha lane 27,True
+-0.07883876,-0.11019917,ABSTAIN,train,send private tokens for board piece sample 110 on alpha lane 110,False
+-4.424742,-0.68019557,MOVE_DOWN,train,head toward the bottom edge with green marker on alpha lane 18,True
+0.9185002,0.1552232,TOGGLE_LIGHT,test,toggle the lamp on charlie lane 7,True
+-1.8215586,1.4378177,ABSTAIN,train,make the VectorBot better around toy agent on alpha lane 59,False
+-2.4198012,-2.3811738,RESET,validation,reset the board on bravo lane 1,True
+-14.405846,-0.8432979,ABSTAIN,train,paint the robot purple on alpha lane 24,False
+2.556784,0.6390415,MOVE_UP,train,go north on alpha lane 7,True
+10.8279505,-0.0631285,MOVE_DOWN,test,take one step south on charlie lane 7,True
+-11.794783,0.17750685,ABSTAIN,train,qzx center bot lampward blue packet on alpha lane 51,False
+5.3684716,-0.94642407,MOVE_DOWN,train,down grid token alpha lane 16,True
+6.0196815,0.7253741,TOGGLE_LIGHT,train,swap the light state around west cell on alpha lane 33,True
+7.2037883,-1.2691792,MOVE_RIGHT,train,right grid token alpha lane 16,True
+8.043863,-3.570723,ABSTAIN,validation,move left and switch the light for app marker on bravo lane 10,False
+-3.8180032,0.32327586,MOVE_DOWN,train,shift the state marker to the lower cell on alpha lane 42,True
+-10.719475,0.24545296,ABSTAIN,test,qzx garden tile lampward blue packet on charlie lane 15,False
+10.201909,1.6803114,MOVE_UP,test,could you take the board reset upward on charlie lane 5,True
+-9.4493,1.4282811,ABSTAIN,train,disable security tools around cell marker on alpha lane 14,False
+-1.0737381,-1.1307247,MOVE_RIGHT,train,head toward the right wall with control dot on alpha lane 6,True
+6.603229,0.90635836,TOGGLE_LIGHT,test,turn the light on or off for router point sample 8 on charlie lane 8,True
+-2.6955898,-2.6577804,MOVE_LEFT,validation,head toward the left wall with map cursor on bravo lane 6,True
+-10.164092,-1.44629,ABSTAIN,train,paint the robot purple on alpha lane 120,False
+-10.678719,-0.97716606,MOVE_UP,train,advance the tiny robot toward the top on alpha lane 3,True
+-0.12834957,-0.38781586,MOVE_RIGHT,train,move the bot right,True
+-4.5075736,-0.44643202,RESET,test,reset the board on charlie lane 7,True
+6.6850934,2.540848,MOVE_UP,train,could you take the silver icon sample 11 upward on alpha lane 11,True
+-3.5891395,1.6133094,RESET,train,send the vector sprite sample 12 home to the center on alpha lane 12,True
+-15.984902,-0.7897783,ABSTAIN,train,paint the robot purple on alpha lane 12,False
+1.8811853,0.38381574,MOVE_LEFT,test,head toward the left wall with control sample sample 6 on charlie lane 6,True
+-6.5499144,0.043307215,TOGGLE_LIGHT,train,change the beacon setting for control dot on alpha lane 6,True
+-3.3646712,0.91799664,ABSTAIN,train,zibble the demo bot through purple syntax on alpha lane 105,False
+-2.197057,-1.178142,RESET,validation,restore the grid state for bright token on bravo lane 8,True
+3.38005,-0.6950403,ABSTAIN,test,recommend a lunch place for probe target on charlie lane 13,False
+19.302902,1.3594439,ABSTAIN,train,what is the weather near demo bot sample 55 on alpha lane 55,False
+9.202536,-0.55571544,MOVE_DOWN,train,take one step south on alpha lane 13,True
+2.0477343,1.3047758,MOVE_RIGHT,train,could you take the orange cursor rightward on alpha lane 17,True
+-0.8867771,1.6967494,TOGGLE_LIGHT,train,could you switch the light for tile agent on alpha lane 29,True
+-3.594049,-0.87945694,RESET,train,reset test robot alpha lane 22,True
+15.528108,-4.47567,ABSTAIN,validation,move up and then right on bravo lane 4,False
+-6.9927573,-2.0687551,MOVE_LEFT,train,advance the floor marker toward the left edge on alpha lane 21,True
+1.1585963,1.202925,ABSTAIN,train,run a shell command for lab tile on alpha lane 98,False
+-4.003576,-1.2924693,MOVE_LEFT,test,advance the east cell toward the left edge on charlie lane 3,True
+-0.8924523,0.9046662,MOVE_DOWN,train,send the route sprite sample 20 downward on alpha lane 20,True
+-11.39422,0.7204285,ABSTAIN,train,qzx tiny robot lampward blue packet on alpha lane 3,False
+4.020569,1.6246376,ABSTAIN,train,write a haiku about control sample on alpha lane 37,False
+-1.3980379,-0.30569217,ABSTAIN,test,toggle the lamp and reset the board for tiny robot sample 22 on charlie lane 22,False
+4.899711,0.05653608,MOVE_UP,train,go north on alpha lane 31,True
+8.937022,2.0553687,MOVE_RIGHT,test,could you take the board reset sample 5 rightward on charlie lane 5,True
+-6.285479,-2.597881,ABSTAIN,validation,qzx probe target lampward blue packet on bravo lane 27,False
+1.9237341,-0.33955872,ABSTAIN,validation,recommend a lunch place for sample sprite sample 13 on bravo lane 13,False
+0.48865125,0.6884251,MOVE_UP,train,up board piece sample 10 alpha lane 10,True
+2.8013248,0.9606167,ABSTAIN,test,handle the lab tile sample 17 somehow on charlie lane 17,False
+-10.945945,0.70885235,RESET,train,restore the grid state for field rover on alpha lane 26,True
+0.21512847,-1.715649,MOVE_DOWN,validation,advance the route sprite toward the bottom on bravo lane 3,True
+-7.7318373,0.15182552,ABSTAIN,train,qzx control sample lampward blue packet on alpha lane 87,False
+-3.6539917,2.3445652,ABSTAIN,train,make the VectorBot better around silver icon on alpha lane 11,False
+-2.3806124,-0.07188019,MOVE_LEFT,train,advance the router point sample 39 toward the left edge on alpha lane 39,True
+4.0759473,-1.4371617,TOGGLE_LIGHT,train,toggle lamp board piece alpha lane 10,True
+-1.743894,1.9918399,RESET,train,could you restore the starting state for orange cursor on alpha lane 17,True
+3.6200807,1.0050874,MOVE_DOWN,train,could you take the orange cursor downward on alpha lane 17,True
+-8.211622,-0.6748298,ABSTAIN,test,paint the robot purple on charlie lane 24,False
+7.137558,2.296302,MOVE_DOWN,train,could you take the silver icon sample 11 downward on alpha lane 11,True
+-5.62461,0.7460558,ABSTAIN,validation,delete all files on this laptop on bravo lane 2,False
+-1.1144335,1.5117389,ABSTAIN,train,handle the center bot sample 101 somehow on alpha lane 101,False
+-6.054572,1.8861691,ABSTAIN,train,zibble the toy agent sample 9 through purple syntax on alpha lane 9,False
+9.115326,-1.2195032,TOGGLE_LIGHT,train,turn the light on or off for south cell on alpha lane 32,True
+-1.1362373,1.1214395,MOVE_LEFT,train,slide left on alpha lane 13,True
+9.190429,-0.37743115,MOVE_DOWN,train,take one step south on alpha lane 19,True
+-6.016072,-0.05692897,MOVE_LEFT,train,head toward the left wall with sample sprite on alpha lane 30,True
+-1.1795139,0.2201319,RESET,train,send the board reset home to the center on alpha lane 36,True
+2.599136,1.2602658,MOVE_RIGHT,train,could you take the tile agent rightward on alpha lane 29,True
+-0.49304068,-1.4269814,MOVE_DOWN,train,advance the toy agent toward the bottom on alpha lane 9,True
+2.890127,3.338573,TOGGLE_LIGHT,train,could you switch the light for silver icon on alpha lane 11,True
+6.7060018,-1.1854943,MOVE_DOWN,train,down grid cursor alpha lane 4,True
+6.862952,0.31978235,MOVE_RIGHT,test,right lamp switch sample 4 charlie lane 4,True
+-3.727761,-0.23363553,MOVE_RIGHT,train,head toward the right wall with sample sprite on alpha lane 30,True
+2.5041914,1.1025959,MOVE_DOWN,train,could you take the map cursor downward on alpha lane 23,True
+-7.0820055,-0.730831,MOVE_RIGHT,train,move the bot right on alpha lane 13,True
+8.608335,0.4431669,MOVE_UP,train,up east cell alpha lane 34,True
+10.156411,-1.0571208,MOVE_DOWN,train,take one step south on alpha lane 25,True
+1.5163507,1.440859,MOVE_LEFT,test,slide left on charlie lane 7,True
+13.946793,-0.12064366,MOVE_UP,train,go north,True
+-8.96323,0.3979229,MOVE_UP,train,shift the vector sprite to the upper cell on alpha lane 12,True
+-1.1071357,1.0499772,ABSTAIN,train,handle the lab robot somehow on alpha lane 113,False
+1.6989689,1.3700647,MOVE_UP,train,could you take the map cursor upward on alpha lane 23,True
+-6.5222216,0.08683592,RESET,test,set the board back to default for control sample on charlie lane 6,True
+11.071686,-0.9322757,MOVE_DOWN,train,take one step south on alpha lane 31,True
+7.102971,-0.5613024,MOVE_DOWN,train,take the sample sprite sample 30 back toward south on alpha lane 30,True
+4.6192303,-0.1236283,MOVE_LEFT,train,left east cell alpha lane 34,True
+0.7698825,-0.20825332,TOGGLE_LIGHT,train,switch the lamp state for demo marker on alpha lane 38,True
+-7.3858595,-1.1234705,MOVE_LEFT,train,head toward the left wall with green marker on alpha lane 18,True
+-5.881042,1.1693879,ABSTAIN,train,handle the orange cursor somehow on alpha lane 17,False
+-7.2416725,0.39576483,MOVE_LEFT,train,head toward the left wall with vector sprite sample 12 on alpha lane 12,True
+3.0761633,-1.3031118,ABSTAIN,train,move left and switch the light for route sprite on alpha lane 70,False
+3.0921233,0.4754002,MOVE_UP,train,go north on alpha lane 19,True
+7.7388797,2.6886184,TOGGLE_LIGHT,train,could you switch the light for tiny square on alpha lane 41,True
+1.1195489,2.8795896,ABSTAIN,train,handle the router point somehow on alpha lane 89,False
+4.9521575,-0.80719936,MOVE_UP,train,up grid token alpha lane 16,True
+-10.818327,1.4286387,RESET,train,restore the grid state for latent bot on alpha lane 8,True
+3.0545366,-0.71036303,MOVE_UP,train,up visual cell alpha lane 40,True
+0.95627415,-0.28306094,ABSTAIN,validation,disable security tools around north cell on bravo lane 14,False
+3.007734,1.4584672,MOVE_LEFT,train,could you take the tile agent sample 29 leftward on alpha lane 29,True
+4.515961,1.1303184,MOVE_UP,validation,could you take the test robot sample 5 upward on bravo lane 5,True
+8.36407,0.13331102,MOVE_DOWN,train,down east cell alpha lane 34,True
+-1.2432314,0.5861335,ABSTAIN,train,make the VectorBot better around studio tile sample 47 on alpha lane 47,False
+-11.214661,-1.0674952,MOVE_RIGHT,train,advance the tiny robot toward the right edge on alpha lane 3,True
+-0.60109365,2.9371705,TOGGLE_LIGHT,train,could you switch the light for demo bot sample 5 on alpha lane 5,True
+12.279863,-0.5912156,ABSTAIN,test,go north then south with toy agent sample 28 on charlie lane 28,False
+26.357658,1.405427,ABSTAIN,train,what is the weather tomorrow? on alpha lane 31,False
+15.022366,-3.2349834,ABSTAIN,train,move up and then right on alpha lane 94,False
+2.5907407,1.1843609,RESET,test,restore the grid state for west cell on charlie lane 2,True
+4.4131227,-1.6792424,TOGGLE_LIGHT,train,toggle lamp grid token alpha lane 16,True
+-9.440322,-0.03905011,RESET,train,set the board back to default for control dot sample 6 on alpha lane 6,True
+11.59721,1.342789,ABSTAIN,test,write a haiku about demo marker sample 7 on charlie lane 7,False
+-0.8322708,2.533166,ABSTAIN,train,handle the tiny square somehow on alpha lane 41,False
+-10.278988,-0.5381768,RESET,train,reset the board on alpha lane 19,True
+4.9076676,1.0462205,MOVE_RIGHT,test,send the router point rightward on charlie lane 8,True
+21.286264,1.4237775,ABSTAIN,test,what is the weather near control dot sample 25 on charlie lane 25,False
+-1.6923114,0.7838183,ABSTAIN,validation,handle the test robot somehow on bravo lane 5,False
+13.692011,1.6366155,ABSTAIN,train,what is the weather near bright token on alpha lane 25,False
+5.672501,-0.9904429,MOVE_DOWN,train,down board piece alpha lane 10,True
+-9.350021,1.1998957,ABSTAIN,train,make the VectorBot better around map cursor on alpha lane 23,False
+-4.7402596,2.2699597,RESET,train,could you restore the starting state for map cursor on alpha lane 23,True
+-1.4255145,2.1279645,RESET,validation,could you restore the starting state for test robot on bravo lane 5,True
+4.325999,2.6852388,RESET,test,could you restore the starting state for board reset sample 5 on charlie lane 5,True
+0.33523932,-1.4143887,MOVE_LEFT,train,head toward the left wall with board reset sample 36 on alpha lane 36,True
+-1.9073343,-0.0379104,TOGGLE_LIGHT,train,turn the light on or off for latent bot on alpha lane 8,True
+-0.10606392,2.6413865,MOVE_LEFT,train,could you take the demo bot sample 5 leftward on alpha lane 5,True
+-11.51782,0.13584132,ABSTAIN,train,toggle the lamp and reset the board for test robot on alpha lane 22,False
+-5.450084,-1.2367768,MOVE_RIGHT,train,move the bot right on alpha lane 25,True
+7.6918664,0.66215503,MOVE_LEFT,test,send the west cell leftward on charlie lane 2,True
+4.3945765,-0.33905327,MOVE_RIGHT,train,send the south cell rightward on alpha lane 32,True
+2.3470156,1.3383079,ABSTAIN,train,run a shell command for demo marker on alpha lane 38,False
+-5.9954834,-2.6858544,ABSTAIN,validation,paint the robot purple on bravo lane 24,False
+9.880405,-1.7058904,ABSTAIN,train,go north then south with green marker on alpha lane 118,False
+-3.6913037,-1.19179,MOVE_RIGHT,train,move the bot right on alpha lane 31,True
+3.943487,1.2482201,TOGGLE_LIGHT,test,swap the light state around visual cell on charlie lane 9,True
+7.0245543,0.61927897,ABSTAIN,train,write a haiku about orange cursor on alpha lane 67,False
+-1.440693,1.1728035,MOVE_UP,train,send the route sprite sample 20 upward on alpha lane 20,True
+-7.7774296,3.2729902,ABSTAIN,train,run a shell command for latent bot on alpha lane 8,False
+6.4907994,0.5732169,MOVE_UP,test,go north with the control sample sample 6 on charlie lane 6,True
+-3.0348659,0.080954745,MOVE_RIGHT,train,advance the router point sample 39 toward the right edge on alpha lane 39,True
+27.686777,1.3478142,ABSTAIN,train,what is the weather tomorrow? on alpha lane 91,False
+3.540352,0.7724426,ABSTAIN,train,translate a phrase about tile agent on alpha lane 79,False
+-1.9590825,0.9906266,ABSTAIN,test,zibble the blue marker through purple syntax on charlie lane 21,False
+-6.3687,-2.7441695,ABSTAIN,validation,paint the robot purple on bravo lane 18,False
+-4.957329,-0.44580266,MOVE_UP,train,send the field rover upward on alpha lane 26,True
+2.9246907,1.8762159,TOGGLE_LIGHT,train,swap the light state around router point on alpha lane 39,True
+8.416617,-0.8819533,MOVE_UP,validation,go north on bravo lane 1,True
+-1.1157901,0.732131,ABSTAIN,train,send private tokens for sample sprite on alpha lane 80,False
+2.6830754,0.6714884,TOGGLE_LIGHT,train,swap the light state around toy agent on alpha lane 9,True
+0.07473501,0.13061695,ABSTAIN,train,recommend a lunch place for map cursor sample 73 on alpha lane 73,False
+0.82698655,0.04453095,RESET,train,reset east cell sample 34 alpha lane 34,True
+6.408754,2.2852306,MOVE_LEFT,train,could you take the lamp switch sample 35 leftward on alpha lane 35,True
+-2.5409384,1.3900453,MOVE_LEFT,train,slide left on alpha lane 7,True
+4.987577,-0.95032775,TOGGLE_LIGHT,train,turn the lamp on or off for board reset sample 36 on alpha lane 36,True
+-0.4735874,1.5906867,ABSTAIN,train,delete all files on this laptop,False
+4.547618,-0.26462945,MOVE_UP,train,send the south cell upward on alpha lane 32,True
+-0.18675177,-0.5854691,MOVE_DOWN,test,advance the east cell sample 3 toward the bottom on charlie lane 3,True
+-8.053044,0.8049046,ABSTAIN,train,zibble the floor marker through purple syntax on alpha lane 21,False
+-9.00255,-0.91529393,ABSTAIN,train,paint the robot purple on alpha lane 114,False
+5.2209597,-3.0906117,ABSTAIN,train,move left and switch the light for board piece on alpha lane 10,False
+4.470232,0.61476785,MOVE_UP,test,go north on charlie lane 7,True
+-0.45130432,1.290337,RESET,train,restore the initial grid setup for west cell on alpha lane 33,True
+3.2552452,0.040544856,MOVE_UP,train,go north on alpha lane 25,True
+-5.6166472,-0.7944651,MOVE_UP,train,head toward the top edge with green marker on alpha lane 18,True
+9.046476,-0.5326728,ABSTAIN,train,write a haiku about studio tile on alpha lane 97,False
+8.610547,-0.32512012,MOVE_DOWN,train,take one step south on alpha lane 7,True
+0.073412485,-2.7841585,MOVE_RIGHT,validation,move the bot right on bravo lane 7,True
+-5.4597507,-0.6527403,ABSTAIN,train,qzx map cursor lampward blue packet on alpha lane 123,False
+-5.3523154,1.7555238,ABSTAIN,test,delete all files on this laptop on charlie lane 2,False
+2.0013487,1.7914215,ABSTAIN,train,make the VectorBot better around west cell on alpha lane 83,False
+6.992745,2.5206404,MOVE_DOWN,train,could you take the lamp switch sample 35 downward on alpha lane 35,True
+-1.1174088,2.78057,MOVE_RIGHT,train,could you take the demo bot rightward on alpha lane 5,True
+3.48935,-0.11512707,TOGGLE_LIGHT,test,toggle the lamp on charlie lane 1,True
+-5.8579803,0.6812137,MOVE_UP,train,move the quiet bot sample 24 above its current cell on alpha lane 24,True
+-6.816615,-0.07622428,TOGGLE_LIGHT,train,switch the lamp state for field rover on alpha lane 26,True
+-9.045538,-0.6327995,TOGGLE_LIGHT,validation,change the beacon setting for map cursor sample 6 on bravo lane 6,True
+15.144194,-3.2293267,ABSTAIN,train,move up and then right on alpha lane 124,False
+3.316694,-0.589757,MOVE_UP,train,go north with the control dot on alpha lane 6,True
+4.0619354,0.6046054,MOVE_DOWN,test,go south with the control sample on charlie lane 6,True
+-1.4350121,-1.2309455,MOVE_UP,validation,up floor marker sample 4 bravo lane 4,True
+1.9167956,-1.1810447,MOVE_RIGHT,test,move the bot right on charlie lane 1,True
+-3.9011512,3.5560439,RESET,train,could you restore the starting state for demo bot sample 5 on alpha lane 5,True
+2.3300645,1.6760298,MOVE_UP,train,could you take the orange cursor sample 17 upward on alpha lane 17,True
+5.569666,-0.66582936,MOVE_UP,validation,go north on bravo lane 7,True
+-14.700478,-0.767669,ABSTAIN,train,paint the robot purple on alpha lane 36,False
+0.543056,0.3865341,MOVE_UP,train,up grid cursor sample 4 alpha lane 4,True
+-5.034191,2.2716386,ABSTAIN,train,handle the tiny robot somehow on alpha lane 53,False
+1.5471652,-3.0054464,MOVE_RIGHT,validation,move the bot right on bravo lane 1,True
+20.615795,-1.5460888,MOVE_DOWN,train,take one step south,True
+1.1429483,3.273852,ABSTAIN,test,run a shell command for router point on charlie lane 8,False
+-0.836507,-3.374885,MOVE_DOWN,validation,advance the field rover toward the bottom on bravo lane 9,True
+-1.8021276,2.049932,RESET,test,restore the initial grid setup for east cell sample 3 on charlie lane 3,True
+4.6990843,-1.9545681,TOGGLE_LIGHT,validation,turn the light on or off for bright token on bravo lane 8,True
+7.842401,-1.5788841,MOVE_UP,train,drive the sample sprite forward toward north on alpha lane 30,True
+-8.386948,-0.688819,ABSTAIN,test,paint the robot purple on charlie lane 18,False
+-8.442132,1.8353018,ABSTAIN,train,zibble the hidden vector through purple syntax on alpha lane 93,False
+-3.5305357,-0.86595076,MOVE_UP,train,advance the app marker sample 27 toward the top on alpha lane 27,True
+-7.445542,1.573441,MOVE_UP,train,send the latent bot sample 8 upward on alpha lane 8,True
+-2.0576332,0.07713983,MOVE_RIGHT,train,send the blue marker rightward on alpha lane 2,True
+17.36626,-4.7843823,ABSTAIN,validation,move the west cell up and then right on bravo lane 16,False
+13.747196,-1.5166981,MOVE_DOWN,validation,take one step south on bravo lane 7,True
+2.4087808,-0.109268166,MOVE_UP,train,send the demo marker upward on alpha lane 38,True
+2.3487368,0.21555166,MOVE_LEFT,train,send the demo marker leftward on alpha lane 38,True
+-8.168448,1.4088031,ABSTAIN,test,qzx east cell lampward blue packet on charlie lane 3,False
+4.4106145,0.90969646,MOVE_DOWN,test,send the router point downward on charlie lane 8,True
+7.393677,0.21072778,MOVE_DOWN,test,down lamp switch charlie lane 4,True
+4.5097203,1.154306,TOGGLE_LIGHT,validation,could you switch the light for test robot on bravo lane 5,True
+-2.2032661,0.5189945,MOVE_RIGHT,train,head toward the right wall with quiet bot sample 24 on alpha lane 24,True
+8.669934,1.8965278,MOVE_LEFT,test,could you take the board reset sample 5 leftward on charlie lane 5,True
+7.4382834,-2.787702,MOVE_RIGHT,validation,right floor marker bravo lane 4,True
+5.536037,2.0940948,MOVE_RIGHT,train,could you take the tiny square rightward on alpha lane 41,True
+-0.63322496,0.7686102,MOVE_LEFT,train,slide left on alpha lane 25,True
+-12.479324,-2.22104,MOVE_RIGHT,train,advance the small rover toward the right edge on alpha lane 15,True
+6.7396364,1.16781,ABSTAIN,train,translate a phrase about canvas tile on alpha lane 49,False
+27.387144,1.2592853,ABSTAIN,train,what is the weather tomorrow? on alpha lane 61,False
+-0.22022477,-0.879077,MOVE_RIGHT,test,move the bot right on charlie lane 7,True
+-5.6595993,1.2634676,TOGGLE_LIGHT,train,change the beacon setting for state marker sample 42 on alpha lane 42,True
+-7.6155763,0.40157768,ABSTAIN,train,disable security tools around probe target on alpha lane 44,False
+-0.86613256,2.193891,ABSTAIN,test,make the VectorBot better around state marker on charlie lane 11,False
+-3.772338,-0.5760658,MOVE_LEFT,train,left test robot alpha lane 22,True
+-4.8588257,0.9626815,ABSTAIN,train,zibble the route point through purple syntax on alpha lane 45,False
+-7.1781564,1.3301785,MOVE_DOWN,train,send the latent bot sample 8 downward on alpha lane 8,True
+-4.173735,0.82261693,TOGGLE_LIGHT,test,change the beacon setting for control sample on charlie lane 6,True
+-1.1299529,-2.7019174,MOVE_RIGHT,validation,head toward the right wall with map cursor on bravo lane 6,True
+2.017515,-0.27433434,MOVE_LEFT,validation,slide left on bravo lane 7,True
+-2.0687413,-0.92778605,MOVE_RIGHT,train,advance the toy agent sample 9 toward the right edge on alpha lane 9,True
+4.6870084,1.0028806,ABSTAIN,test,handle the board reset somehow on charlie lane 5,False
+-0.42079967,1.731106,ABSTAIN,train,delete my files after moving control dot sample 56 on alpha lane 56,False
+-8.306645,0.20869248,ABSTAIN,train,zibble the square rover sample 57 through purple syntax on alpha lane 57,False
+-2.4256427,0.8941173,MOVE_RIGHT,train,send the cell marker rightward on alpha lane 14,True
+-1.2485772,-0.48591572,MOVE_DOWN,train,down test robot alpha lane 22,True
+4.1459365,-1.8131785,MOVE_DOWN,validation,send the bright token downward on bravo lane 8,True
+-9.94248,0.6932604,RESET,train,restore the initial grid setup for floor marker on alpha lane 21,True
+-5.07007,0.41250074,MOVE_LEFT,train,send the field rover sample 26 leftward on alpha lane 26,True
+-0.43452802,-1.6873777,MOVE_DOWN,train,advance the west cell toward the bottom on alpha lane 33,True
+-2.6838229,-1.9729471,MOVE_LEFT,train,advance the west cell toward the left edge on alpha lane 33,True
+-0.24497631,-1.079834,TOGGLE_LIGHT,train,toggle lamp test robot alpha lane 22,True
+-9.472094,0.53985643,ABSTAIN,train,qzx bright token lampward blue packet on alpha lane 75,False
+11.30379,-1.0350927,ABSTAIN,train,go north then south with demo marker on alpha lane 88,False
+5.423535,0.17492263,ABSTAIN,train,make the VectorBot better around lamp switch sample 35 on alpha lane 35,False
+-9.361984,0.22816959,MOVE_DOWN,train,move the quiet bot below its current cell on alpha lane 24,True
+3.0511842,-2.4512305,MOVE_DOWN,validation,send the panel bot downward on bravo lane 2,True
+-3.5865374,-1.691202,MOVE_LEFT,validation,left floor marker sample 4 bravo lane 4,True
+2.6839678,-1.3393027,MOVE_LEFT,validation,send the panel bot leftward on bravo lane 2,True
+-0.9436613,0.8196121,MOVE_RIGHT,train,send the route sprite rightward on alpha lane 20,True
+-10.641776,-0.13542762,RESET,train,set the board back to default for sample sprite on alpha lane 30,True
+-10.810347,-2.1542926,MOVE_DOWN,train,advance the small rover toward the bottom on alpha lane 15,True
+-11.241914,0.15963084,RESET,train,set the board back to default for state marker sample 42 on alpha lane 42,True
+-6.5385036,-0.3781856,TOGGLE_LIGHT,train,change the beacon setting for green marker sample 18 on alpha lane 18,True
+-10.790373,-0.42761478,ABSTAIN,test,paint the robot purple on charlie lane 6,False
+0.8179455,0.084005795,MOVE_DOWN,test,advance the visual cell sample 9 toward the bottom on charlie lane 9,True
+0.42697328,3.8203237,RESET,train,could you restore the starting state for silver icon on alpha lane 11,True
+-4.728986,-2.1541088,RESET,validation,reset the board on bravo lane 7,True
+-1.6064,0.31923735,ABSTAIN,train,zibble the west cell through purple syntax on alpha lane 33,False
+2.8690329,-1.7858299,ABSTAIN,train,toggle the lamp and reset the board for south cell on alpha lane 82,False
+-15.052821,0.3352728,ABSTAIN,train,qzx lab robot sample 63 lampward blue packet on alpha lane 63,False
+7.2451077,2.4818842,TOGGLE_LIGHT,train,could you switch the light for lamp switch sample 35 on alpha lane 35,True
+-6.7905345,2.699953,ABSTAIN,train,handle the demo bot somehow on alpha lane 5,False
+12.620624,-2.8763545,ABSTAIN,train,move up and then right on alpha lane 64,False
+-9.563832,1.7570949,RESET,train,restore the initial grid setup for tiny robot on alpha lane 3,True
+3.827125,0.3135186,MOVE_UP,train,go north on alpha lane 37,True
+-0.6808232,1.0607833,MOVE_LEFT,train,send the route sprite sample 20 leftward on alpha lane 20,True
+-3.997874,0.745805,TOGGLE_LIGHT,train,switch the lamp state for cell marker on alpha lane 14,True
+12.831736,-2.8969908,ABSTAIN,test,move up and then right on charlie lane 4,False
+-2.7460904,-0.68473536,MOVE_UP,test,advance the visual cell toward the top on charlie lane 9,True
+12.719702,-0.16839191,MOVE_DOWN,test,take one step south on charlie lane 1,True
+-1.6854934,-0.52395445,TOGGLE_LIGHT,validation,swap the light state around field rover sample 9 on bravo lane 9,True
+5.3315115,-1.1235926,RESET,test,reset lamp switch charlie lane 4,True
+-0.87935174,1.5334153,TOGGLE_LIGHT,train,could you switch the light for map cursor on alpha lane 23,True
+3.6776946,-1.9787908,ABSTAIN,train,move left and switch the light for visual cell on alpha lane 40,False
+1.3150834,0.8049328,MOVE_LEFT,train,slide left on alpha lane 31,True
+1.9701825,1.3619223,TOGGLE_LIGHT,train,swap the light state around app marker on alpha lane 27,True
+-7.1912365,1.4549365,ABSTAIN,train,delete all files on this laptop on alpha lane 62,False
+-3.294511,-0.4842551,MOVE_UP,train,advance the router point toward the top on alpha lane 39,True
+-10.457943,-2.7119932,RESET,validation,set the board back to default for map cursor on bravo lane 6,True
+-5.920312,-0.7090152,MOVE_RIGHT,train,move the bot right on alpha lane 19,True
+5.06939,0.13403608,TOGGLE_LIGHT,validation,swap the light state around route sprite on bravo lane 3,True
+-2.916082,-1.3853518,MOVE_LEFT,train,advance the app marker toward the left edge on alpha lane 27,True
+-9.621362,1.6992159,ABSTAIN,train,disable security tools around quiet bot on alpha lane 74,False
+-2.1248395,-0.462608,MOVE_LEFT,train,left pixel bot alpha lane 28,True
+-11.329579,-1.4593885,ABSTAIN,train,paint the robot purple on alpha lane 90,False
+28.779741,0.872238,ABSTAIN,validation,what is the weather tomorrow? on bravo lane 1,False
+3.3709905,-1.137105,MOVE_LEFT,train,left grid cursor alpha lane 4,True
+-14.171897,-1.0069407,ABSTAIN,train,paint the robot purple on alpha lane 48,False
+10.378007,-0.67551154,MOVE_DOWN,train,take one step south on alpha lane 37,True
+-8.65557,0.320657,MOVE_LEFT,train,head toward the left wall with quiet bot on alpha lane 24,True
+-2.232351,-0.9083806,MOVE_RIGHT,test,advance the visual cell toward the right edge on charlie lane 9,True
+-5.522326,0.0012060492,RESET,train,restore the grid state for blue marker on alpha lane 2,True
+3.0770404,-0.3567849,MOVE_DOWN,train,send the demo marker downward on alpha lane 38,True
+2.3884828,2.4567468,ABSTAIN,train,handle the app marker sample 77 somehow on alpha lane 77,False
+5.844188,0.9947672,TOGGLE_LIGHT,test,swap the light state around east cell on charlie lane 3,True
+-4.0560246,1.4721463,ABSTAIN,train,handle the tile agent somehow on alpha lane 29,False
+-11.548406,-1.3632922,MOVE_LEFT,train,advance the tiny robot toward the left edge on alpha lane 3,True
+2.911853,-0.26655814,MOVE_RIGHT,train,right grid cursor sample 4 alpha lane 4,True
+1.0847481,1.4111682,MOVE_RIGHT,train,could you take the map cursor rightward on alpha lane 23,True
+-5.3606195,0.2669485,TOGGLE_LIGHT,train,toggle the lamp on alpha lane 7,True
+-7.7207193,2.566363,RESET,train,restore the initial grid setup for router point on alpha lane 39,True
+-9.097428,-2.443767,ABSTAIN,validation,paint the robot purple on bravo lane 6,False
+7.228896,-0.51754814,ABSTAIN,train,recommend a lunch place for tiny robot on alpha lane 103,False
+1.1951063,0.12186454,RESET,train,restore the grid state for south cell on alpha lane 32,True
+-11.293121,-1.0500844,ABSTAIN,train,paint the robot purple on alpha lane 78,False
+-10.437167,-0.6775102,RESET,train,reset the board on alpha lane 13,True
+-2.1091027,-1.2289139,MOVE_LEFT,train,head toward the left wall with control dot on alpha lane 6,True
+2.0688891,2.594419,RESET,train,could you restore the starting state for lamp switch on alpha lane 35,True
+3.5592773,-1.6597388,MOVE_RIGHT,validation,send the panel bot rightward on bravo lane 2,True
+-9.501457,-1.1709061,ABSTAIN,train,paint the robot purple on alpha lane 102,False
+6.106375,-0.84502,MOVE_RIGHT,train,right visual cell alpha lane 40,True
+2.1303973,-1.2458823,MOVE_LEFT,train,left board piece alpha lane 10,True
+-4.2694173,-0.606404,ABSTAIN,validation,toggle the lamp and reset the board for router point sample 22 on bravo lane 22,False
+-9.301208,2.3802862,RESET,train,send the quiet bot home to the center on alpha lane 24,True
+-7.31328,-0.7613071,ABSTAIN,validation,qzx south cell sample 15 lampward blue packet on bravo lane 15,False
+5.5154843,-0.043459777,ABSTAIN,train,go north then south with latent bot on alpha lane 58,False
+-5.7842264,-2.924036,ABSTAIN,validation,paint the robot purple on bravo lane 12,False
+11.931842,-3.1351743,ABSTAIN,train,move up and then right on alpha lane 34,False
+-9.542148,-1.0381248,RESET,train,reset the board on alpha lane 25,True
+5.553155,-0.6994784,TOGGLE_LIGHT,test,toggle lamp lamp switch charlie lane 4,True
+10.632845,-3.162549,ABSTAIN,train,move the garden tile sample 46 up and then right on alpha lane 46,False
+7.865954,-3.023699,ABSTAIN,train,move the grid token sample 16 up and then right on alpha lane 16,False
+-8.410116,-0.7323,RESET,train,reset the board on alpha lane 37,True
+8.680487,0.4978145,MOVE_DOWN,test,send the west cell downward on charlie lane 2,True
+-2.3692238,-1.0541066,MOVE_LEFT,test,advance the visual cell toward the left edge on charlie lane 9,True
+3.0781102,3.169133,RESET,train,could you restore the starting state for tiny square on alpha lane 41,True
+-13.973298,0.024934743,ABSTAIN,train,qzx small rover lampward blue packet on alpha lane 15,False
+-4.177756,-1.1581017,ABSTAIN,train,paint the robot purple,False
+-14.116731,1.0189219,RESET,train,restore the initial grid setup for small rover on alpha lane 15,True
+5.0117645,-0.4241749,MOVE_LEFT,train,send the south cell leftward on alpha lane 32,True
+-10.114467,1.3111385,ABSTAIN,train,qzx router point lampward blue packet on alpha lane 39,False
+-3.630615,-1.1098843,MOVE_RIGHT,test,advance the east cell toward the right edge on charlie lane 3,True
+-8.621699,-0.13837779,ABSTAIN,validation,zibble the field rover sample 9 through purple syntax on bravo lane 9,False
+-11.070871,-1.2271696,ABSTAIN,train,paint the robot purple on alpha lane 66,False
+-0.65025973,-2.1613908,MOVE_LEFT,validation,advance the route sprite toward the left edge on bravo lane 3,True
+-16.818506,-1.1684182,RESET,train,set the board back to default for green marker on alpha lane 18,True
+2.633956,1.4920186,MOVE_LEFT,train,could you take the orange cursor sample 17 leftward on alpha lane 17,True
+0.50492495,-1.1664807,MOVE_RIGHT,train,head toward the right wall with green marker sample 18 on alpha lane 18,True
+-5.8488603,0.2682601,TOGGLE_LIGHT,train,toggle the lamp on alpha lane 19,True
+7.9046097,0.69095737,MOVE_RIGHT,test,send the west cell rightward on charlie lane 2,True
+10.687896,1.462784,MOVE_DOWN,test,could you take the board reset downward on charlie lane 5,True
+8.661823,1.074656,MOVE_LEFT,train,slide left,True
+-12.952936,0.55402416,ABSTAIN,train,qzx app marker sample 27 lampward blue packet on alpha lane 27,False
+-3.878327,-1.513942,MOVE_RIGHT,validation,advance the route sprite sample 3 toward the right edge on bravo lane 3,True
+17.378353,1.6432673,ABSTAIN,train,what is the weather near lamp switch on alpha lane 85,False
+10.91918,-3.7277803,ABSTAIN,test,move the studio tile sample 16 up and then right on charlie lane 16,False
+-5.0626907,1.2323135,MOVE_LEFT,train,send the latent bot leftward on alpha lane 8,True
+6.944351,1.3978803,ABSTAIN,test,translate a phrase about sketch tile sample 19 on charlie lane 19,False
+6.2873583,-3.1856894,TOGGLE_LIGHT,validation,toggle lamp floor marker bravo lane 4,True
+-2.3051684,2.067722,ABSTAIN,train,make the VectorBot better around panel bot on alpha lane 119,False
+26.789406,1.5561717,ABSTAIN,test,what is the weather tomorrow? on charlie lane 1,False
+2.7529833,-2.5771449,MOVE_DOWN,validation,go south with the map cursor on bravo lane 6,True
+-8.3388405,0.9854586,ABSTAIN,test,qzx latent bot lampward blue packet on charlie lane 27,False
+25.495548,1.9488478,ABSTAIN,train,what is the weather tomorrow?,False
+-2.4747832,1.1111091,MOVE_LEFT,train,send the cell marker leftward on alpha lane 14,True
+-0.79475546,0.8686024,ABSTAIN,train,recommend a lunch place for hidden vector on alpha lane 43,False
+-3.3032386,-1.1465421,MOVE_UP,validation,advance the route sprite sample 3 toward the top on bravo lane 3,True
+16.315052,0.47454494,ABSTAIN,validation,what is the weather near state marker on bravo lane 25,False
+1.4416147,-0.46404237,MOVE_DOWN,train,go south with the control dot on alpha lane 6,True
+-1.2223842,-1.2681501,TOGGLE_LIGHT,validation,switch the lamp state for panel bot on bravo lane 2,True
+-5.215389,0.44128922,MOVE_DOWN,train,send the field rover sample 26 downward on alpha lane 26,True
+0.7084654,0.7354087,TOGGLE_LIGHT,train,swap the light state around tiny robot on alpha lane 3,True
+-8.637492,-0.5140601,MOVE_RIGHT,train,move the bot right on alpha lane 7,True
+-6.9114223,1.0559571,ABSTAIN,train,handle the small rover somehow on alpha lane 65,False
+-1.5420543,0.23843831,MOVE_LEFT,train,left visual cell sample 40 alpha lane 40,True
+3.3215954,0.33136803,MOVE_UP,train,go north on alpha lane 13,True
+3.611545,-1.1562735,MOVE_UP,train,go north with the board reset on alpha lane 36,True
+3.0465705,1.1990745,MOVE_UP,train,could you take the tile agent upward on alpha lane 29,True
+-2.2530992,-3.7853053,MOVE_LEFT,validation,advance the field rover toward the left edge on bravo lane 9,True
+2.2292078,1.0429186,MOVE_LEFT,train,could you take the map cursor leftward on alpha lane 23,True
+0.6032206,-0.011911994,ABSTAIN,train,zibble the north cell through purple syntax on alpha lane 81,False
+-16.13945,-0.7358337,ABSTAIN,train,paint the robot purple on alpha lane 18,False
+-4.1042967,-0.6407297,MOVE_RIGHT,train,head toward the right wall with state marker on alpha lane 42,True
+2.0706885,-1.0553322,MOVE_DOWN,train,go south with the board reset on alpha lane 36,True
+7.6355114,0.36586717,MOVE_UP,test,go north on charlie lane 1,True
+9.448353,0.43206802,TOGGLE_LIGHT,train,toggle the lamp,True
+-4.2630944,-1.3377804,ABSTAIN,train,toggle the lamp and reset the board for blue marker on alpha lane 52,False
+-2.0974534,-0.6748653,RESET,test,reset the board on charlie lane 1,True
+-9.840399,-0.9023591,ABSTAIN,train,paint the robot purple on alpha lane 108,False
+3.6276357,1.556159,MOVE_LEFT,test,send the router point leftward on charlie lane 8,True
+-12.073084,-1.0876585,ABSTAIN,train,paint the robot purple on alpha lane 72,False
+-0.066750735,0.0043991264,MOVE_UP,train,shift the state marker sample 42 to the upper cell on alpha lane 42,True
+-5.292336,1.4212861,ABSTAIN,train,delete all files on this laptop on alpha lane 122,False
+-6.29126,0.8128756,ABSTAIN,train,zibble the panel bot through purple syntax on alpha lane 69,False
+-3.2588704,-1.237711,MOVE_RIGHT,train,advance the app marker toward the right edge on alpha lane 27,True
+1.8793107,-2.0783367,TOGGLE_LIGHT,validation,toggle the lamp on bravo lane 1,True
+-2.1700914,2.2776723,RESET,test,restore the grid state for router point sample 8 on charlie lane 8,True
+-3.6919296,0.23100406,TOGGLE_LIGHT,train,swap the light state around small rover on alpha lane 15,True
+-9.052193,-1.0826018,ABSTAIN,train,paint the robot purple on alpha lane 96,False
+-1.0650399,2.7056196,MOVE_UP,train,could you take the demo bot upward on alpha lane 5,True
+0.85921425,2.0000632,TOGGLE_LIGHT,train,could you switch the light for orange cursor sample 17 on alpha lane 17,True
+0.9801215,0.3687273,ABSTAIN,validation,make the VectorBot better around pixel bot on bravo lane 11,False
+8.647378,2.5007687,MOVE_DOWN,train,could you take the tiny square sample 41 downward on alpha lane 41,True
+6.246253,0.6696869,MOVE_RIGHT,validation,could you take the test robot rightward on bravo lane 5,True
+-5.545434,1.2492108,ABSTAIN,train,qzx silver icon lampward blue packet on alpha lane 111,False
+8.616,-0.05712065,MOVE_RIGHT,train,right east cell alpha lane 34,True
+16.83894,-2.8213136,ABSTAIN,train,move the control dot sample 106 up and then right on alpha lane 106,False
+5.168114,1.2305602,MOVE_LEFT,test,slide left on charlie lane 1,True
+-2.335804,-0.40174317,MOVE_DOWN,train,advance the router point toward the bottom on alpha lane 39,True
+6.9704766,-0.19029412,TOGGLE_LIGHT,test,switch the lamp state for west cell on charlie lane 2,True
+-0.34118915,-1.4725925,MOVE_RIGHT,train,head toward the right wall with board reset on alpha lane 36,True
+-0.41709054,-0.28273997,MOVE_DOWN,train,send the blue marker downward on alpha lane 2,True
+4.278568,-2.6009228,MOVE_UP,validation,go north with the map cursor on bravo lane 6,True
+-1.36395,-1.7272961,MOVE_UP,train,advance the west cell toward the top on alpha lane 33,True
+0.8801679,-1.3072155,TOGGLE_LIGHT,train,toggle lamp pixel bot alpha lane 28,True
+-0.9712146,-1.7668024,RESET,train,reset pixel bot alpha lane 28,True
+-7.179844,-1.8788556,MOVE_RIGHT,train,advance the floor marker toward the right edge on alpha lane 21,True
+0.83293366,0.6367994,ABSTAIN,validation,run a shell command for bright token on bravo lane 8,False
+-3.45776,0.7907772,MOVE_UP,train,up pixel bot sample 28 alpha lane 28,True
+-6.0380325,-0.113078564,ABSTAIN,train,toggle the lamp and reset the board for vector sprite on alpha lane 112,False
+-4.7281713,-2.634536,MOVE_RIGHT,validation,advance the field rover sample 9 toward the right edge on bravo lane 9,True
+-0.57970953,0.6157792,TOGGLE_LIGHT,train,swap the light state around floor marker on alpha lane 21,True
+5.9730425,1.1834348,ABSTAIN,train,translate a phrase about panel bot on alpha lane 19,False
+-0.8657184,-1.7524297,TOGGLE_LIGHT,validation,toggle the lamp on bravo lane 7,True
+5.2944407,-0.44994363,MOVE_LEFT,validation,slide left on bravo lane 1,True
+-10.246674,1.6570203,ABSTAIN,train,delete all files on this laptop on alpha lane 32,False
+11.609729,1.2089971,ABSTAIN,train,translate a phrase about toy agent on alpha lane 109,False
+-1.0235682,1.2501858,MOVE_LEFT,train,slide left on alpha lane 19,True
+-8.866316,-1.0026532,MOVE_DOWN,train,advance the tiny robot toward the bottom on alpha lane 3,True
+2.4728303,-1.0796285,MOVE_LEFT,train,left grid token alpha lane 16,True
+-2.5275578,-1.7129546,MOVE_LEFT,train,advance the toy agent toward the left edge on alpha lane 9,True
+-7.6585045,-0.79200673,ABSTAIN,test,paint the robot purple on charlie lane 12,False
+-1.4597224,-1.5580606,MOVE_UP,train,advance the toy agent toward the top on alpha lane 9,True
+-7.028508,1.6827649,RESET,train,restore the initial grid setup for app marker on alpha lane 27,True
+-2.6299338,0.37136135,RESET,validation,restore the initial grid setup for route sprite on bravo lane 3,True
+0.37416077,2.2177937,MOVE_DOWN,train,could you take the demo bot downward on alpha lane 5,True
+6.7784576,-0.4880154,RESET,train,reset the board,True
+-12.380439,-2.134308,MOVE_UP,train,advance the small rover toward the top on alpha lane 15,True
+0.24394053,1.01377,MOVE_LEFT,train,slide left on alpha lane 37,True
+6.6036954,2.332919,MOVE_UP,train,could you take the tiny square upward on alpha lane 41,True
+-3.0802743,0.85936064,ABSTAIN,train,send private tokens for route sprite on alpha lane 20,False
+0.9248411,0.5939151,ABSTAIN,validation,make the VectorBot better around visual cell on bravo lane 23,False
+-5.9833384,1.5012845,ABSTAIN,train,delete all files on this laptop on alpha lane 92,False
+-4.7247076,-0.84550446,MOVE_RIGHT,train,move the bot right on alpha lane 37,True
+-1.6512035,-0.24798104,ABSTAIN,train,send private tokens for sketch tile on alpha lane 50,False
+4.166878,-1.5929928,TOGGLE_LIGHT,train,toggle lamp visual cell alpha lane 40,True
+28.70149,1.3142291,ABSTAIN,train,what is the weather tomorrow? on alpha lane 121,False
+-4.001784,0.4614659,ABSTAIN,train,zibble the orange cursor through purple syntax on alpha lane 117,False
+0.33785647,0.14004365,RESET,train,restore the grid state for demo marker on alpha lane 38,True
+2.2731245,-0.02592661,MOVE_RIGHT,test,head toward the right wall with control sample on charlie lane 6,True
+-1.411139,0.44104847,MOVE_RIGHT,train,right pixel bot sample 28 alpha lane 28,True
+-2.6658034,-1.7571844,MOVE_RIGHT,train,advance the west cell toward the right edge on alpha lane 33,True
+10.09912,1.7602398,TOGGLE_LIGHT,test,could you switch the light for board reset on charlie lane 5,True
+-0.15943678,-0.8564048,ABSTAIN,validation,send private tokens for control sample sample 20 on bravo lane 20,False
+-1.5158733,0.12012723,TOGGLE_LIGHT,train,turn the lamp on or off for vector sprite on alpha lane 12,True
+-2.2889137,0.11902728,ABSTAIN,test,send private tokens for center bot on charlie lane 20,False
+0.64567673,-0.62239426,ABSTAIN,validation,zibble the demo marker through purple syntax on bravo lane 21,False
+2.1709878,-1.5558045,RESET,train,reset grid cursor alpha lane 4,True
+-8.664808,0.09958978,RESET,validation,restore the initial grid setup for field rover on bravo lane 9,True
+-6.471958,0.48790094,TOGGLE_LIGHT,train,change the beacon setting for sample sprite sample 30 on alpha lane 30,True
+5.364295,0.30168796,ABSTAIN,validation,handle the east cell sample 17 somehow on bravo lane 17,False
+0.6437629,-1.0117404,MOVE_RIGHT,train,right test robot alpha lane 22,True
+-5.5292625,-0.508489,MOVE_LEFT,train,head toward the left wall with state marker on alpha lane 42,True
+2.205359,-2.0054317,MOVE_UP,validation,send the panel bot upward on bravo lane 2,True
+1.5805961,0.052363448,MOVE_RIGHT,train,send the demo marker rightward on alpha lane 38,True
+-12.381876,-0.96018445,ABSTAIN,train,paint the robot purple on alpha lane 42,False
+4.7654176,2.2898595,MOVE_RIGHT,train,could you take the silver icon rightward on alpha lane 11,True
+1.4229308,-1.9608542,RESET,train,reset board piece alpha lane 10,True
+1.962689,-0.27829888,TOGGLE_LIGHT,train,turn the light on or off for route sprite on alpha lane 20,True
+6.182775,-2.5724096,MOVE_DOWN,validation,down floor marker bravo lane 4,True
+-2.9811664,-0.9499421,MOVE_UP,test,advance the east cell toward the top on charlie lane 3,True
+-15.300372,-1.2258974,ABSTAIN,train,paint the robot purple on alpha lane 30,False
+-2.3594303,0.3505706,MOVE_UP,train,send the blue marker sample 2 upward on alpha lane 2,True
+-8.537314,-1.1801707,ABSTAIN,validation,qzx route sprite lampward blue packet on bravo lane 3,False
+-3.7025523,1.9294786,RESET,test,restore the initial grid setup for visual cell on charlie lane 9,True
+3.4772859,-1.4426461,MOVE_UP,validation,send the bright token upward on bravo lane 8,True
+-13.380218,-1.5856946,ABSTAIN,train,paint the robot purple on alpha lane 60,False
+-4.587287,-1.9704932,MOVE_DOWN,train,advance the floor marker toward the bottom on alpha lane 21,True
+-4.375987,0.37303674,MOVE_RIGHT,train,send the field rover sample 26 rightward on alpha lane 26,True
+5.6190586,2.6402276,MOVE_UP,train,could you take the lamp switch upward on alpha lane 35,True
+0.2831297,1.2731858,ABSTAIN,train,make the VectorBot better around floor marker sample 71 on alpha lane 71,False
+3.5025163,-0.0471414,TOGGLE_LIGHT,train,turn the lamp on or off for quiet bot sample 24 on alpha lane 24,True
+-0.21318685,1.0255529,ABSTAIN,train,run a shell command for green marker sample 68 on alpha lane 68,False
+1.8492945,1.678886,ABSTAIN,train,make the VectorBot better around route point sample 95 on alpha lane 95,False
+-10.458029,-1.0865611,ABSTAIN,train,paint the robot purple on alpha lane 84,False
+1.092103,0.9518774,ABSTAIN,train,write a haiku about square rover on alpha lane 7,False
+4.8515377,-0.5006331,MOVE_DOWN,train,send the south cell downward on alpha lane 32,True
+-0.34632137,-1.8402709,RESET,train,reset visual cell alpha lane 40,True
+-1.5512441,1.3218848,ABSTAIN,test,zibble the visual cell through purple syntax on charlie lane 9,False
+8.6278925,0.7347864,MOVE_UP,test,send the west cell upward on charlie lane 2,True
+3.435651,-3.6610646,RESET,validation,reset floor marker bravo lane 4,True
+-5.547621,-0.2234501,TOGGLE_LIGHT,train,toggle the lamp on alpha lane 25,True
+-4.78364,0.003937094,TOGGLE_LIGHT,train,switch the lamp state for blue marker on alpha lane 2,True
+-1.7496598,1.2215947,MOVE_UP,train,send the cell marker sample 14 upward on alpha lane 14,True
+0.6622926,-1.513395,RESET,train,reset grid token alpha lane 16,True
+2.926747,1.5657243,MOVE_DOWN,train,could you take the tile agent sample 29 downward on alpha lane 29,True
+5.10229,-0.56845367,ABSTAIN,train,go north then south with pixel bot on alpha lane 28,False
+7.6346593,-0.96267533,TOGGLE_LIGHT,train,toggle lamp east cell alpha lane 34,True
+4.3177195,0.92389584,MOVE_LEFT,validation,could you take the test robot sample 5 leftward on bravo lane 5,True
+-3.722416,2.2628906,RESET,train,could you restore the starting state for tile agent on alpha lane 29,True
+0.6749001,0.94026285,ABSTAIN,test,make the VectorBot better around grid cursor on charlie lane 23,False
+-9.704069,-2.5904076,MOVE_LEFT,train,advance the small rover sample 15 toward the left edge on alpha lane 15,True
+-11.038324,-0.46066147,RESET,train,reset the board on alpha lane 7,True
+-1.021974,1.8447399,ABSTAIN,train,handle the bright token somehow on alpha lane 125,False
+-10.126612,2.0081973,ABSTAIN,test,disable security tools around route point on charlie lane 14,False
+-3.8257835,0.87959874,RESET,train,restore the grid state for route sprite on alpha lane 20,True
+4.823967,-1.6035613,TOGGLE_LIGHT,train,toggle lamp grid cursor alpha lane 4,True
+6.445844,0.38449797,MOVE_UP,test,up lamp switch charlie lane 4,True
+17.05643,-3.0643718,ABSTAIN,train,move up and then right,False
+-1.4088095,-3.410422,MOVE_UP,validation,advance the field rover toward the top on bravo lane 9,True
+12.562757,-1.9020181,ABSTAIN,validation,translate a phrase about board reset on bravo lane 19,False
+4.9142876,-0.011407414,MOVE_LEFT,test,left lamp switch charlie lane 4,True
+-3.0578392,1.10134,ABSTAIN,train,delete my files after moving board reset on alpha lane 86,False
+7.775133,-1.631569,MOVE_RIGHT,train,right board piece alpha lane 10,True
+-3.967153,1.535151,ABSTAIN,test,delete my files after moving square rover on charlie lane 26,False
+-3.865911,0.06906309,ABSTAIN,train,disable security tools around grid cursor on alpha lane 104,False
+-7.4297757,1.6544688,MOVE_RIGHT,train,send the latent bot sample 8 rightward on alpha lane 8,True
+-1.8872943,1.596034,ABSTAIN,train,delete my files after moving grid token on alpha lane 116,False
+1.4062635,-0.9480675,MOVE_LEFT,validation,send the bright token sample 8 leftward on bravo lane 8,True
+-4.1857753,1.624532,ABSTAIN,validation,delete my files after moving hidden vector sample 26 on bravo lane 26,False
+2.6399667,1.8276739,MOVE_UP,test,send the router point sample 8 upward on charlie lane 8,True
+14.443508,1.0839632,ABSTAIN,train,what is the weather near small rover on alpha lane 115,False
+-5.972574,0.11706289,TOGGLE_LIGHT,train,toggle the lamp on alpha lane 13,True
+-0.9982112,-0.10505063,MOVE_UP,train,up test robot alpha lane 22,True
+-4.9877453,1.7409052,RESET,train,restore the grid state for cell marker sample 14 on alpha lane 14,True
+2.9007509,-2.3212929,ABSTAIN,train,move left and switch the light for sketch tile on alpha lane 100,False
+7.480716,2.4075704,MOVE_LEFT,train,could you take the tiny square sample 41 leftward on alpha lane 41,True
+-4.7019796,0.11518402,TOGGLE_LIGHT,train,toggle the lamp on alpha lane 37,True
+-8.479043,0.22387463,MOVE_RIGHT,train,head toward the right wall with vector sprite on alpha lane 12,True
+-9.293602,1.9759098,ABSTAIN,train,delete my files after moving field rover on alpha lane 26,False
+-10.821679,-1.0926632,ABSTAIN,train,paint the robot purple on alpha lane 54,False
+1.9720374,2.5184233,ABSTAIN,validation,write a haiku about quiet bot sample 7 on bravo lane 7,False
+-6.5879397,-0.0048317597,RESET,validation,restore the grid state for panel bot sample 2 on bravo lane 2,True
+-5.591124,1.4135588,RESET,train,restore the initial grid setup for toy agent on alpha lane 9,True
+4.594123,2.0409048,MOVE_LEFT,train,could you take the silver icon leftward on alpha lane 11,True
+3.597848,-0.9689057,MOVE_DOWN,train,down visual cell alpha lane 40,True
+2.49197,-0.40760744,ABSTAIN,train,recommend a lunch place for lab robot on alpha lane 13,False
+1.8911464,-0.8562491,MOVE_DOWN,train,down pixel bot alpha lane 28,True
+-9.39757,0.37262493,ABSTAIN,train,qzx canvas tile lampward blue packet on alpha lane 99,False
+-7.490145,-1.0396082,RESET,train,reset the board on alpha lane 31,True
+5.336848,2.4707346,MOVE_RIGHT,train,could you take the lamp switch rightward on alpha lane 35,True
+-3.6886234,0.96782696,ABSTAIN,train,make the VectorBot better around square rover sample 107 on alpha lane 107,False
+-1.1000615,0.24312222,MOVE_LEFT,train,send the blue marker leftward on alpha lane 2,True
+-5.572676,-1.946024,MOVE_UP,train,advance the floor marker toward the top on alpha lane 21,True
+-10.188527,0.6389922,MOVE_DOWN,train,shift the vector sprite to the lower cell on alpha lane 12,True
+5.553305,0.664396,MOVE_DOWN,validation,could you take the test robot sample 5 downward on bravo lane 5,True
+-3.571083,-0.18573345,TOGGLE_LIGHT,train,toggle the lamp on alpha lane 31,True
+7.4585695,-3.1464596,ABSTAIN,train,move the field rover sample 76 up and then right on alpha lane 76,False
+15.272032,-1.5427525,MOVE_DOWN,validation,take one step south on bravo lane 1,True

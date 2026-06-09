@@ -29,8 +29,8 @@ def main() -> None:
     )
     parser.add_argument(
         "--model-id",
-        default="google/gemma-2-2b-it",
-        help="Hugging Face causal LM id, for example distilgpt2 or google/gemma-2-2b-it.",
+        default="distilgpt2",
+        help="Hugging Face causal LM id, for example distilgpt2 or sshleifer/tiny-gpt2.",
     )
     parser.add_argument(
         "--output",

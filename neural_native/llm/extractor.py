@@ -5,12 +5,12 @@ from typing import Any
 
 import numpy as np
 
-PROMPT_TEMPLATE = """You are a latent action router for a sandboxed task controller.
+PROMPT_TEMPLATE = """You are a latent action router for VectorBot, a sandboxed grid-world toy app.
 
 User request:
 {text}
 
-Represent the intended controller action:"""
+Represent the intended VectorBot action:"""
 
 
 def format_prompt(text: str, prompt_template: str = PROMPT_TEMPLATE) -> str:

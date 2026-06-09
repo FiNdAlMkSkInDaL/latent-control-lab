@@ -6,6 +6,8 @@ from sklearn.preprocessing import StandardScaler
 
 from neural_native.app.state import Action
 from neural_native.bridge.router import LinearProbeRouter, RouterThresholds
+from neural_native.vectorbot.router import VectorBotLinearProbeRouter
+from neural_native.vectorbot.state import VectorBotAction
 
 
 def make_probe_bundle(path) -> None:
@@ -65,3 +67,46 @@ def test_router_rejects_abstain(tmp_path) -> None:
     decision = router.predict(np.array([-1.2, -1.0], dtype=np.float32))
     assert decision.action == Action.ABSTAIN
     assert decision.accepted is False
+
+
+def test_vectorbot_router_maps_probe_label_to_vectorbot_action(tmp_path) -> None:
+    bundle_path = tmp_path / "probe.joblib"
+    X = np.array(
+        [
+            [1.0, 0.0],
+            [1.1, 0.0],
+            [0.0, 1.0],
+            [0.0, 1.1],
+            [-1.0, -1.0],
+            [-1.1, -1.0],
+        ],
+        dtype=np.float32,
+    )
+    y = np.array([
+        "MOVE_UP",
+        "MOVE_UP",
+        "MOVE_RIGHT",
+        "MOVE_RIGHT",
+        "ABSTAIN",
+        "ABSTAIN",
+    ])
+    probe = make_pipeline(StandardScaler(), LogisticRegression(max_iter=500)).fit(X, y)
+    joblib.dump(
+        {
+            "probe": probe,
+            "classes": probe.classes_,
+            "centroids": {
+                "MOVE_UP": np.array([1.05, 0.0], dtype=np.float32),
+                "MOVE_RIGHT": np.array([0.0, 1.05], dtype=np.float32),
+                "ABSTAIN": np.array([-1.05, -1.0], dtype=np.float32),
+            },
+        },
+        bundle_path,
+    )
+    router = VectorBotLinearProbeRouter(
+        str(bundle_path),
+        thresholds=RouterThresholds(min_confidence=0.0, min_margin=0.0),
+    )
+    decision = router.predict(np.array([1.2, 0.0], dtype=np.float32))
+    assert decision.action == VectorBotAction.MOVE_UP
+    assert decision.accepted is True

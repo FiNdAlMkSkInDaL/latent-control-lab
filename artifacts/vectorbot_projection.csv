@@ -1,0 +1,109 @@
+x,y,label,split,text,accepted
+8.5584,-2.0502887,ABSTAIN,train,write a haiku about control dot on alpha lane 6,False
+9.684725,-2.0121782,MOVE_UP,test,raise the west cell sample 2 by a single cell on charlie lane 2,True
+-8.122575,-0.051565163,MOVE_UP,train,shift the demo bot to the upper cell on alpha lane 5,True
+-3.1984825,-1.154969,ABSTAIN,train,send private tokens for vector sprite on alpha lane 12,False
+5.774941,-0.90020645,RESET,train,home position tiny robot alpha lane 3,True
+-2.4309492,-0.5700424,RESET,train,start over latent bot sample 8 alpha lane 8,True
+-9.507826,-0.053226423,MOVE_LEFT,train,nudge the square rover one column left on alpha lane 7,True
+7.5840654,2.7984204,MOVE_RIGHT,test,move the south cell sample 1 right on charlie lane 1,True
+-0.042683296,2.5207648,ABSTAIN,train,move left and switch the light for quiet bot on alpha lane 24,False
+7.986875,-0.8131358,MOVE_UP,test,north east cell charlie lane 3,True
+9.645647,-0.75479686,ABSTAIN,train,do the usual grid thing for board piece on alpha lane 10,False
+10.153494,-0.6334994,ABSTAIN,train,mervo the latent bot sample 8 sideways maybe on alpha lane 8,False
+-6.1503944,2.4010305,MOVE_UP,train,move the center bot up on alpha lane 1,True
+8.497373,3.1092606,ABSTAIN,train,move the toy agent up and then right on alpha lane 9,False
+-10.119908,-0.35692024,MOVE_DOWN,train,nudge the square rover one row lower on alpha lane 7,True
+-3.8912318,2.0965126,RESET,test,reset the board for the south cell on charlie lane 1,True
+-1.487604,1.3284396,TOGGLE_LIGHT,validation,toggle the light for the green marker sample 1 on bravo lane 1,True
+-5.3854275,-2.5875525,ABSTAIN,train,handle the demo bot somehow on alpha lane 5,False
+8.03211,-0.46456438,ABSTAIN,test,handle the board reset sample 5 somehow on charlie lane 5,False
+-13.572672,-0.57847404,MOVE_RIGHT,train,nudge the square rover sample 7 one column right on alpha lane 7,True
+-1.9704448,2.1065204,MOVE_DOWN,train,move the center bot sample 1 down on alpha lane 1,True
+-5.4100943,2.4098353,MOVE_RIGHT,train,move the center bot right on alpha lane 1,True
+-12.954102,0.011113697,RESET,train,set the board back to default for demo bot on alpha lane 5,True
+-0.925324,-1.3164002,MOVE_LEFT,train,west tiny robot sample 3 alpha lane 3,True
+7.397772,-1.2762163,MOVE_DOWN,test,drop the west cell by a single cell on charlie lane 2,True
+0.50964904,-1.6962227,MOVE_LEFT,train,one cell left latent bot alpha lane 8,True
+4.688944,-0.63014203,MOVE_RIGHT,test,east east cell charlie lane 3,True
+3.4028802,3.0903223,ABSTAIN,validation,move left and switch the light for floor marker sample 4 on bravo lane 4,False
+11.143361,0.039079532,MOVE_DOWN,train,please move the grid cursor down on alpha lane 4,True
+3.34925,4.1283417,MOVE_RIGHT,validation,move the green marker sample 1 right on bravo lane 1,True
+-6.222421,-0.5691115,ABSTAIN,train,delete my files after moving orange cursor sample 17 on alpha lane 17,False
+-14.170564,-0.97123504,ABSTAIN,train,flarn green marker sample 18 seven noodle axis on alpha lane 18,False
+8.316117,2.9730904,MOVE_UP,test,move the south cell sample 1 up on charlie lane 1,True
+4.896553,3.3501434,MOVE_LEFT,test,move the south cell left on charlie lane 1,True
+-0.84455884,-0.89139616,TOGGLE_LIGHT,train,light switch latent bot alpha lane 8,True
+10.026584,-2.73094,ABSTAIN,test,run a shell command for west cell on charlie lane 2,False
+-7.9007087,0.1671668,MOVE_LEFT,train,shift the demo bot to the cell on its left on alpha lane 5,True
+-8.778964,-0.04117631,MOVE_RIGHT,train,shift the demo bot to the cell on its right on alpha lane 5,True
+2.615409,2.815514,MOVE_UP,train,move up with the control dot on alpha lane 6,True
+-1.5521212,-0.56733245,TOGGLE_LIGHT,train,flip the light on the board for control dot on alpha lane 6,True
+8.444515,-2.1064203,ABSTAIN,test,write a haiku about control sample on charlie lane 6,False
+9.929538,-0.05639439,MOVE_RIGHT,train,please move the grid cursor right on alpha lane 4,True
+6.264779,-0.57322085,MOVE_LEFT,test,west east cell charlie lane 3,True
+-7.136122,-0.44840407,MOVE_DOWN,train,shift the demo bot sample 5 to the lower cell on alpha lane 5,True
+-11.227019,0.27360824,ABSTAIN,train,disable security tools around square rover on alpha lane 7,False
+0.82922137,-1.6044472,MOVE_LEFT,test,slide the west cell to the previous cell on charlie lane 2,True
+-8.176493,-1.5065361,RESET,train,put the square rover sample 7 back at the starting cell on alpha lane 7,True
+0.29926455,-1.9443469,MOVE_UP,train,one cell up latent bot sample 8 alpha lane 8,True
+4.110812,-1.525884,MOVE_RIGHT,train,one cell right latent bot alpha lane 8,True
+1.8857495,0.25547722,RESET,train,return the control dot board to start on alpha lane 6,True
+14.826347,-1.7684519,ABSTAIN,train,what is the weather near center bot on alpha lane 1,False
+9.648861,-0.6479805,MOVE_LEFT,train,please move the grid cursor sample 4 left on alpha lane 4,True
+-0.5730177,-1.8733028,MOVE_DOWN,train,one cell down latent bot sample 8 alpha lane 8,True
+8.179261,-0.8078307,ABSTAIN,train,go north then south with panel bot sample 19 on alpha lane 19,False
+8.719304,2.8015878,ABSTAIN,test,move left and switch the light for lamp switch on charlie lane 4,False
+-9.999701,-1.8886876,MOVE_LEFT,train,slide the blue marker to the previous cell on alpha lane 2,True
+-9.077042,3.7022827,RESET,validation,reset the board for the green marker on bravo lane 1,True
+-10.953705,-1.1753412,TOGGLE_LIGHT,train,invert the glow setting for blue marker on alpha lane 2,True
+-5.365852,-2.1685734,MOVE_DOWN,train,drop the blue marker sample 2 by a single cell on alpha lane 2,True
+-5.3817754,2.5806046,MOVE_LEFT,train,move the center bot left on alpha lane 1,True
+12.09903,-0.40502268,MOVE_UP,train,please move the grid cursor sample 4 up on alpha lane 4,True
+1.9238521,2.5094414,MOVE_DOWN,train,move down with the control dot on alpha lane 6,True
+1.5817336,-0.80031836,MOVE_RIGHT,train,east tiny robot alpha lane 3,True
+2.9135225,4.7181263,MOVE_UP,validation,move the green marker up on bravo lane 1,True
+-9.426281,-1.1883469,ABSTAIN,train,zibble the lab robot through purple syntax on alpha lane 13,False
+-10.052238,-0.22685927,MOVE_UP,train,nudge the square rover one row higher on alpha lane 7,True
+-4.2885795,0.5342515,RESET,test,clear the VectorBot board for west cell sample 2 on charlie lane 2,True
+-12.570747,0.108360596,ABSTAIN,train,qzx map cursor sample 23 lampward blue packet on alpha lane 23,False
+-7.0600495,0.96755224,ABSTAIN,validation,qzx route sprite lampward blue packet on bravo lane 3,False
+-9.222068,1.8224673,TOGGLE_LIGHT,train,change whether the square rover lamp is lit on alpha lane 7,True
+0.733845,-1.5576878,TOGGLE_LIGHT,train,flip glow tiny robot alpha lane 3,True
+-1.2894413,-2.6146867,ABSTAIN,train,run a shell command for blue marker on alpha lane 2,False
+-1.595553,-2.2850962,MOVE_RIGHT,test,slide the west cell sample 2 to the next cell on charlie lane 2,True
+18.57237,-0.43513408,ABSTAIN,validation,what is the weather near green marker on bravo lane 1,False
+-14.059817,1.2838036,RESET,train,clear the VectorBot board for blue marker on alpha lane 2,True
+-6.695525,-0.737695,ABSTAIN,test,qzx east cell lampward blue packet on charlie lane 3,False
+-2.9279873,-0.1346655,ABSTAIN,train,toggle the lamp and reset the board for cell marker sample 14 on alpha lane 14,False
+6.4634037,2.3555672,MOVE_RIGHT,train,move right with the control dot sample 6 on alpha lane 6,True
+0.18593659,-1.2324246,TOGGLE_LIGHT,test,invert the glow setting for west cell sample 2 on charlie lane 2,True
+-12.614322,-0.18003583,TOGGLE_LIGHT,train,toggle the light for the center bot on alpha lane 1,True
+-6.432495,-3.2866657,ABSTAIN,train,run a shell command for test robot on alpha lane 22,False
+-0.10942265,0.5163804,TOGGLE_LIGHT,test,toggle the light for the south cell on charlie lane 1,True
+1.9673591,2.706943,ABSTAIN,train,move left and switch the light for grid cursor on alpha lane 4,False
+1.8798476,4.5165586,MOVE_LEFT,validation,move the green marker left on bravo lane 1,True
+-0.2559461,-1.2766155,ABSTAIN,validation,handle the test robot somehow on bravo lane 5,False
+5.019031,-0.9936969,TOGGLE_LIGHT,test,flip glow east cell charlie lane 3,True
+5.3492236,-0.50754094,RESET,train,please reset the board for grid cursor on alpha lane 4,True
+3.4352248,2.7719917,ABSTAIN,train,adjust the board state for route sprite on alpha lane 20,False
+-11.351373,-2.0662796,MOVE_RIGHT,train,slide the blue marker to the next cell on alpha lane 2,True
+0.62869054,2.951302,MOVE_LEFT,train,move left with the control dot on alpha lane 6,True
+-3.716378,-1.7809743,ABSTAIN,train,handle the bright token somehow on alpha lane 25,False
+2.41008,-1.9854729,MOVE_UP,train,raise the blue marker sample 2 by a single cell on alpha lane 2,True
+-7.931803,-0.2547117,TOGGLE_LIGHT,train,change the beacon setting for demo bot on alpha lane 5,True
+4.9707527,3.2494116,MOVE_DOWN,test,move the south cell down on charlie lane 1,True
+5.581773,-0.82651293,MOVE_UP,train,north tiny robot alpha lane 3,True
+3.9176066,-1.1928116,MOVE_DOWN,test,south east cell sample 3 charlie lane 3,True
+3.6834698,-1.2138373,ABSTAIN,train,translate a phrase about grid token on alpha lane 16,False
+2.3497667,-2.2230227,ABSTAIN,validation,run a shell command for panel bot on bravo lane 2,False
+-9.946118,-0.989969,ABSTAIN,train,qzx tiny robot lampward blue packet on alpha lane 3,False
+-13.151323,-1.8196607,ABSTAIN,train,make the VectorBot better around small rover on alpha lane 15,False
+5.6737466,-1.0855453,ABSTAIN,train,recommend a lunch place for silver icon on alpha lane 11,False
+2.715455,4.694109,MOVE_DOWN,validation,move the green marker down on bravo lane 1,True
+-19.364414,1.1639216,RESET,train,reset the board for the center bot on alpha lane 1,True
+7.4951468,-0.26313207,RESET,test,home position east cell charlie lane 3,True
+5.1174464,-0.5583422,MOVE_DOWN,train,south tiny robot alpha lane 3,True
+12.957113,-1.4920288,ABSTAIN,train,what is the weather near floor marker on alpha lane 21,False
+6.4870534,-0.8554825,TOGGLE_LIGHT,train,please toggle the lamp for grid cursor sample 4 on alpha lane 4,True
+25.078457,-1.5921298,ABSTAIN,test,what is the weather near south cell on charlie lane 1,False
