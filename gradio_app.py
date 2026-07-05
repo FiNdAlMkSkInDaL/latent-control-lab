@@ -128,7 +128,7 @@ def route(text: str, kernel_state: dict | None = None) -> tuple[str, str, str, s
 
 
 def make_demo():
-    with gr.Blocks(title="Tiny Latent Control Lab", theme=gr.themes.Soft()) as demo:
+    with gr.Blocks(title="Tiny Latent Control Lab") as demo:
         gr.Markdown(
             "# Tiny Latent Control Lab\n"
             "**Zero-generation latent action routing** — frozen `distilgpt2` activations control a sandboxed VectorBot via a probe. "
