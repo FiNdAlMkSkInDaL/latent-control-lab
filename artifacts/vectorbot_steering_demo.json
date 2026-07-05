@@ -1,0 +1,48 @@
+{
+  "base_vector_stats": {
+    "norm": 95.4952621459961
+  },
+  "steering_results": [
+    {
+      "eps": 0.0,
+      "label": "ABSTAIN",
+      "confidence": 0.9907615780830383
+    },
+    {
+      "eps": 0.75,
+      "steered_toward": "MOVE_DOWN",
+      "label": "ABSTAIN",
+      "confidence": 0.9890685677528381
+    },
+    {
+      "eps": 0.75,
+      "steered_toward": "MOVE_LEFT",
+      "label": "MOVE_LEFT",
+      "confidence": 0.6127440929412842
+    },
+    {
+      "eps": 0.75,
+      "steered_toward": "MOVE_RIGHT",
+      "label": "ABSTAIN",
+      "confidence": 0.8551674485206604
+    },
+    {
+      "eps": 0.75,
+      "steered_toward": "MOVE_UP",
+      "label": "ABSTAIN",
+      "confidence": 0.9807347655296326
+    },
+    {
+      "eps": 0.75,
+      "steered_toward": "RESET",
+      "label": "ABSTAIN",
+      "confidence": 0.994179368019104
+    },
+    {
+      "eps": 0.75,
+      "steered_toward": "TOGGLE_LIGHT",
+      "label": "ABSTAIN",
+      "confidence": 0.9980725049972534
+    }
+  ]
+}

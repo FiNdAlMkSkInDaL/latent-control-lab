@@ -37,6 +37,9 @@ viz = [
     "streamlit>=1.32",
     "umap-learn>=0.5",
 ]
+demo = [
+    "gradio>=4.0",
+]
 interp = [
     "transformer-lens>=2.0",
 ]

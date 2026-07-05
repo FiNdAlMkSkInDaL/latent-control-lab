@@ -52,11 +52,11 @@ text-command API wrapper.
 
 ## Final Technical Highlights
 
-- PyTorch forward hooks over Hugging Face causal LMs.
-- Frozen-LM feature extraction with no token generation.
-- scikit-learn linear probes and serialized routing bundles.
-- Validation-selected OOD calibration with documented objective.
-- CI-friendly tests that avoid large model downloads by default.
+- PyTorch forward hooks + zero-generation routing boundary (forward-pass only).
+- Concept vector analysis: contrastive directions in activation space + steering illustrations.
+- Modern interactive demos (Gradio + Streamlit) with visual trail rendering and generation-vs-latent comparison.
+- Animated GIF assets, PCA/UMAP latent diagnostics, and full pipeline reproducibility on CPU.
+- Strong engineering: guard tests, dataset audits, calibration, prompt robustness, and honest baselines.
 
 ## Limitations
 

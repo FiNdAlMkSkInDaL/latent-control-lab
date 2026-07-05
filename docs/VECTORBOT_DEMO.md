@@ -2,11 +2,9 @@
 
 ## 30-second demo
 
-Open the README and show `docs/assets/vectorbot_demo_composite.png`.
+Open the README composite + any generated GIF in `docs/assets/`.
 
-Say: "A frozen `distilgpt2` forward pass produces a hidden-state vector. A
-linear probe maps that vector to a VectorBot enum action. The app never parses
-generated commands because there are no generated commands."
+Say: "Frozen forward pass → hook captures vector → probe decides typed action. No generation, no parser. We also compute action directions in the same space (steering demo)."
 
 ## 2-minute demo
 

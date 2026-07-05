@@ -19,6 +19,8 @@ try:
 except ModuleNotFoundError:  # pragma: no cover - direct script execution
     from generate_vectorbot_dataset import LABELS, build_vectorbot_dataset
 
+from neural_native.vectorbot.kernel import VectorBotKernel
+
 PALETTE = {
     "MOVE_UP": "#2563eb",
     "MOVE_DOWN": "#16a34a",
@@ -285,6 +287,109 @@ def _routes_by_text(path: Path) -> dict[str, dict[str, Any]]:
     return {str(row["input_text"]): row for row in rows}
 
 
+# --- Animation / GIF support for cutting-edge demo assets ---
+
+def _pil_render_grid_frame(state: dict[str, Any], size: int = 420) -> Any:
+    """Render a single nice grid frame as PIL Image (bot + trail + light)."""
+    Image, _ic, ImageDraw, _font = _load_pillow()
+    img = Image.new("RGB", (size, size + 42), "#0f172a")
+    draw = ImageDraw.Draw(img)
+
+    w = int(state.get("width", 5))
+    h = int(state.get("height", 5))
+    bx = int(state.get("x", 2))
+    by = int(state.get("y", 2))
+    light = bool(state.get("light_on", False))
+    step = int(state.get("step_count", 0))
+    trail = state.get("trail", []) or []
+
+    margin = 18
+    cell = (size - 2 * margin) // max(w, h)
+    left = (size - w * cell) // 2
+    top = 12
+
+    # title bar
+    draw.text((margin, size + 8), f"step={step}  light={'ON' if light else 'OFF'}", fill="#94a3b8")
+
+    for y in range(h):
+        for x in range(w):
+            x0 = left + x * cell + 1
+            y0 = top + y * cell + 1
+            x1 = x0 + cell - 2
+            y1 = y0 + cell - 2
+            is_bot = (x == bx and y == by)
+            visited = [x, y] in trail or (x, y) in [tuple(p) for p in trail] if trail else False
+            if is_bot:
+                fill = "#fde047" if light else "#3b82f6"
+                draw.rectangle([x0, y0, x1, y1], fill=fill, outline="#1e2937", width=2)
+                sym = "✦" if light else "B"
+                draw.text((x0 + cell // 2 - 6, y0 + cell // 2 - 8), sym, fill="#0f172a")
+            elif visited:
+                draw.rectangle([x0, y0, x1, y1], fill="#334155", outline="#475569", width=1)
+            else:
+                fill = "#1e2937" if (x + y) % 2 == 0 else "#0f172a"
+                draw.rectangle([x0, y0, x1, y1], fill=fill, outline="#475569", width=1)
+    return img
+
+
+def build_route_gifs(routes_path: Path, out_dir: Path) -> list[Path]:
+    """Create short animated GIFs from a few representative routes (success + ABSTAIN)."""
+    try:
+        Image = _load_pillow()[0]
+    except Exception:
+        return []
+
+    routes = []
+    if routes_path.exists():
+        for line in routes_path.read_text(encoding="utf-8").splitlines():
+            if line.strip():
+                routes.append(json.loads(line))
+
+    if not routes:
+        return []
+
+    generated: list[Path] = []
+    # Pick a short success sequence and one ABSTAIN
+    success_examples = [r for r in routes if r.get("accepted") and r.get("predicted_label", "").startswith("MOVE")]
+    abstain_examples = [r for r in routes if not r.get("accepted")]
+
+    def _make_gif_for(rows: list[dict], name: str) -> None:
+        frames = []
+        kernel = VectorBotKernel()  # fresh
+        for r in rows[:6]:  # short clip
+            # simulate by forcing state if present in after
+            _ = r.get("input_text", "")
+            sa = r.get("state_after", {})
+            if sa:
+                # directly mutate for viz (demo only)
+                kernel.state.x = sa.get("x", kernel.state.x)
+                kernel.state.y = sa.get("y", kernel.state.y)
+                kernel.state.light_on = sa.get("light_on", kernel.state.light_on)
+                kernel.state.step_count = sa.get("step_count", kernel.state.step_count)
+                tr = sa.get("trail")
+                if tr:
+                    kernel.state.trail = [tuple(p) for p in tr]
+            else:
+                # fallback: just step a move if label known
+                lbl = r.get("predicted_label", "")
+                if lbl == "MOVE_UP":
+                    kernel.state.y = max(0, kernel.state.y - 1)
+                elif lbl == "MOVE_DOWN":
+                    kernel.state.y = min(kernel.state.height - 1, kernel.state.y + 1)
+            frames.append(_pil_render_grid_frame(kernel.snapshot()))
+
+        if len(frames) >= 2:
+            out = out_dir / name
+            frames[0].save(out, save_all=True, append_images=frames[1:], duration=420, loop=0)
+            generated.append(out)
+
+    if success_examples:
+        _make_gif_for(success_examples[:5], "vectorbot_move_demo.gif")
+    if abstain_examples:
+        _make_gif_for(abstain_examples[:3], "vectorbot_abstain_demo.gif")
+    return generated
+
+
 def _fallback_projection(dataset: pd.DataFrame) -> pd.DataFrame:
     angles = {label: index * (2 * math.pi / len(LABELS)) for index, label in enumerate(LABELS)}
     rows = []
@@ -530,6 +635,12 @@ def main() -> None:
         output_dir / "vectorbot_demo_composite.png"
     )
     plot_composite(composite_path, output_dir)
+
+    # Generate short animated GIFs (high visual impact for portfolio)
+    gif_paths = build_route_gifs(Path(args.routes), output_dir)
+    for gp in gif_paths:
+        print(f"wrote {gp}")
+
     print(f"wrote {args.projection_output}")
     print(f"wrote {output_dir / 'vectorbot_grid_demo.png'}")
     print(f"wrote {output_dir / 'vectorbot_latent_space.png'}")

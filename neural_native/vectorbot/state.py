@@ -49,6 +49,7 @@ class VectorBotState:
     mode: str = "idle"
     step_count: int = 0
     action_history: list[dict[str, Any]] = field(default_factory=list)
+    trail: list[tuple[int, int]] = field(default_factory=list)  # visual history for demo (positions visited)
 
     def to_summary(self) -> dict[str, Any]:
         return {
@@ -60,10 +61,18 @@ class VectorBotState:
             "mode": self.mode,
             "step_count": self.step_count,
             "action_history": list(self.action_history),
+            "trail": [list(p) for p in self.trail],  # JSON friendly
         }
 
 
 def initial_state(width: int = 5, height: int = 5) -> VectorBotState:
     if width <= 0 or height <= 0:
         raise ValueError("VectorBot grid dimensions must be positive")
-    return VectorBotState(width=width, height=height, x=width // 2, y=height // 2)
+    start = (width // 2, height // 2)
+    return VectorBotState(
+        width=width,
+        height=height,
+        x=start[0],
+        y=start[1],
+        trail=[start],
+    )

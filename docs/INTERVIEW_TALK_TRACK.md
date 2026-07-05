@@ -21,12 +21,11 @@ The strongest claim is the software boundary, not benchmark dominance.
 
 ## What to show
 
-1. README composite image.
-2. `docs/VECTORBOT_DEMO_TRANSCRIPT.md`.
-3. `neural_native/vectorbot/vector_port.py`, which receives a vector and does
-   not parse raw text for actions.
-4. `tests/test_no_generate_guard.py`, which scans the core path for
-   `model.generate()`.
+1. README + new composite + animated GIFs (`docs/assets/*.gif`).
+2. Live demo: `streamlit run streamlit_app.py` or Gradio (side-by-side safety view + trail grid).
+3. `neural_native/vectorbot/vector_port.py` — vector in, typed enum out (no text parsing).
+4. `scripts/analyze_concept_vectors.py` + generated `vectorbot_concept_directions.json` (shows work with the geometry of the representation).
+5. `tests/test_no_generate_guard.py`.
 
 ## Results line
 

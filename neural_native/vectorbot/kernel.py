@@ -75,18 +75,22 @@ class VectorBotKernel:
     def _move_up(self) -> None:
         self.state.y = max(0, self.state.y - 1)
         self.state.mode = "moving"
+        self._append_trail()
 
     def _move_down(self) -> None:
         self.state.y = min(self.state.height - 1, self.state.y + 1)
         self.state.mode = "moving"
+        self._append_trail()
 
     def _move_left(self) -> None:
         self.state.x = max(0, self.state.x - 1)
         self.state.mode = "moving"
+        self._append_trail()
 
     def _move_right(self) -> None:
         self.state.x = min(self.state.width - 1, self.state.x + 1)
         self.state.mode = "moving"
+        self._append_trail()
 
     def _toggle_light(self) -> None:
         self.state.light_on = not self.state.light_on
@@ -96,6 +100,11 @@ class VectorBotKernel:
         width = self.state.width
         height = self.state.height
         self.state = initial_state(width=width, height=height)
+
+    def _append_trail(self) -> None:
+        pos = (self.state.x, self.state.y)
+        if not self.state.trail or self.state.trail[-1] != pos:
+            self.state.trail.append(pos)
 
     def _record(self, action: VectorBotAction, ctx: VectorBotActionContext) -> None:
         if action is not VectorBotAction.RESET:
