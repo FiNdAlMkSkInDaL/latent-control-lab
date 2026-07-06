@@ -32,12 +32,18 @@ def render_ascii(state: VectorBotState | dict[str, Any]) -> str:
     return "\n".join(rows)
 
 
-def render_grid_html(state: VectorBotState | dict[str, Any], *, cell_size: int = 52) -> str:
+def render_grid_html(state: VectorBotState | dict[str, Any] | Any, *, cell_size: int = 52) -> str:
     """Return a self-contained HTML/CSS grid visualization with bot + optional trail.
 
     Designed for Streamlit via st.markdown(..., unsafe_allow_html=True).
     Shows visited trail faintly for visual interest.
+    Accepts VectorBotState, summary dict, or a kernel object (for convenience).
     """
+    # Normalize input: support kernel, state, or dict
+    if hasattr(state, "snapshot"):
+        state = state.snapshot()
+    elif hasattr(state, "state") and hasattr(state.state, "to_summary"):
+        state = state.state
     summary = state.to_summary() if isinstance(state, VectorBotState) else dict(state)
     width = int(summary["width"])
     height = int(summary["height"])

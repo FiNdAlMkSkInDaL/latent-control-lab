@@ -19,6 +19,8 @@ try:
 except Exception:  # pragma: no cover - optional dashboard dependency
     px = None
 
+import streamlit.components.v1 as components
+
 
 MODEL_ID = "distilgpt2"
 PROBE_PATH = Path("artifacts/vectorbot_probe_distilgpt2_full.joblib")
@@ -33,6 +35,15 @@ if not ROUTES_PATH.exists():
 PROJECTION_PATH = Path("artifacts/vectorbot_projection_full.csv")
 if not PROJECTION_PATH.exists():
     PROJECTION_PATH = Path("artifacts/vectorbot_projection.csv")
+
+
+def _can_load_llm() -> bool:
+    """Safely check if torch + transformers are importable without triggering full load."""
+    try:
+        import torch  # noqa: F401
+        return True
+    except ImportError:
+        return False
 
 
 @st.cache_resource(show_spinner=False)
@@ -118,6 +129,88 @@ def _simulated_generation_router(text: str) -> dict:
     }
 
 
+def render_3b1b_under_the_bonnet(full_probs: list[dict[str, float]] | None = None) -> str:
+    """3Blue1Brown-inspired real-time probability distribution visual.
+
+    Shows animated bars for the model's predicted likelihood (after softmax)
+    of each possible action. The bars animate from uniform/zero to the actual
+    output of the linear probe.
+    """
+    if not full_probs:
+        # Fallback demo values if somehow not provided
+        full_probs = [
+            {"label": "MOVE_UP", "probability": 0.15},
+            {"label": "MOVE_DOWN", "probability": 0.12},
+            {"label": "MOVE_LEFT", "probability": 0.08},
+            {"label": "MOVE_RIGHT", "probability": 0.55},
+            {"label": "TOGGLE_LIGHT", "probability": 0.04},
+            {"label": "RESET", "probability": 0.03},
+            {"label": "ABSTAIN", "probability": 0.03},
+        ]
+
+    # Sort for consistent order (optional, or keep model order)
+    label_order = ["MOVE_UP", "MOVE_DOWN", "MOVE_LEFT", "MOVE_RIGHT", "TOGGLE_LIGHT", "RESET", "ABSTAIN"]
+    prob_map = {p["label"]: p["probability"] for p in full_probs}
+    ordered = [{"label": lab, "probability": prob_map.get(lab, 0.0)} for lab in label_order]
+
+    # Build bar HTML
+    bars_html = ""
+    max_p = max(p["probability"] for p in ordered) or 1.0
+    for i, p in enumerate(ordered):
+        pct = p["probability"] * 100
+        # Use CSS var for the final width so we can animate it
+        bars_html += f'''
+        <div style="display:flex; align-items:center; gap:8px; margin:4px 0;">
+            <div style="width:110px; font-size:12px; color:#bae6fd; text-align:right; font-family:monospace;">{p["label"]}</div>
+            <div style="flex:1; background:#1e2937; height:22px; border-radius:3px; position:relative; overflow:hidden; border:1px solid #334155;">
+                <div class="prob-bar" data-pct="{pct}" style="
+                    --final-width: {pct}%;
+                    width: 0%;
+                    height:100%;
+                    background: linear-gradient(90deg, #22d3ee, #67e8f9);
+                    transition: width 1200ms cubic-bezier(0.23, 1.0, 0.32, 1);
+                    box-shadow: 0 0 8px #67e8f9;
+                "></div>
+            </div>
+            <div style="width:60px; font-size:12px; color:#e0f2fe; font-family:monospace; text-align:left;">{pct:.2f}%</div>
+        </div>
+        '''
+
+    return f'''
+    <div style="
+        background: #0a0f1e;
+        border: 2px solid #1e40af;
+        border-radius: 10px;
+        padding: 14px 16px;
+        margin: 8px 0 16px;
+        font-family: ui-monospace, monospace;
+        color: #bae6fd;
+    ">
+        <div style="font-size:15px; font-weight:600; color:#67e8f9; margin-bottom:6px;">
+            Probe output — predicted probability distribution
+        </div>
+        <div style="font-size:10px; color:#64748b; margin-bottom:8px;">
+            The linear probe turns the 768-dimensional activation vector into a distribution over the 7 possible actions (sums to ~100%).
+        </div>
+
+        {bars_html}
+
+        <div style="margin-top:6px; font-size:9px; color:#475569;">
+            These are the model's "beliefs" right after the forward pass. The gate then decides whether to act or ABSTAIN.
+        </div>
+    </div>
+
+    <script>
+    // Trigger the bar animations shortly after render
+    setTimeout(() => {{
+        document.querySelectorAll('.prob-bar').forEach(bar => {{
+            const final = bar.getAttribute('data-pct') || '0';
+            bar.style.width = final + '%';
+        }});
+    }}, 80);
+    </script>
+    '''
+
 def _apply_replay_to_kernel(replay_row: dict) -> None:
     if "kernel" not in st.session_state:
         st.session_state.kernel = VectorBotKernel()
@@ -144,8 +237,15 @@ def main() -> None:
     if "kernel" not in st.session_state:
         st.session_state.kernel = VectorBotKernel()
 
+    if "cmd_input" not in st.session_state:
+        st.session_state.cmd_input = "go north"
+
     routes = load_routes()
-    live_available = PROBE_PATH.exists() and THRESHOLDS_PATH.exists()
+    live_available = (
+        PROBE_PATH.exists()
+        and THRESHOLDS_PATH.exists()
+        and _can_load_llm()
+    )
 
     # Header
     st.markdown(
@@ -158,51 +258,75 @@ def main() -> None:
         unsafe_allow_html=True,
     )
     if live_available:
-        st.caption("🟢 Live mode (distilgpt2 + probe) — forward-pass only, no generation on the action path")
+        # Pre-warm the model on first load so the *first* user command is fast
+        if "model_warmed" not in st.session_state:
+            with st.spinner("Warming up distilgpt2 (one-time on first app load)..."):
+                _ = load_runtime()
+                # Do a quick dummy forward to warm caches
+                try:
+                    from neural_native.llm.extractor import extract_vectors
+                    tok, mod, tap, _ = load_runtime()  # cached
+                    _ = extract_vectors(["warmup"], tok, mod, tap, batch_size=1, max_length=16)
+                except Exception:
+                    pass
+            st.session_state.model_warmed = True
+        st.caption("🟢 Live mode (distilgpt2 + probe) — forward-pass only, no generation on the action path  |  ⏱️ Real CPU inference (usually <1s after warmup)")
     else:
-        st.info("Live model artifacts not found — using replay + simulated comparison. Run the quickstart to enable live routing.")
+        st.info(
+            "Live mode unavailable (missing torch or artifacts). "
+            "Using replay + simulated comparison. "
+            "Install with: pip install -e '.[llm]' and ensure artifacts are present."
+        )
 
-    # Quick command chips
+    # Quick command chips — clicking only fills the input bar (user then clicks Route)
     st.subheader("Try these commands")
     chip_cols = st.columns(min(5, len(DEMO_COMMANDS)))
-    clicked_cmd = None
     for i, (cmd, expected) in enumerate(DEMO_COMMANDS[:10]):
         with chip_cols[i % len(chip_cols)]:
-            if st.button(cmd, key=f"chip_{i}", use_container_width=True):
-                clicked_cmd = cmd
+            if st.button(cmd, key=f"chip_{i}", width="stretch"):
+                st.session_state.cmd_input = cmd
 
-    # Main area
-    cmd_tab, replay_tab = st.tabs(["💬 Live / Custom", "📼 Replay log"])
+    # Main single-page live view
+    c1, c2 = st.columns([1.15, 1])
+    with c1:
+        st.markdown("**Natural language command**")
+        command = st.text_input("Input", label_visibility="collapsed", key="cmd_input")
+        col_run, col_reset = st.columns(2)
+        with col_run:
+            run_clicked = st.button("🚀 Route with Latent Vector", type="primary", width="stretch")
+        with col_reset:
+            if st.button("↺ Reset grid", width="stretch"):
+                st.session_state.kernel = VectorBotKernel()
+                st.rerun()
 
-    with cmd_tab:
-        c1, c2 = st.columns([1.15, 1])
-        with c1:
-            st.markdown("**Natural language command**")
-            default_cmd = clicked_cmd or "go north"
-            command = st.text_input("Input", value=default_cmd, label_visibility="collapsed", key="cmd_input")
-            col_run, col_reset = st.columns(2)
-            with col_run:
-                run_clicked = st.button("🚀 Route with Latent Vector", type="primary", use_container_width=True)
-            with col_reset:
-                if st.button("↺ Reset grid", use_container_width=True):
-                    st.session_state.kernel = VectorBotKernel()
-                    st.rerun()
+        result = None
+        if run_clicked and live_available:
+            import time
+            t0 = time.time()
+            try:
+                result = route_live(command)
+                dt = time.time() - t0
+                st.caption(f"⏱️ Live inference took {dt:.2f}s (CPU forward + hook + probe)")
+            except Exception as exc:  # noqa: BLE001
+                st.warning(f"Live routing unavailable. {exc}")
 
-            result = None
-            if run_clicked and live_available:
-                try:
-                    result = route_live(command)
-                except Exception as exc:  # noqa: BLE001
-                    st.warning(f"Live routing unavailable. {exc}")
-            elif run_clicked and not live_available:
-                st.info("Live model not loaded. Using simulated latent result for UI demo.")
+            # The main explanatory visual: full probability distribution over actions
+            if result and "route" in result:
+                full_probs = result["route"].get("full_probabilities") or result["route"].get("top_probabilities", [])
+                st.markdown("### 🧠 What's happening under the bonnet")
+                html = render_3b1b_under_the_bonnet(full_probs)
+                components.html(html, height=320, scrolling=False)
+                st.caption("The linear probe's softmax output — the model's current belief over every possible action.")
+        elif run_clicked and not live_available:
+            st.info("Live model not loaded (torch or artifacts missing). Using replay/simulated data.")
 
-        with c2:
-            st.markdown("**Current state (latent-routed)**")
-            grid_html = render_grid_html(st.session_state.kernel)
-            st.markdown(grid_html, unsafe_allow_html=True)
+    with c2:
+        st.markdown("**Current state (latent-routed)**")
+        grid_html = render_grid_html(st.session_state.kernel.state)
+        st.markdown(grid_html, unsafe_allow_html=True)
 
-    with replay_tab:
+    # Optional replay log (collapsed to keep it one focused page)
+    with st.expander("📼 Replay log (optional)", expanded=False):
         if not routes:
             st.caption("No route log available. Generate with scripts/run_vectorbot_demo.py or quickstart.")
         else:
@@ -223,86 +347,6 @@ def main() -> None:
             })
             st.markdown("**State after (replayed)**", unsafe_allow_html=True)
             st.code(render_ascii(st.session_state.kernel.snapshot()), language="text")
-
-    # Route decision panel + comparison
-    st.divider()
-    st.subheader("Routing decision")
-
-    r1, r2 = st.columns(2)
-
-    with r1:
-        st.markdown("**Latent router (ours — zero generation)**")
-        route = None
-        if result is not None:
-            route = result.get("route", {})
-            # Also sync kernel state if result carried after
-            if "after" in result:
-                st.session_state.kernel.state.x = result["after"].get("x", st.session_state.kernel.state.x)
-                # (full sync is done inside port; we rely on it)
-        if route is None and routes:
-            # fallback to last replayed if any
-            pass
-
-        if route:
-            accepted = route.get("accepted", False)
-            st.metric("Predicted action", route.get("label", "—"))
-            st.metric("Confidence", f"{route.get('confidence', 0):.3f}")
-            st.metric("Accepted → kernel", "✅ YES" if accepted else "🚫 ABSTAIN")
-            top = route.get("top_probabilities", [])
-            if top:
-                dfp = pd.DataFrame(top)
-                st.bar_chart(dfp.set_index("label")["probability"], height=180)
-            if "ood_score" in route:
-                st.caption(f"margin={route.get('margin', 0):.3f} | ood={route.get('ood_score', 0):.3f}")
-        else:
-            st.caption("Enter a command and click Route (or use chips) to see live latent routing.")
-            st.code(render_ascii(st.session_state.kernel.snapshot()), language="text")
-
-    with r2:
-        st.markdown("**Naive generation-based router (simulated)**")
-        sim_text = command if "command" in locals() else (clicked_cmd or "go north")
-        sim = _simulated_generation_router(sim_text)
-        color = "#ef4444" if sim.get("danger") else "#f59e0b"
-        st.markdown(
-            f'<div style="padding:8px 12px;border-radius:6px;background:{color}22;border:1px solid {color};">'
-            f'<strong>{sim["label"]}</strong><br/>'
-            f'<span style="font-size:12px;">{sim["note"]}</span>'
-            f'</div>',
-            unsafe_allow_html=True,
-        )
-        st.caption("Typical real-world path: LLM emits text/JSON/tool call → parser → execute. No native ABSTAIN for unsafe intent.")
-
-    # Latent space + log (bottom)
-    st.divider()
-    bl, br = st.columns([1.35, 1])
-
-    with bl:
-        st.subheader("Latent space (PCA of pre-lm-head activations)")
-        if PROJECTION_PATH.exists() and px is not None:
-            proj = pd.read_csv(PROJECTION_PATH)
-            fig = px.scatter(
-                proj,
-                x="x",
-                y="y",
-                color="label",
-                hover_data=["split", "text", "accepted"] if "text" in proj.columns else None,
-                height=380,
-            )
-            fig.update_traces(marker=dict(size=5))
-            st.plotly_chart(fig, use_container_width=True, key="latent")
-        elif PROJECTION_PATH.exists():
-            st.dataframe(pd.read_csv(PROJECTION_PATH).head(200))
-        else:
-            st.caption("Projection CSV not found. Run build_vectorbot_visuals.py to generate.")
-
-    with br:
-        st.subheader("Recent routes (from artifact)")
-        if routes:
-            df = pd.DataFrame(routes)
-            cols = [c for c in ["input_text", "predicted_label", "accepted", "confidence", "vector_norm"] if c in df.columns]
-            st.dataframe(df[cols].tail(12), use_container_width=True, height=320)
-        else:
-            st.caption("No routes log found.")
 
     # Footer note
     st.caption(

@@ -18,6 +18,7 @@ class VectorBotRouteDecision:
     ood_score: float
     accepted: bool
     top_probabilities: list[dict[str, float]] = field(default_factory=list)
+    full_probabilities: list[dict[str, float]] = field(default_factory=list)  # all classes, sums to ~1.0
 
 
 class VectorBotRouter(Protocol):
@@ -54,5 +55,6 @@ class VectorBotVectorPort:
             "ood_score": decision.ood_score,
             "accepted": decision.accepted,
             "top_probabilities": list(decision.top_probabilities),
+            "full_probabilities": list(decision.full_probabilities),
         }
         return result
