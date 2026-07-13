@@ -5,6 +5,8 @@ __pycache__/
 .ipynb_checkpoints/
 artifacts/*.npz
 artifacts/*.joblib
+!artifacts/vectorbot_probe_distilgpt2.joblib
+!artifacts/vectorbot_probe_distilgpt2_full.joblib
 artifacts/*.png
 artifacts/*.jsonl
 artifacts/*.pt
