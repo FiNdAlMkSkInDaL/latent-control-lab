@@ -1,39 +1,27 @@
-# Repository instructions for coding agents
+# Notes for coding agents in this repo
 
-## Mission
+This project demos **zero-generation** action routing: frozen LM activations → probe → typed action. The kernel never sees free-form model text.
 
-This repository demonstrates **zero-generation latent action routing**. Maintain the core invariant: the runtime route from user request to app action must use a frozen LLM activation vector and a lightweight projection layer, not generated commands or parsed tool-call text.
+## Hard rules
 
-## Hard constraints
+- Do **not** call `model.generate()` on the action path.
+- Do **not** parse user text with keywords/JSON/SQL/shell to choose actions.
+- Keep the grid kernel sandboxed and deterministic.
+- Keep the LM frozen; train only the probe.
+- Keep the `ABSTAIN` route.
 
-- Do not call `model.generate()` in the production inference path.
-- Do not parse user text with regexes, keyword matching, generated JSON, generated SQL, or generated shell commands to decide actions.
-- Do not add arbitrary filesystem, shell, network, or OS-control actions to the toy application.
-- Keep the task kernel sandboxed and deterministic.
-- Keep the LLM frozen. Train only the probe/projection layer.
-- Preserve the `ABSTAIN` route and OOD gates.
-
-## Coding standards
-
-- Prefer small, typed modules with clear boundaries.
-- Add tests for state mutations and routing behavior.
-- Put executable demos in `scripts/` or `neural_native/cli.py`.
-- Keep notebooks optional; do not make tests depend on notebooks.
-- Use `pytest`, `ruff`, and type hints.
-- Document model id, feature space, prompt template, and metrics in saved artifacts.
-- For delegated verification tasks, Codex must execute the required commands itself and must not ask the user to run local commands. If execution is blocked by the sandbox, record the blocker and implement the closest runnable fallback.
-
-## Architecture boundary
+## Path
 
 ```text
-Text input -> tokenizer -> frozen LLM forward pass -> hook -> vector -> probe -> gate -> enum action -> TaskFlowKernel
+text → tokenizer → frozen LM → hook → vector → probe → gate → enum → kernel
 ```
 
-Anything outside this path should be marked as experimental or evaluation-only.
+Anything outside that for demos should be labeled analysis-only.
 
-## Preferred tests
+## Tests
 
-- App state machine tests should be pure Python and fast.
-- Hook tests may use fake modules or a tiny local model.
-- Integration tests should verify that a router decision reaches the app without text parsing.
-- Add a guard test or code comment ensuring `model.generate()` is not used for action routing.
+```bash
+pytest
+```
+
+Prefer small modules, type hints, and tests for state + routing.
